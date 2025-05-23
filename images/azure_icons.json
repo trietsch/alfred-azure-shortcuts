@@ -1,0 +1,4550 @@
+[
+  {
+    "type": "microsoft.insights/workbooktemplates",
+    "imagePath": "svg/AppInsightsExtension/WorkbookTemplates.svg"
+  },
+  {
+    "type": "microsoft.insights/workbooks",
+    "imagePath": "svg/AppInsightsExtension/Workbooks.svg"
+  },
+  {
+    "type": "microsoft.insights/webtests",
+    "imagePath": "svg/AppInsightsExtension/WebTest.svg"
+  },
+  {
+    "type": "Microsoft.Insights/privateLinkScopes",
+    "imagePath": "svg/AppInsightsExtension/PrivateLinkScope.svg"
+  },
+  {
+    "type": "microsoft.insights/components",
+    "imagePath": "svg/AppInsightsExtension/ApplicationInsights.svg"
+  },
+  {
+    "type": "Microsoft.AppPlatform/Spring",
+    "imagePath": "svg/AppPlatformExtension/AppPlatformAsset.svg"
+  },
+  {
+    "type": "Microsoft.Cache/Redis",
+    "imagePath": "svg/AzureCacheExtension/CacheAsset.svg"
+  },
+  {
+    "type": "Microsoft.Cache/RedisEnterprise/Databases",
+    "imagePath": "svg/AzureCacheExtension/RedisEnterpriseDatabaseAsset.svg"
+  },
+  {
+    "type": "Microsoft.Cache/RedisEnterprise",
+    "imagePath": "svg/AzureCacheExtension/RedisEnterpriseAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/AzureTfsExtension/Account.svg"
+  },
+  {
+    "type": "microsoft.visualstudio/account",
+    "imagePath": "svg/AzureTfsExtension/Organization.svg"
+  },
+  {
+    "type": "Astronomer.Astro/organizations",
+    "imagePath": "svg/Azure_Marketplace_Astronomer/Astronomer.svg"
+  },
+  {
+    "type": "Microsoft.Confluent/organizations",
+    "imagePath": "svg/Azure_Marketplace_Confluent/Confluent.svg"
+  },
+  {
+    "type": "Microsoft.Datadog/monitors",
+    "imagePath": "svg/Azure_Marketplace_Datadog/Datadog.svg"
+  },
+  {
+    "type": "Dell.Storage/filesystems",
+    "imagePath": "svg/Azure_Marketplace_Dell/Azure_Microsoft_Dell.svg"
+  },
+  {
+    "type": "Dynatrace.Observability/monitors",
+    "imagePath": "svg/Azure_Marketplace_Dynatrace/Dynatrace.svg"
+  },
+  {
+    "type": "Microsoft.Elastic/monitors",
+    "imagePath": "svg/Azure_Marketplace_Elastic/Elastic.svg"
+  },
+  {
+    "type": "Informatica.DataManagement/organizations",
+    "imagePath": "svg/Azure_Marketplace_Informatica/Informatica.svg"
+  },
+  {
+    "type": "NewRelic.Observability/monitors",
+    "imagePath": "svg/Azure_Marketplace_Liftr_NewRelic/NewRelic.svg"
+  },
+  {
+    "type": "Microsoft.WeightsAndBiases/instances",
+    "imagePath": "svg/Azure_MarketPlace_NativeISVService/WeightsAndBiases.svg"
+  },
+  {
+    "type": "Pinecone.VectorDb/organizations",
+    "imagePath": "svg/Azure_MarketPlace_NativeISVService/Pinecone.svg"
+  },
+  {
+    "type": "MongoDB.Atlas/organizations",
+    "imagePath": "svg/Azure_MarketPlace_NativeISVService/MongoDB.svg"
+  },
+  {
+    "type": "LambdaTest.HyperExecute/organizations",
+    "imagePath": "svg/Azure_MarketPlace_NativeISVService/LambdaTest.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Azure_MarketPlace_NativeISVService/CommvaultOverview.svg"
+  },
+  {
+    "type": "Commvault.ContentStore/cloudAccounts",
+    "imagePath": "svg/Azure_MarketPlace_NativeISVService/CommvaultCloudAccounts.svg"
+  },
+  {
+    "type": "ArizeAi.ObservabilityEval/organizations",
+    "imagePath": "svg/Azure_MarketPlace_NativeISVService/ArizeAi.svg"
+  },
+  {
+    "type": "Neon.Postgres/organizations",
+    "imagePath": "svg/Azure_Marketplace_Neon/NeonResource.svg"
+  },
+  {
+    "type": "NGINX.NGINXPLUS/nginxDeployments",
+    "imagePath": "svg/Azure_Marketplace_NGINX/Nginx.svg"
+  },
+  {
+    "type": "PaloAltoNetworks.Cloudngfw/firewalls",
+    "imagePath": "svg/Azure_Marketplace_PaloAltoNetworks_Cloudngfw/PaloAltoNetworksCloudNGFW.svg"
+  },
+  {
+    "type": "PaloAltoNetworks.Cloudngfw/globalRulestacks",
+    "imagePath": "svg/Azure_Marketplace_PaloAltoNetworks_Cloudngfw/PaloAltoNetworksGlobalRulestack.svg"
+  },
+  {
+    "type": "PaloAltoNetworks.Cloudngfw/localRulestacks",
+    "imagePath": "svg/Azure_Marketplace_PaloAltoNetworks_Cloudngfw/PaloAltoNetworksLocalRulestack.svg"
+  },
+  {
+    "type": "Microsoft.LiftrPilot/organizations",
+    "imagePath": "svg/Azure_Marketplace_Pilot/Pilot.svg"
+  },
+  {
+    "type": "purestorage.block/storagepools/avsstoragecontainers",
+    "imagePath": "svg/Azure_Marketplace_PureStorage/purestorage_block_storagepools_avsstoragecontainers.svg"
+  },
+  {
+    "type": "purestorage.block/reservations",
+    "imagePath": "svg/Azure_Marketplace_PureStorage/purestorage_block_reservations.svg"
+  },
+  {
+    "type": "purestorage.block/storagepools",
+    "imagePath": "svg/Azure_Marketplace_PureStorage/purestorage_block_storagepools.svg"
+  },
+  {
+    "type": "Qumulo.Storage/fileSystems",
+    "imagePath": "svg/Azure_Marketplace_Qumulo/MyResource.svg"
+  },
+  {
+    "type": "Microsoft.SamplePartner/organizations",
+    "imagePath": "svg/Azure_Marketplace_SamplePartner/MyResource.svg"
+  },
+  {
+    "type": "SolarWinds.Observability/Organizations",
+    "imagePath": "svg/Azure_Marketplace_SolarWindsObservability/SolarWinds.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/HubsExtension/Tag.svg"
+  },
+  {
+    "type": "Microsoft.Resources/subscriptions/resourceGroups",
+    "imagePath": "svg/HubsExtension/ResourceGroups.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/HubsExtension/Deployments.svg"
+  },
+  {
+    "type": "microsoft.portal/virtual-privatedashboards",
+    "imagePath": "svg/HubsExtension/PrivateDashboards.svg"
+  },
+  {
+    "type": "Microsoft.Portal/dashboards",
+    "imagePath": "svg/HubsExtension/Dashboards.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/HubsExtension/ResourceGraphExplorer.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/HubsExtension/BrowseRecentResources.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/HubsExtension/BrowseAllResources.svg"
+  },
+  {
+    "type": "Microsoft.resourcegraph/queries",
+    "imagePath": "svg/HubsExtension/ARGSharedQueries.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/HubsExtension/ArmExplorer.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_B2CAdmin/RootAsset.svg"
+  },
+  {
+    "type": "Microsoft.AzureActiveDirectory/guestUsages",
+    "imagePath": "svg/Microsoft_AAD_B2CAdmin/GuestUsages.svg"
+  },
+  {
+    "type": "Microsoft.AzureActiveDirectory/ciamDirectories",
+    "imagePath": "svg/Microsoft_AAD_B2CAdmin/CIAMTenant.svg"
+  },
+  {
+    "type": "Microsoft.AzureActiveDirectory/b2cDirectories",
+    "imagePath": "svg/Microsoft_AAD_B2CAdmin/B2CTenant.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_ConditionalAccess/PasswordProtectionRootAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_ConditionalAccess/NamedLocationsRootAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_ConditionalAccess/AuthenticationStrengthsRootAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_ConditionalAccess/PolicyRootAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_DecentralizedIdentity/PortableIdentityCards.svg"
+  },
+  {
+    "type": "Microsoft.AAD/domainServices",
+    "imagePath": "svg/Microsoft_AAD_DomainServices/AADDomainService.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_ERM/RootAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/UserManagement.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/WorkloadIdentities.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/WorkflowOverview.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/Workbooks.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/WebFilteringPolicy.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/VpnConfigurationsBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/UserRiskPolicyBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/UserResourceListBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/UserRegistrationDetailsList.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/TrafficLogs.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/TermsOfUseSummaryBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/TenantOverview.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/SignInRiskPolicyBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/SignInLogs.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/SetupBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/Settings.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/ServicePrincipalActivity.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/ServerStatusBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/ServerSettingsBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/SecurityQuickStartBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/SecurityOverviewBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/Security.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/ScenarioHealthSummary.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/RoamingSettingsBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/ReviewAccessBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/RegistrationCampaign.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/RegistrationAndResetEventsList.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/QuickStart.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/QuickAccess.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/ProvisioningGetStarted.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/ProvisioningEventsBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/ProvidersBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/PreviewHub.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/PolicyOverview.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/PoliciesList.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/PMDashboard.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/PhoneCallSettingsBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/PasswordResetPolicyDetailRegistrationBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/PasswordResetPolicyDetailNotificationsBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/PasswordResetPolicyDetailCustomizationBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/PasswordReset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/PasswordProtectionBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/PartnerListBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/Overview.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/OnPremisesPasswordResetPolicy.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/OneTimeBypassBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/NotificationsBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/NewSupportRequestV3Blade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/NamedLocations.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/Mobility.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/MfaPolicyBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/Logging.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/LocalAdminPasswordRecoveryBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/LinkedSubscriptionsBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/LicenseManagement.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/IssuerSettingsBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/IPTutorial.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/IpcDigestSettingsBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/IpcAlertSettingsBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/IdentitySecureScoreV2Blade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/IdentityProtectionOverview.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/HardwareTokensBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/GroupGeneralSettings.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/GettingStartedBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/GetStarted.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/FraudAlertBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/ForwardingProfile.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/FilteringPolicyProfiles.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/ExternalIdentitiesGettingStarted.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/ExternalCollaborationSettings.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/EnterpriseAppsOverview.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/EnterpriseApplicationsUserSettingsBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/EnterpriseApplicationsCollectionsBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/EnrichedLogs.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/DomainNames.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/DirectoryGroupNamingPolicySettingsBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/DirectoryGroupLifecycleSettingsV2Blade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/DiagnosticsLogsBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/DiagnosticsHome.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/DevicesOverview.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/DevicesList.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/DeviceSettingsBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/DeviceManagement.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/DeletedWorkflow.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/DeletedUsers.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/DeletedGroups.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/DelegatedAdminPartners.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/Dashboard.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/CustomControls.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/CustomSecurityAttributes.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/CustomAttributes.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/CrossTenantSynchronizationGetStarted.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/CrossTenantSynchronizationConfiguration.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/XtapAccessSettings.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/ConsentPoliciesUserSettingsBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/ConsentPoliciesPermissionsBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/ConsentPoliciesAdminConsentSettingsBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/CompanyBranding.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/Clients.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/ClassicPolicyListBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/CertificateAuthorities.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/CatalogListBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/CardsListBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/CachingRulesBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/BulkOperations.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/BranchConnectivity.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/BlockedUsersBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/BitLockerKeys.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/AzureAttachActiveDirectoryBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/AuthStrengths.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/AuthMethodsSettings.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/AuthenticationMethodsActivity.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/AuthenticationContextBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/AuthenticationActivityBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/AuditLogs.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/ArmResourceBrowseBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/ApplicationRequestApprovalsBladeV2.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/ApplicationCredentialActivityList.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/ApplicationActivityGrid.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/AppLaunchersSettings.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/AdminPasswordResetPolicyBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/AdminAuthMethodsBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/AccountLockoutBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/AADConnectBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/SecurityRootAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/SecurityQuickStart.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/SecureScoreRootAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/RiskyUsersRootAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/RiskySigninsRootAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/RiskyServicePrincipalsRootAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/RiskDetectionsRootAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/PasswordProtectionRootAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/MultifactorAuthenticationRootAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/IdentityProtectionRootAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/AuthenticationMethodsRootAsset.svg"
+  },
+  {
+    "type": "microsoft.aadiam/privateLinkForAzureAD",
+    "imagePath": "svg/Microsoft_AAD_IAM/PrivateLinkForAzureAD.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/GroupsManagement.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/TenantProperties.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/DirectoryUserSettings.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/CreateCustomRole.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/CompanyRelationshipsMenuBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/AzureActiveDirectory.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/AllRolesBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/AdminUnitManagementBlade.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/Application.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_IAM/AppProxyOverview.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AAD_RegisteredApps/RegisteredApps.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AzureCXP_EngageHub/EngageHubPortalMenu.svg"
+  },
+  {
+    "type": "Microsoft.Edge/disconnectedoperations",
+    "imagePath": "svg/Microsoft_AzureStackHCI_PortalExtension/Winfields.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AzureStackHCI_PortalExtension/EdgeCenter.svg"
+  },
+  {
+    "type": "Microsoft.All/hciVirtualMachines",
+    "imagePath": "svg/Microsoft_AzureStackHCI_PortalExtension/HCIVirtualMachines.svg"
+  },
+  {
+    "type": "Microsoft.AzureStackHCI/storagecontainers",
+    "imagePath": "svg/Microsoft_AzureStackHCI_PortalExtension/AzureStackHCIStoragePath.svg"
+  },
+  {
+    "type": "Microsoft.AzureStackHCI/clusters",
+    "imagePath": "svg/Microsoft_AzureStackHCI_PortalExtension/AzureStackHCIResource.svg"
+  },
+  {
+    "type": "Microsoft.AzureStackHCI/networkSecurityGroups",
+    "imagePath": "svg/Microsoft_AzureStackHCI_PortalExtension/AzureStackHCINetworkSecurityGroup.svg"
+  },
+  {
+    "type": "Microsoft.AzureStackHCI/NetworkInterfaces",
+    "imagePath": "svg/Microsoft_AzureStackHCI_PortalExtension/AzureStackHCINetworkInterface.svg"
+  },
+  {
+    "type": "Microsoft.AzureStackHCI/marketplacegalleryImages",
+    "imagePath": "svg/Microsoft_AzureStackHCI_PortalExtension/AzureStackHCIMarketplaceGalleryImage.svg"
+  },
+  {
+    "type": "Microsoft.AzureStackHCI/logicalnetworks",
+    "imagePath": "svg/Microsoft_AzureStackHCI_PortalExtension/AzureStackHCILogicalNetwork.svg"
+  },
+  {
+    "type": "Microsoft.AzureStackHCI/galleryImages",
+    "imagePath": "svg/Microsoft_AzureStackHCI_PortalExtension/AzureStackHCIGalleryImage.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_AzureStackHCI_PortalExtension/AzureStackHCI.svg"
+  },
+  {
+    "type": "Microsoft.AzureStackHCI/edgeNodePools",
+    "imagePath": "svg/Microsoft_AzureStackHCI_PortalExtension/AzureEdgeNodePool.svg"
+  },
+  {
+    "type": "private.aszlabhardware/labservers",
+    "imagePath": "svg/Microsoft_AzureStack_LabHardware/LabServers.svg"
+  },
+  {
+    "type": "private.aszlabhardware/reservations",
+    "imagePath": "svg/Microsoft_AzureStack_LabHardware/Reservations.svg"
+  },
+  {
+    "type": "private.aszlabhardware/servers",
+    "imagePath": "svg/Microsoft_AzureStack_LabHardware/Servers.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_ActivityLog/ActivityLogAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_ADHybridHealth/RootAsset.svg"
+  },
+  {
+    "type": "Microsoft.DeviceUpdate/Accounts",
+    "imagePath": "svg/Microsoft_Azure_ADU/IotDUResource.svg"
+  },
+  {
+    "type": "microsoft.cdn/profiles",
+    "imagePath": "svg/Microsoft_Azure_AFDX/FrontdoorProfile.svg"
+  },
+  {
+    "type": "Microsoft.AgFoodPlatform/farmBeats",
+    "imagePath": "svg/Microsoft_Azure_AgFoodPlatform/FarmbeatsResource.svg"
+  },
+  {
+    "type": "Microsoft.AgriculturePlatform/agriServices",
+    "imagePath": "svg/Microsoft_Azure_AgriculturePlatform/AgriServices.svg"
+  },
+  {
+    "type": "Microsoft.AnalysisServices/servers",
+    "imagePath": "svg/Microsoft_Azure_AnalysisServices/AnalysisServices.svg"
+  },
+  {
+    "type": "Microsoft.Fabric/capacities",
+    "imagePath": "svg/Microsoft_Azure_Analytics/REDIDCILDCBJNGCP.svg"
+  },
+  {
+    "type": "Microsoft.Network/networkManagers/verifierWorkspaces",
+    "imagePath": "svg/Microsoft_Azure_ANMVerifier/verifierWorkspace.svg"
+  },
+  {
+    "type": "Microsoft.MobileNetwork/packetCoreControlPlanes/packetCoreDataPlanes/attachedDataNetworks",
+    "imagePath": "svg/Microsoft_Azure_AP5GC/MobileNetworkPacketCoreControlPlanesPacketCoreDataPlanesAttachedDataNetworks.svg"
+  },
+  {
+    "type": "Microsoft.MobileNetwork/packetCoreControlPlanes",
+    "imagePath": "svg/Microsoft_Azure_AP5GC/MobileNetworkPacketCoreControlPlanes.svg"
+  },
+  {
+    "type": "Microsoft.MobileNetwork/mobileNetworks/dataNetworks",
+    "imagePath": "svg/Microsoft_Azure_AP5GC/MobileNetworkMobileNetworkDataNetworks.svg"
+  },
+  {
+    "type": "Microsoft.MobileNetwork/packetCoreControlPlanes/packetCoreDataPlanes",
+    "imagePath": "svg/Microsoft_Azure_AP5GC/MobileNetworkPacketCoreControlPlanesPacketCoreDataPlanes.svg"
+  },
+  {
+    "type": "Microsoft.MobileNetwork/mobileNetworks",
+    "imagePath": "svg/Microsoft_Azure_AP5GC/MobileNetworkMobileNetworks.svg"
+  },
+  {
+    "type": "Microsoft.MobileNetwork/radioAccessNetworks",
+    "imagePath": "svg/Microsoft_Azure_AP5GC/MobileNetworkSiteRadioAccessNetworks.svg"
+  },
+  {
+    "type": "Microsoft.MobileNetwork/mobileNetworks/services",
+    "imagePath": "svg/Microsoft_Azure_AP5GC/MobileNetworkMobileNetworkServices.svg"
+  },
+  {
+    "type": "Microsoft.MobileNetwork/simGroups/sims",
+    "imagePath": "svg/Microsoft_Azure_AP5GC/MobileNetworkSims.svg"
+  },
+  {
+    "type": "Microsoft.MobileNetwork/simGroups",
+    "imagePath": "svg/Microsoft_Azure_AP5GC/MobileNetworkSimGroups.svg"
+  },
+  {
+    "type": "Microsoft.MobileNetwork/mobileNetworks/simPolicies",
+    "imagePath": "svg/Microsoft_Azure_AP5GC/MobileNetworkMobileNetworkSimPolicies.svg"
+  },
+  {
+    "type": "Microsoft.MobileNetwork/mobileNetworks/sites",
+    "imagePath": "svg/Microsoft_Azure_AP5GC/MobileNetworkMobileNetworkSites.svg"
+  },
+  {
+    "type": "Microsoft.MobileNetwork/mobileNetworks/slices",
+    "imagePath": "svg/Microsoft_Azure_AP5GC/MobileNetworkMobileNetworkSlices.svg"
+  },
+  {
+    "type": "Microsoft.ApiCenter/services",
+    "imagePath": "svg/Microsoft_Azure_ApiManagement/Center.svg"
+  },
+  {
+    "type": "Microsoft.ApiManagement/gateways",
+    "imagePath": "svg/Microsoft_Azure_ApiManagement/Gateway.svg"
+  },
+  {
+    "type": "Microsoft.ApiManagement/service",
+    "imagePath": "svg/Microsoft_Azure_ApiManagement/Service.svg"
+  },
+  {
+    "type": "Microsoft.ApiCenter/services/workspaces",
+    "imagePath": "svg/Microsoft_Azure_ApiManagement/WorkspaceCatalog.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_AppComplianceAutomation/AppComplianceAutomation.svg"
+  },
+  {
+    "type": "Microsoft.Solutions/applicationDefinitions",
+    "imagePath": "svg/Microsoft_Azure_Appliance/ApplianceDefinition.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Appliance/ApplicationsHub.svg"
+  },
+  {
+    "type": "Microsoft.Solutions/applications",
+    "imagePath": "svg/Microsoft_Azure_Appliance/ArmAppliance.svg"
+  },
+  {
+    "type": "Microsoft.VSOnline/Plans",
+    "imagePath": "svg/Microsoft_Azure_Appliance/MicrosoftVSOnlinePlans.svg"
+  },
+  {
+    "type": "Microsoft.AppSecurity/Policies",
+    "imagePath": "svg/Microsoft_Azure_AppProtection/AppProtectPolicies.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_ArcCenterUX/AzureArcCenter.svg"
+  },
+  {
+    "type": "Microsoft.Arc/allFairfax",
+    "imagePath": "svg/Microsoft_Azure_ArcCenterUX/AllArcResourcesFairfax.svg"
+  },
+  {
+    "type": "Microsoft.Arc/all",
+    "imagePath": "svg/Microsoft_Azure_ArcCenterUX/AllArcResources.svg"
+  },
+  {
+    "type": "microsoft.kubernetesruntime/loadbalancers",
+    "imagePath": "svg/Microsoft_Azure_ArcNetworking/ArcNetworking.svg"
+  },
+  {
+    "type": "Microsoft.Attestation/attestationProviders",
+    "imagePath": "svg/Microsoft_Azure_Attestation/AttestResource.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_AutoManagedVirtualMachines/AutoManagedVirtualMachines.svg"
+  },
+  {
+    "type": "Microsoft.Automation/AutomationAccounts",
+    "imagePath": "svg/Microsoft_Azure_Automation/Account.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Automation/Variable.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Automation/ChangeTrackingCenter.svg"
+  },
+  {
+    "type": "Microsoft.Compute/virtualMachines/providers/guestConfigurationAssignments",
+    "imagePath": "svg/Microsoft_Azure_Automation/GuestAssignment.svg"
+  },
+  {
+    "type": "Microsoft.HybridCompute/machines/providers/guestConfigurationAssignments",
+    "imagePath": "svg/Microsoft_Azure_Automation/NonAzureGuestAssignment.svg"
+  },
+  {
+    "type": "microsoft.maintenance/maintenanceconfigurationsBladeResource",
+    "imagePath": "svg/Microsoft_Azure_Automation/MaintenanceConfigurationAUMasset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Automation/UpdateCenter.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Automation/UpdateAgentTroubleshooting.svg"
+  },
+  {
+    "type": "Microsoft.AppConfiguration/configurationStores",
+    "imagePath": "svg/Microsoft_Azure_AzConfig/StoreResource.svg"
+  },
+  {
+    "type": "microsoft.azurefleet/fleetsComputehub",
+    "imagePath": "svg/Microsoft_Azure_AzFleet/AzureFleetComputeHub.svg"
+  },
+  {
+    "type": "microsoft.azurefleet/fleets",
+    "imagePath": "svg/Microsoft_Azure_AzFleet/AzureFleet.svg"
+  },
+  {
+    "type": "Microsoft.Batch/batchAccounts",
+    "imagePath": "svg/Microsoft_Azure_Batch/BatchAccount.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_BCDRCenter/ABCCenter.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Billing/FreeServices.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Billing/Billing.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Billing/SubscriptionDetail.svg"
+  },
+  {
+    "type": "microsoft.resources/subscriptions",
+    "imagePath": "svg/Microsoft_Azure_Billing/Subscription.svg"
+  },
+  {
+    "type": "Microsoft.BotService/botServices",
+    "imagePath": "svg/Microsoft_Azure_BotService/BotService.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Capacity/QuotaMenu.svg"
+  },
+  {
+    "type": "microsoft.cdn/profiles/endpoints/origins",
+    "imagePath": "svg/Microsoft_Azure_Cdn/Origin.svg"
+  },
+  {
+    "type": "microsoft.cdn/profiles/endpoints",
+    "imagePath": "svg/Microsoft_Azure_Cdn/Endpoint.svg"
+  },
+  {
+    "type": "microsoft.cdn/profiles/endpoints/customdomains",
+    "imagePath": "svg/Microsoft_Azure_Cdn/CustomDomain.svg"
+  },
+  {
+    "type": "microsoft.cdn/profiles",
+    "imagePath": "svg/Microsoft_Azure_Cdn/CdnProfile.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_ChangeAnalysis/AzureChangeAnalysis.svg"
+  },
+  {
+    "type": "microsoft.chaos/privateaccesses",
+    "imagePath": "svg/Microsoft_Azure_Chaos/privateAccess.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Chaos/chaosStudio.svg"
+  },
+  {
+    "type": "microsoft.chaos/experiments",
+    "imagePath": "svg/Microsoft_Azure_Chaos/chaosExperimentResource.svg"
+  },
+  {
+    "type": "Microsoft.ClassicCompute/VirtualMachines",
+    "imagePath": "svg/Microsoft_Azure_Classic_Compute/VirtualMachine.svg"
+  },
+  {
+    "type": "Microsoft.ClassicStorage/storageAccounts/vmimages",
+    "imagePath": "svg/Microsoft_Azure_Classic_Compute/VmUserImages.svg"
+  },
+  {
+    "type": "Microsoft.ClassicStorage/storageAccounts/osimages",
+    "imagePath": "svg/Microsoft_Azure_Classic_Compute/OsUserImages.svg"
+  },
+  {
+    "type": "Microsoft.ClassicStorage/storageAccounts/disks",
+    "imagePath": "svg/Microsoft_Azure_Classic_Compute/Disks.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Classic_Compute/DomainName.svg"
+  },
+  {
+    "type": "microsoft.sovereign/transparencylogs",
+    "imagePath": "svg/Microsoft_Azure_CloudforSovereignty/TransparencyLogsAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_CloudforSovereignty/SovereigntyAsset.svg"
+  },
+  {
+    "type": "microsoft.sovereign/landingzoneaccounts/landingzoneregistrations",
+    "imagePath": "svg/Microsoft_Azure_CloudforSovereignty/LZRegistrationsAsset.svg"
+  },
+  {
+    "type": "microsoft.sovereign/landingzoneaccounts",
+    "imagePath": "svg/Microsoft_Azure_CloudforSovereignty/LandingZoneAccountsAsset.svg"
+  },
+  {
+    "type": "microsoft.sovereign/landingzoneaccounts/landingzoneconfigurations",
+    "imagePath": "svg/Microsoft_Azure_CloudforSovereignty/LZConfigurationsAsset.svg"
+  },
+  {
+    "type": "Microsoft.HardwareSecurityModules/cloudHsmClusters",
+    "imagePath": "svg/Microsoft_Azure_CloudHSM/CloudHSM.svg"
+  },
+  {
+    "type": "Microsoft.LoadTestService/LoadTests",
+    "imagePath": "svg/Microsoft_Azure_CloudNativeTesting/CloudNativeTesting.svg"
+  },
+  {
+    "type": "microsoft.classiccompute/domainnames/slots/roles",
+    "imagePath": "svg/Microsoft_Azure_CloudServices/Role.svg"
+  },
+  {
+    "type": "microsoft.classicCompute/domainNames",
+    "imagePath": "svg/Microsoft_Azure_CloudServices/CloudService.svg"
+  },
+  {
+    "type": "Microsoft.Compute/cloudServices",
+    "imagePath": "svg/Microsoft_Azure_CloudServices_Arm/CloudServicesArm.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_CloudTest/CloudTest.svg"
+  },
+  {
+    "type": "Microsoft.CloudTest/accounts",
+    "imagePath": "svg/Microsoft_Azure_CloudTest/CloudTestAccounts.svg"
+  },
+  {
+    "type": "Microsoft.CloudTest/buildcaches",
+    "imagePath": "svg/Microsoft_Azure_CloudTest/CloudTestBuildCache.svg"
+  },
+  {
+    "type": "Microsoft.CloudTest/hostedpools",
+    "imagePath": "svg/Microsoft_Azure_CloudTest/HostedPools.svg"
+  },
+  {
+    "type": "Microsoft.CloudTest/images",
+    "imagePath": "svg/Microsoft_Azure_CloudTest/CloudTestImages.svg"
+  },
+  {
+    "type": "Microsoft.CloudTest/pools",
+    "imagePath": "svg/Microsoft_Azure_CloudTest/CloudTestPools.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_CodeOptimizations/CodeOptimizations.svg"
+  },
+  {
+    "type": "Microsoft.CodeSigning/codesigningaccounts",
+    "imagePath": "svg/Microsoft_Azure_CodeSigning/CodeSigningAccounts.svg"
+  },
+  {
+    "type": "Microsoft.Communication/CommunicationServices",
+    "imagePath": "svg/Microsoft_Azure_CommunicationServices/Communication.svg"
+  },
+  {
+    "type": "Microsoft.VoiceServices/CommunicationsGateways/TestLines",
+    "imagePath": "svg/Microsoft_Azure_CommunicationsGatewayExtension/TestLines.svg"
+  },
+  {
+    "type": "Microsoft.VoiceServices/CommunicationsGateways",
+    "imagePath": "svg/Microsoft_Azure_CommunicationsGatewayExtension/CommunicationsGateways.svg"
+  },
+  {
+    "type": "Microsoft.Community/communityTrainings",
+    "imagePath": "svg/Microsoft_Azure_CommunityTraining/CommunityTraining.svg"
+  },
+  {
+    "type": "Microsoft.Compute/virtualMachineScaleSetsComputehub",
+    "imagePath": "svg/Microsoft_Azure_Compute/VirtualMachineScaleSetComputeHub.svg"
+  },
+  {
+    "type": "Microsoft.Compute/virtualMachineScaleSets",
+    "imagePath": "svg/Microsoft_Azure_Compute/VirtualMachineScaleSet.svg"
+  },
+  {
+    "type": "Microsoft.Compute/VirtualMachineComputehub",
+    "imagePath": "svg/Microsoft_Azure_Compute/VirtualMachineComputeHub.svg"
+  },
+  {
+    "type": "Microsoft.Compute/VirtualMachines",
+    "imagePath": "svg/Microsoft_Azure_Compute/VirtualMachine.svg"
+  },
+  {
+    "type": "Microsoft.All/virtualMachines",
+    "imagePath": "svg/Microsoft_Azure_Compute/AllVirtualMachine.svg"
+  },
+  {
+    "type": "Microsoft.Compute/sshPublicKeys",
+    "imagePath": "svg/Microsoft_Azure_Compute/SshKey.svg"
+  },
+  {
+    "type": "Microsoft.Compute/ProximityPlacementGroupsComputehub",
+    "imagePath": "svg/Microsoft_Azure_Compute/ProximityPlacementGroupComputeHub.svg"
+  },
+  {
+    "type": "Microsoft.Compute/ProximityPlacementGroups",
+    "imagePath": "svg/Microsoft_Azure_Compute/ProximityPlacementGroup.svg"
+  },
+  {
+    "type": "microsoft.compute/virtualmachineflexinstances",
+    "imagePath": "svg/Microsoft_Azure_Compute/VirtualMachineFlexInstance.svg"
+  },
+  {
+    "type": "microsoft.compute/standbypoolinstance",
+    "imagePath": "svg/Microsoft_Azure_Compute/StandbyPoolInstance.svg"
+  },
+  {
+    "type": "microsoft.compute/computefleetscalesets",
+    "imagePath": "svg/Microsoft_Azure_Compute/ComputeFleetScaleSet.svg"
+  },
+  {
+    "type": "microsoft.compute/computefleetinstances",
+    "imagePath": "svg/Microsoft_Azure_Compute/ComputeFleetInstance.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Compute/DedicatedHostComputeHub.svg"
+  },
+  {
+    "type": "Microsoft.Compute/hostgroups/hosts",
+    "imagePath": "svg/Microsoft_Azure_Compute/DedicatedHost.svg"
+  },
+  {
+    "type": "Microsoft.Compute/hostgroupsComputehub",
+    "imagePath": "svg/Microsoft_Azure_Compute/DedicatedHostGroupComputeHub.svg"
+  },
+  {
+    "type": "Microsoft.Compute/hostgroups",
+    "imagePath": "svg/Microsoft_Azure_Compute/DedicatedHostGroup.svg"
+  },
+  {
+    "type": "Microsoft.Compute/capacityReservationGroupsComputehub",
+    "imagePath": "svg/Microsoft_Azure_Compute/CapacityReservationGroupComputeHub.svg"
+  },
+  {
+    "type": "Microsoft.Compute/capacityReservationGroups",
+    "imagePath": "svg/Microsoft_Azure_Compute/CapacityReservationGroup.svg"
+  },
+  {
+    "type": "Microsoft.Compute/availabilitySets",
+    "imagePath": "svg/Microsoft_Azure_Compute/AvailabilitySet.svg"
+  },
+  {
+    "type": "Microsoft.ComputeHub/WindowsOSType",
+    "imagePath": "svg/Microsoft_Azure_ComputeHub/WindowsOSType.svg"
+  },
+  {
+    "type": "Microsoft.ComputeHub/ProvisioningStateSucceededResources",
+    "imagePath": "svg/Microsoft_Azure_ComputeHub/ProvisioningStateSucceededResources.svg"
+  },
+  {
+    "type": "Microsoft.ComputeHub/ProvisioningStateFailedResources",
+    "imagePath": "svg/Microsoft_Azure_ComputeHub/ProvisioningStateFailedResources.svg"
+  },
+  {
+    "type": "Microsoft.ComputeHub/PowerStateStopped",
+    "imagePath": "svg/Microsoft_Azure_ComputeHub/PowerStateStopped.svg"
+  },
+  {
+    "type": "Microsoft.ComputeHub/PowerStateRunning",
+    "imagePath": "svg/Microsoft_Azure_ComputeHub/PowerStateRunning.svg"
+  },
+  {
+    "type": "Microsoft.ComputeHub/PowerStateDeallocated",
+    "imagePath": "svg/Microsoft_Azure_ComputeHub/PowerStateDeallocated.svg"
+  },
+  {
+    "type": "Microsoft.ComputeHub/Outages",
+    "imagePath": "svg/Microsoft_Azure_ComputeHub/Outages.svg"
+  },
+  {
+    "type": "Microsoft.ComputeHub/MicrosoftDefenderStandardSubscription",
+    "imagePath": "svg/Microsoft_Azure_ComputeHub/MicrosoftDefenderStandardSubscription.svg"
+  },
+  {
+    "type": "Microsoft.ComputeHub/MicrosoftDefenderFreeTrialSubscription",
+    "imagePath": "svg/Microsoft_Azure_ComputeHub/MicrosoftDefenderFreeTrialSubscription.svg"
+  },
+  {
+    "type": "Microsoft.ComputeHub/LinuxOSType",
+    "imagePath": "svg/Microsoft_Azure_ComputeHub/LinuxOSType.svg"
+  },
+  {
+    "type": "Microsoft.ComputeHub/HealthEvents",
+    "imagePath": "svg/Microsoft_Azure_ComputeHub/HealthEvents.svg"
+  },
+  {
+    "type": "Microsoft.ComputeHub/ComputeHubMain",
+    "imagePath": "svg/Microsoft_Azure_ComputeHub/ComputeHub.svg"
+  },
+  {
+    "type": "Microsoft.ComputeHub/Backup",
+    "imagePath": "svg/Microsoft_Azure_ComputeHub/Backup.svg"
+  },
+  {
+    "type": "Microsoft.ComputeHub/all",
+    "imagePath": "svg/Microsoft_Azure_ComputeHub/AllResources.svg"
+  },
+  {
+    "type": "Microsoft.ComputeHub/AdvisorSecurity",
+    "imagePath": "svg/Microsoft_Azure_ComputeHub/AdvisorSecurity.svg"
+  },
+  {
+    "type": "Microsoft.ComputeHub/AdvisorReliability",
+    "imagePath": "svg/Microsoft_Azure_ComputeHub/AdvisorReliability.svg"
+  },
+  {
+    "type": "Microsoft.ComputeHub/AdvisorPerformance",
+    "imagePath": "svg/Microsoft_Azure_ComputeHub/AdvisorPerformance.svg"
+  },
+  {
+    "type": "Microsoft.ComputeHub/AdvisorOperationalExcellence",
+    "imagePath": "svg/Microsoft_Azure_ComputeHub/AdvisorOperationalExcellence.svg"
+  },
+  {
+    "type": "Microsoft.ComputeHub/AdvisorCost",
+    "imagePath": "svg/Microsoft_Azure_ComputeHub/AdvisorCost.svg"
+  },
+  {
+    "type": "Microsoft.ConfidentialLedger/ledgers",
+    "imagePath": "svg/Microsoft_Azure_ConfidentialLedger/ConfidentialLedger.svg"
+  },
+  {
+    "type": "Microsoft.ConfidentialLedger/ManagedCCFs",
+    "imagePath": "svg/Microsoft_Azure_ConfidentialLedger/ManagedCCF.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_ConfigManager/ConfigManager.svg"
+  },
+  {
+    "type": "Microsoft.ContainerRegistry/registries/webhooks",
+    "imagePath": "svg/Microsoft_Azure_ContainerRegistries/WebhookResource.svg"
+  },
+  {
+    "type": "Microsoft.ContainerRegistry/registries/tokens",
+    "imagePath": "svg/Microsoft_Azure_ContainerRegistries/TokenResource.svg"
+  },
+  {
+    "type": "Microsoft.ContainerRegistry/registries/scopeMaps",
+    "imagePath": "svg/Microsoft_Azure_ContainerRegistries/ScopeMapResource.svg"
+  },
+  {
+    "type": "Microsoft.ContainerRegistry/registries/replications",
+    "imagePath": "svg/Microsoft_Azure_ContainerRegistries/ReplicationResource.svg"
+  },
+  {
+    "type": "Microsoft.ContainerRegistry/registries",
+    "imagePath": "svg/Microsoft_Azure_ContainerRegistries/RegistryResource.svg"
+  },
+  {
+    "type": "Microsoft.ContainerService/managedClusters/Microsoft.KubernetesConfiguration/fluxConfigurations",
+    "imagePath": "svg/Microsoft_Azure_ContainerService/ManagedClustersGitOpsConfiguration.svg"
+  },
+  {
+    "type": "Microsoft.Kubernetes/connectedClusters/Microsoft.KubernetesConfiguration/fluxConfigurations",
+    "imagePath": "svg/Microsoft_Azure_ContainerService/ConnectedClustersGitOpsConfiguration.svg"
+  },
+  {
+    "type": "Microsoft.ContainerService/managedClusters/Microsoft.KubernetesConfiguration/namespaces",
+    "imagePath": "svg/Microsoft_Azure_ContainerService/ManagedClusterNamespaces.svg"
+  },
+  {
+    "type": "Microsoft.Kubernetes/connectedClusters/Microsoft.KubernetesConfiguration/namespaces",
+    "imagePath": "svg/Microsoft_Azure_ContainerService/ConnectedClusterNamespaces.svg"
+  },
+  {
+    "type": "Microsoft.ContainerInstance/containerGroups",
+    "imagePath": "svg/Microsoft_Azure_ContainerService/ContainerGroup.svg"
+  },
+  {
+    "type": "Microsoft.ContainerService/managedClusters/managedNamespaces",
+    "imagePath": "svg/Microsoft_Azure_ContainerService/ManagedNamespaces.svg"
+  },
+  {
+    "type": "Microsoft.ContainerService/managedClusters",
+    "imagePath": "svg/Microsoft_Azure_ContainerService/ManagedClusters.svg"
+  },
+  {
+    "type": "microsoft.containerservice/managedclusters/microsoft.kubernetesconfiguration/extensions",
+    "imagePath": "svg/Microsoft_Azure_ContainerService/KubernetesClusterExtensionsChild.svg"
+  },
+  {
+    "type": "microsoft.kubernetesconfiguration/extensions",
+    "imagePath": "svg/Microsoft_Azure_ContainerService/KubernetesClusterExtensions.svg"
+  },
+  {
+    "type": "microsoft.containerservice/fleets",
+    "imagePath": "svg/Microsoft_Azure_ContainerService/Fleets.svg"
+  },
+  {
+    "type": "Microsoft.RedHatOpenShift/OpenShiftClusters",
+    "imagePath": "svg/Microsoft_Azure_ContainerService/AroClusters.svg"
+  },
+  {
+    "type": "Microsoft.ContainerStorage/pools",
+    "imagePath": "svg/Microsoft_Azure_ContainerStorage/ContainerStorage.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Copilot/CopilotSettingsAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_CostManagement/Exports.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_CostManagement/CostManagement.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_CostManagement/CostAnalysis.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_CostManagement/CostAlerts.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_CostManagement/Connectors.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_CostManagement/Budgets.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_CreateUIDef/CustomTemplate.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_CreateUIDef/DeploymentStack.svg"
+  },
+  {
+    "type": "Microsoft.PortalServices/Extensions/Deployments",
+    "imagePath": "svg/Microsoft_Azure_CreateUIDef/PortalExtensionDeployments.svg"
+  },
+  {
+    "type": "Microsoft.PortalServices/Extensions",
+    "imagePath": "svg/Microsoft_Azure_CreateUIDef/PortalExtensions.svg"
+  },
+  {
+    "type": "Microsoft.PortalServices/Extensions/Slots",
+    "imagePath": "svg/Microsoft_Azure_CreateUIDef/PortalExtensionSlots.svg"
+  },
+  {
+    "type": "Microsoft.PortalServices/Extensions/Versions",
+    "imagePath": "svg/Microsoft_Azure_CreateUIDef/PortalExtensionVersions.svg"
+  },
+  {
+    "type": "Microsoft.AzureDataTransfer/Pipelines",
+    "imagePath": "svg/Microsoft_Azure_CtsExtension/CloudTransferPipeline.svg"
+  },
+  {
+    "type": "Microsoft.AzureDataTransfer/Connections/Flows",
+    "imagePath": "svg/Microsoft_Azure_CtsExtension/CloudTransferFlow.svg"
+  },
+  {
+    "type": "Microsoft.AzureDataTransfer/Connections",
+    "imagePath": "svg/Microsoft_Azure_CtsExtension/CloudTransferConnection.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_CtsExtension/CloudTransferService.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_CustomerHub/ServiceProviders.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_CustomerHub/MyCustomers.svg"
+  },
+  {
+    "type": "Microsoft.ManagedServices/registrationDefinitions",
+    "imagePath": "svg/Microsoft_Azure_CustomerHub/Lighthouse.svg"
+  },
+  {
+    "type": "Microsoft.Dashboard/grafana",
+    "imagePath": "svg/Microsoft_Azure_Dashboard/AzureDashboardGrafanaResource.svg"
+  },
+  {
+    "type": "Microsoft.DatabaseWatcher/watchers",
+    "imagePath": "svg/Microsoft_Azure_DatabaseInsights/DatabaseWatcher.svg"
+  },
+  {
+    "type": "Microsoft.Databricks/accessConnectors",
+    "imagePath": "svg/Microsoft_Azure_Databricks/AccessConnector.svg"
+  },
+  {
+    "type": "Microsoft.Databricks/workspaces",
+    "imagePath": "svg/Microsoft_Azure_Databricks/Workspace.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_DataFactory/Activity.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_DataFactory/Table.svg"
+  },
+  {
+    "type": "Microsoft.DataFactory/dataFactories",
+    "imagePath": "svg/Microsoft_Azure_DataFactory/DataFactory.svg"
+  },
+  {
+    "type": "Microsoft.DataFactory/factories",
+    "imagePath": "svg/Microsoft_Azure_DataFactory/DataFactoryv2.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_DataFactory/Pipeline.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_DataFactory/Slice.svg"
+  },
+  {
+    "type": "Microsoft.DataLakeAnalytics/accounts",
+    "imagePath": "svg/Microsoft_Azure_DataLakeAnalytics/KonaAccount.svg"
+  },
+  {
+    "type": "Microsoft.DataLakeStore/accounts",
+    "imagePath": "svg/Microsoft_Azure_DataLakeStore/CaboAccount.svg"
+  },
+  {
+    "type": "Microsoft.DataProtection/resourceGuards",
+    "imagePath": "svg/Microsoft_Azure_DataProtection/ResourceGuardResource.svg"
+  },
+  {
+    "type": "Microsoft.DataProtection/BackupVaults",
+    "imagePath": "svg/Microsoft_Azure_DataProtection/DataProtectionResource.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_DataProtection/BackupCenter.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_DataShare/InvitationsBrowse.svg"
+  },
+  {
+    "type": "Microsoft.DataShare/accounts",
+    "imagePath": "svg/Microsoft_Azure_DataShare/DataShare.svg"
+  },
+  {
+    "type": "Microsoft.ClusterStor/nodes",
+    "imagePath": "svg/Microsoft_Azure_Dedicated_ClusterStor/ClusterStor.svg"
+  },
+  {
+    "type": "Microsoft.SecurityDetonation/chambers",
+    "imagePath": "svg/Microsoft_Azure_DetonationService/DetonationChamber.svg"
+  },
+  {
+    "type": "Microsoft.DevCenter/projects",
+    "imagePath": "svg/Microsoft_Azure_DevCenter/Project.svg"
+  },
+  {
+    "type": "Microsoft.DevCenter/projects/pools",
+    "imagePath": "svg/Microsoft_Azure_DevCenter/Pools.svg"
+  },
+  {
+    "type": "Microsoft.DevCenter/plans",
+    "imagePath": "svg/Microsoft_Azure_DevCenter/Plan.svg"
+  },
+  {
+    "type": "Microsoft.DevCenter/networkconnections",
+    "imagePath": "svg/Microsoft_Azure_DevCenter/NetworkConnection.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_DevCenter/EnvironmentsService.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_DevCenter/DevCenterService.svg"
+  },
+  {
+    "type": "Microsoft.DevCenter/devcenters",
+    "imagePath": "svg/Microsoft_Azure_DevCenter/DevCenter.svg"
+  },
+  {
+    "type": "Microsoft.DevCenter/devcenters/devboxdefinitions",
+    "imagePath": "svg/Microsoft_Azure_DevCenter/DevBoxDefinitions.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_DevCenter/CodeStudioService.svg"
+  },
+  {
+    "type": "microsoft.deviceregistry/schemaRegistries",
+    "imagePath": "svg/Microsoft_Azure_DeviceRegistry/schemaRegistries.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_DeviceRegistry/DeviceRegistry.svg"
+  },
+  {
+    "type": "microsoft.deviceregistry/devices",
+    "imagePath": "svg/Microsoft_Azure_DeviceRegistry/devices.svg"
+  },
+  {
+    "type": "microsoft.deviceregistry/assetEndpointProfiles",
+    "imagePath": "svg/Microsoft_Azure_DeviceRegistry/assetEndpointProfiles.svg"
+  },
+  {
+    "type": "microsoft.deviceregistry/assets",
+    "imagePath": "svg/Microsoft_Azure_DeviceRegistry/assets.svg"
+  },
+  {
+    "type": "Microsoft.DeviceUpdate/updateAccounts",
+    "imagePath": "svg/Microsoft_Azure_DeviceUpdate/updateAccount.svg"
+  },
+  {
+    "type": "Microsoft.DeviceUpdate/updateAccounts/updates",
+    "imagePath": "svg/Microsoft_Azure_DeviceUpdate/update.svg"
+  },
+  {
+    "type": "Microsoft.DeviceUpdate/updateAccounts/deviceClasses",
+    "imagePath": "svg/Microsoft_Azure_DeviceUpdate/deviceClass.svg"
+  },
+  {
+    "type": "Microsoft.DeviceUpdate/updateAccounts/deployments",
+    "imagePath": "svg/Microsoft_Azure_DeviceUpdate/deployment.svg"
+  },
+  {
+    "type": "Microsoft.DeviceUpdate/updateAccounts/agents",
+    "imagePath": "svg/Microsoft_Azure_DeviceUpdate/agent.svg"
+  },
+  {
+    "type": "Microsoft.DeviceUpdate/updateAccounts/activeDeployments",
+    "imagePath": "svg/Microsoft_Azure_DeviceUpdate/activeDeployment.svg"
+  },
+  {
+    "type": "Microsoft.DevOpsInfrastructure/pools",
+    "imagePath": "svg/Microsoft_Azure_DevOpsInfrastructure/ManagedDevOpsPools.svg"
+  },
+  {
+    "type": "Microsoft.DevTestLab/labs/virtualMachines",
+    "imagePath": "svg/Microsoft_Azure_DevTestLab/MyLabVms.svg"
+  },
+  {
+    "type": "Microsoft.DevTestLab/labs",
+    "imagePath": "svg/Microsoft_Azure_DevTestLab/DevTestLab.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_DevTestLab/CustomImage.svg"
+  },
+  {
+    "type": "microsoft.devtunnels/tunnelplans",
+    "imagePath": "svg/Microsoft_Azure_DevTunnels/devtunnels.svg"
+  },
+  {
+    "type": "Microsoft.DigitalTwins/digitalTwinsInstances",
+    "imagePath": "svg/Microsoft_Azure_DigitalTwins/digitaltwinsInstances.svg"
+  },
+  {
+    "type": "Microsoft.Compute/snapshots",
+    "imagePath": "svg/Microsoft_Azure_DiskMgmt/Snapshot.svg"
+  },
+  {
+    "type": "Microsoft.Compute/galleries",
+    "imagePath": "svg/Microsoft_Azure_DiskMgmt/SharedImageGallery.svg"
+  },
+  {
+    "type": "Microsoft.Compute/restorePointCollections",
+    "imagePath": "svg/Microsoft_Azure_DiskMgmt/RestorePointCollection.svg"
+  },
+  {
+    "type": "Microsoft.Compute/restorePointCollections/restorePoints",
+    "imagePath": "svg/Microsoft_Azure_DiskMgmt/RestorePoint.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_DiskMgmt/ImageVersionComputeHub.svg"
+  },
+  {
+    "type": "Microsoft.Compute/galleries/images/versions",
+    "imagePath": "svg/Microsoft_Azure_DiskMgmt/ImageVersion.svg"
+  },
+  {
+    "type": "Microsoft.VirtualMachineImages/imageTemplates",
+    "imagePath": "svg/Microsoft_Azure_DiskMgmt/ImageTemplate.svg"
+  },
+  {
+    "type": "Microsoft.Compute/imagesComputehub",
+    "imagePath": "svg/Microsoft_Azure_DiskMgmt/ImageComputeHub.svg"
+  },
+  {
+    "type": "Microsoft.Compute/images",
+    "imagePath": "svg/Microsoft_Azure_DiskMgmt/Image.svg"
+  },
+  {
+    "type": "Microsoft.Compute/galleries/imagesComputehub",
+    "imagePath": "svg/Microsoft_Azure_DiskMgmt/ImageDefinitionComputeHub.svg"
+  },
+  {
+    "type": "Microsoft.Compute/galleries/images",
+    "imagePath": "svg/Microsoft_Azure_DiskMgmt/ImageDefinition.svg"
+  },
+  {
+    "type": "Microsoft.Compute/galleries/applications/versions",
+    "imagePath": "svg/Microsoft_Azure_DiskMgmt/GalleryApplicationVersion.svg"
+  },
+  {
+    "type": "Microsoft.Compute/galleries/applications",
+    "imagePath": "svg/Microsoft_Azure_DiskMgmt/GalleryApplication.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_DiskMgmt/DiskEncryptionSetComputeHub.svg"
+  },
+  {
+    "type": "Microsoft.Compute/diskEncryptionSets",
+    "imagePath": "svg/Microsoft_Azure_DiskMgmt/DiskEncryptionSet.svg"
+  },
+  {
+    "type": "Microsoft.Compute/diskAccesses",
+    "imagePath": "svg/Microsoft_Azure_DiskMgmt/DiskAccess.svg"
+  },
+  {
+    "type": "Microsoft.Compute/disks",
+    "imagePath": "svg/Microsoft_Azure_DiskMgmt/Disk.svg"
+  },
+  {
+    "type": "Microsoft.Compute/locations/communityGalleries/imagesComputehub",
+    "imagePath": "svg/Microsoft_Azure_DiskMgmt/CommunityImageComputeHub.svg"
+  },
+  {
+    "type": "Microsoft.Compute/locations/communityGalleries/images",
+    "imagePath": "svg/Microsoft_Azure_DiskMgmt/CommunityImage.svg"
+  },
+  {
+    "type": "microsoft.datamigration/sqlmigrationservices",
+    "imagePath": "svg/Microsoft_Azure_DMS/DmsV2.svg"
+  },
+  {
+    "type": "Microsoft.DataMigration/services/projects",
+    "imagePath": "svg/Microsoft_Azure_DMS/DmsProject.svg"
+  },
+  {
+    "type": "Microsoft.DataMigration/services",
+    "imagePath": "svg/Microsoft_Azure_DMS/Dms.svg"
+  },
+  {
+    "type": "Microsoft.Network/trafficmanagerprofiles",
+    "imagePath": "svg/Microsoft_Azure_DNS/TrafficManager.svg"
+  },
+  {
+    "type": "Microsoft.Network/dnsZones",
+    "imagePath": "svg/Microsoft_Azure_DNS/DnsZone.svg"
+  },
+  {
+    "type": "Microsoft.Network/dnsForwardingRulesets",
+    "imagePath": "svg/Microsoft_Azure_DNSManagedResolver/DnsForwardingRulesets.svg"
+  },
+  {
+    "type": "Microsoft.Network/dnsResolvers",
+    "imagePath": "svg/Microsoft_Azure_DNSManagedResolver/DnsManagedResolver.svg"
+  },
+  {
+    "type": "Microsoft.Network/dnsResolverPolicies",
+    "imagePath": "svg/Microsoft_Azure_DnsSecurityPolicy/DnsSecurityPolicy.svg"
+  },
+  {
+    "type": "Microsoft.Network/dnsResolverDomainLists",
+    "imagePath": "svg/Microsoft_Azure_DnsSecurityPolicy/DnsDomainList.svg"
+  },
+  {
+    "type": "Microsoft.DocumentDB/mongoClusters",
+    "imagePath": "svg/Microsoft_Azure_DocumentDB/MongoCluster.svg"
+  },
+  {
+    "type": "Microsoft.DBforPostgreSQL/serverGroupsv2",
+    "imagePath": "svg/Microsoft_Azure_DocumentDB/PostgreSqlServerGroupV2.svg"
+  },
+  {
+    "type": "Microsoft.DocumentDB/cassandraClusters",
+    "imagePath": "svg/Microsoft_Azure_DocumentDB/DocumentDBCassandraClusters.svg"
+  },
+  {
+    "type": "microsoft.documentdb/fleetspacepotentialdatabaseaccountswithlocations",
+    "imagePath": "svg/Microsoft_Azure_DocumentDB/CosmosDBFleetspacePotentialDatabaseAccountsWithLocations.svg"
+  },
+  {
+    "type": "microsoft.documentdb/fleetspacepotentialdatabaseaccounts",
+    "imagePath": "svg/Microsoft_Azure_DocumentDB/CosmosDBFleetspacePotentialDatabaseAccounts.svg"
+  },
+  {
+    "type": "Microsoft.DocumentDB/fleets",
+    "imagePath": "svg/Microsoft_Azure_DocumentDB/CosmosDBFleet.svg"
+  },
+  {
+    "type": "Microsoft.DocumentDb/databaseAccounts",
+    "imagePath": "svg/Microsoft_Azure_DocumentDB/DocumentDBDatabaseAccount.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_DocumentManagement/Microsoft_Azure_DocumentManagement.svg"
+  },
+  {
+    "type": "Microsoft.Easm/workspaces",
+    "imagePath": "svg/Microsoft_Azure_EASM/EasmWorkspace.svg"
+  },
+  {
+    "type": "Private.Easm/workspaces",
+    "imagePath": "svg/Microsoft_Azure_EASM/PrivateEasmWorkspace.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_ECE/ImpactRP.svg"
+  },
+  {
+    "type": "microsoft.impact/connectors",
+    "imagePath": "svg/Microsoft_Azure_ECE/microsoft_impact_connectors_2025_01_01_preview.svg"
+  },
+  {
+    "type": "Microsoft.Cdn/edgeactions",
+    "imagePath": "svg/Microsoft_Azure_EdgeAction/EdgeAction.svg"
+  },
+  {
+    "type": "Providers.Test/statefulIbizaEngines",
+    "imagePath": "svg/Microsoft_Azure_EdgeAIExtension/MyResource.svg"
+  },
+  {
+    "type": "Microsoft.DataBoxEdge/dataBoxEdgeDevices",
+    "imagePath": "svg/Microsoft_Azure_EdgeGateway/EdgeGateway.svg"
+  },
+  {
+    "type": "Providers.Test/statefulIbizaEngines",
+    "imagePath": "svg/Microsoft_Azure_EdgeManagementCopilot/MyResource.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_EdgeOrder/AzureEdgeDevice.svg"
+  },
+  {
+    "type": "Microsoft.EdgeOrder/virtual_orderItems",
+    "imagePath": "svg/Microsoft_Azure_EdgeOrder/AllZtpOrderItemResources.svg"
+  },
+  {
+    "type": "Microsoft.EdgeOrder/orderItems",
+    "imagePath": "svg/Microsoft_Azure_EdgeOrder/AllOrderResources.svg"
+  },
+  {
+    "type": "microsoft.edgeorder/bootstrapConfigurations",
+    "imagePath": "svg/Microsoft_Azure_EdgeOrder/AllBootstrapConfigurationResources.svg"
+  },
+  {
+    "type": "Microsoft.EdgeOrder/addresses",
+    "imagePath": "svg/Microsoft_Azure_EdgeOrder/AllAddressResources.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Education/Education.svg"
+  },
+  {
+    "type": "Microsoft.ElasticSan/elasticsans",
+    "imagePath": "svg/Microsoft_Azure_ElasticSan/ElasticSan.svg"
+  },
+  {
+    "type": "Microsoft.Logic/workflows",
+    "imagePath": "svg/Microsoft_Azure_EMA/Workflow.svg"
+  },
+  {
+    "type": "Microsoft.Logic/integrationServiceEnvironments/managedApis",
+    "imagePath": "svg/Microsoft_Azure_EMA/ManagedConnector.svg"
+  },
+  {
+    "type": "Microsoft.Web/logicAppsTemplate",
+    "imagePath": "svg/Microsoft_Azure_EMA/LogicAppsTemplate.svg"
+  },
+  {
+    "type": "Microsoft.Logic/integrationAccounts",
+    "imagePath": "svg/Microsoft_Azure_EMA/IntegrationAccount.svg"
+  },
+  {
+    "type": "Microsoft.Web/connectionGateways",
+    "imagePath": "svg/Microsoft_Azure_EMA/Gateway.svg"
+  },
+  {
+    "type": "Microsoft.Web/customApis",
+    "imagePath": "svg/Microsoft_Azure_EMA/CustomConnector.svg"
+  },
+  {
+    "type": "Microsoft.Web/connections",
+    "imagePath": "svg/Microsoft_Azure_EMA/ApiConnection.svg"
+  },
+  {
+    "type": "Microsoft.Communication/EmailServices",
+    "imagePath": "svg/Microsoft_Azure_EmailCommunicationServices/EmailCommunicationService.svg"
+  },
+  {
+    "type": "Microsoft.Communication/EmailServices/Domains",
+    "imagePath": "svg/Microsoft_Azure_EmailCommunicationServices/EmailCommunicationServicesDomain.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_EpicManagement/LandingAsset.svg"
+  },
+  {
+    "type": "Microsoft.Workloads/epicVirtualInstances",
+    "imagePath": "svg/Microsoft_Azure_EpicManagement/OverviewAsset.svg"
+  },
+  {
+    "type": "Microsoft.EventGrid/namespaces/topicSpaces",
+    "imagePath": "svg/Microsoft_Azure_EventGrid/TopicSpace.svg"
+  },
+  {
+    "type": "Microsoft.EventGrid/topics",
+    "imagePath": "svg/Microsoft_Azure_EventGrid/Topic.svg"
+  },
+  {
+    "type": "Microsoft.EventGrid/systemTopics/eventSubscriptions",
+    "imagePath": "svg/Microsoft_Azure_EventGrid/SystemTopicEventSubscription.svg"
+  },
+  {
+    "type": "Microsoft.EventGrid/systemTopics",
+    "imagePath": "svg/Microsoft_Azure_EventGrid/SystemTopic.svg"
+  },
+  {
+    "type": "Microsoft.EventGrid/namespaces/topics/eventSubscriptions",
+    "imagePath": "svg/Microsoft_Azure_EventGrid/QueueSubscription.svg"
+  },
+  {
+    "type": "Microsoft.EventGrid/namespaces",
+    "imagePath": "svg/Microsoft_Azure_EventGrid/PubSubNamespace.svg"
+  },
+  {
+    "type": "Microsoft.EventGrid/partnerTopics",
+    "imagePath": "svg/Microsoft_Azure_EventGrid/PartnerTopic.svg"
+  },
+  {
+    "type": "Microsoft.EventGrid/partnerRegistrations",
+    "imagePath": "svg/Microsoft_Azure_EventGrid/PartnerRegistration.svg"
+  },
+  {
+    "type": "Microsoft.EventGrid/partnerNamespaces",
+    "imagePath": "svg/Microsoft_Azure_EventGrid/PartnerNamespace.svg"
+  },
+  {
+    "type": "Microsoft.EventGrid/partnerDestinations",
+    "imagePath": "svg/Microsoft_Azure_EventGrid/PartnerDestination.svg"
+  },
+  {
+    "type": "Microsoft.EventGrid/partnerConfigurations",
+    "imagePath": "svg/Microsoft_Azure_EventGrid/PartnerConfiguration.svg"
+  },
+  {
+    "type": "Microsoft.EventGrid/namespaces/topics",
+    "imagePath": "svg/Microsoft_Azure_EventGrid/NamespaceTopic.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_EventGrid/EventGridCentral.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_EventGrid/EventGrid.svg"
+  },
+  {
+    "type": "Microsoft.EventGrid/domains/topics",
+    "imagePath": "svg/Microsoft_Azure_EventGrid/EventDomainTopic.svg"
+  },
+  {
+    "type": "Microsoft.EventGrid/domains",
+    "imagePath": "svg/Microsoft_Azure_EventGrid/EventDomain.svg"
+  },
+  {
+    "type": "Microsoft.EventGrid/partnerNamespaces/channels",
+    "imagePath": "svg/Microsoft_Azure_EventGrid/Channel.svg"
+  },
+  {
+    "type": "Microsoft.EventHub/namespaces/disasterrecoveryconfigs",
+    "imagePath": "svg/Microsoft_Azure_EventHub/ServiceBusDrConfig.svg"
+  },
+  {
+    "type": "Microsoft.EventHub/namespaces/schemagroups",
+    "imagePath": "svg/Microsoft_Azure_EventHub/SchemaGroupSelect.svg"
+  },
+  {
+    "type": "Microsoft.EventHub/namespaces/eventhubs",
+    "imagePath": "svg/Microsoft_Azure_EventHub/EventHubSelect.svg"
+  },
+  {
+    "type": "Microsoft.EventHub/clusters",
+    "imagePath": "svg/Microsoft_Azure_EventHub/EventHubCluster.svg"
+  },
+  {
+    "type": "Microsoft.EventHub/namespaces",
+    "imagePath": "svg/Microsoft_Azure_EventHub/EventHub.svg"
+  },
+  {
+    "type": "Microsoft.Experimentation/experimentWorkspaces",
+    "imagePath": "svg/Microsoft_Azure_Experimentation/Browse.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Expert/AzureAdvisor.svg"
+  },
+  {
+    "type": "Microsoft.DataBox/jobs",
+    "imagePath": "svg/Microsoft_Azure_ExpressPod/DataBox.svg"
+  },
+  {
+    "type": "Microsoft.FairfieldGardens/ProvisioningResources",
+    "imagePath": "svg/Microsoft_Azure_FairfieldGardens/fairfieldgardens.svg"
+  },
+  {
+    "type": "Microsoft.FairfieldGardens/ProvisioningResources/ProvisioningPolicies",
+    "imagePath": "svg/Microsoft_Azure_FairfieldGardens/provisioningpolicies.svg"
+  },
+  {
+    "type": "Microsoft.FileShares/fileshares",
+    "imagePath": "svg/Microsoft_Azure_FileShare/FileShares.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_FIST/FirmwareDefender.svg"
+  },
+  {
+    "type": "microsoft.iotfirmwaredefense/workspaces",
+    "imagePath": "svg/Microsoft_Azure_FIST/FirmwareAnalysisWorkspace.svg"
+  },
+  {
+    "type": "Microsoft.FluidRelay/fluidRelayServers",
+    "imagePath": "svg/Microsoft_Azure_FluidRelay/FrsResource.svg"
+  },
+  {
+    "type": "Microsoft.Network/frontdoors",
+    "imagePath": "svg/Microsoft_Azure_Frontdoor/AzureFrontdoor.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_GlobalView/GlobalView.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_GraphDataConnect/Microsoft_Graph_Data_Connect.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_GTM/Billing.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_GTM/Invoice.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_GTM/BillingSubscriptions.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_GTM/AccessControl.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_HDInsight/HDInsightClusterPool.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_HDInsight/HDInsightClusterGen2.svg"
+  },
+  {
+    "type": "Microsoft.HDInsight/clusters",
+    "imagePath": "svg/Microsoft_Azure_HDInsight/HDInsightCluster.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Health/AzureHealth.svg"
+  },
+  {
+    "type": "Microsoft.HealthBot/healthBots",
+    "imagePath": "svg/Microsoft_Azure_HealthBot/HealthBot.svg"
+  },
+  {
+    "type": "Microsoft.HealthDataAIServices/DeidServices",
+    "imagePath": "svg/Microsoft_Azure_HealthDataDeidentification/DeidService.svg"
+  },
+  {
+    "type": "Microsoft.HealthModel/healthmodels",
+    "imagePath": "svg/Microsoft_Azure_HealthModels/AzureHealthModel.svg"
+  },
+  {
+    "type": "Microsoft.HybridCompute/Machines/Microsoft.ConnectedVMwarevSphere/virtualMachineInstances",
+    "imagePath": "svg/Microsoft_Azure_HybridCompute/VMwareVmV2.svg"
+  },
+  {
+    "type": "Microsoft.ConnectedVMwarevSphere/VirtualMachines",
+    "imagePath": "svg/Microsoft_Azure_HybridCompute/VMwareVm.svg"
+  },
+  {
+    "type": "Microsoft.connectedVMwareVSphere/vCenters",
+    "imagePath": "svg/Microsoft_Azure_HybridCompute/VMwarevCenter.svg"
+  },
+  {
+    "type": "Microsoft.HybridCompute/machinesSoftwareAssurance",
+    "imagePath": "svg/Microsoft_Azure_HybridCompute/SoftwareAssurance.svg"
+  },
+  {
+    "type": "Microsoft.HybridCompute/machinesPayGo",
+    "imagePath": "svg/Microsoft_Azure_HybridCompute/PayGoEligible.svg"
+  },
+  {
+    "type": "Microsoft.HybridCompute/licenses",
+    "imagePath": "svg/Microsoft_Azure_HybridCompute/EsuLicense.svg"
+  },
+  {
+    "type": "Microsoft.HybridCompute/machinesEsu",
+    "imagePath": "svg/Microsoft_Azure_HybridCompute/HybridComputeEsu.svg"
+  },
+  {
+    "type": "Microsoft.HybridCompute/gateways",
+    "imagePath": "svg/Microsoft_Azure_HybridCompute/ArcGateway.svg"
+  },
+  {
+    "type": "Microsoft.ScVmm/vmmServers",
+    "imagePath": "svg/Microsoft_Azure_HybridCompute/ScVmmManagementServer.svg"
+  },
+  {
+    "type": "Microsoft.scvmm/virtualMachines",
+    "imagePath": "svg/Microsoft_Azure_HybridCompute/ArcVmScVmm.svg"
+  },
+  {
+    "type": "Microsoft.HybridCompute/privateLinkScopes",
+    "imagePath": "svg/Microsoft_Azure_HybridCompute/AzureArcPrivateLinkScope.svg"
+  },
+  {
+    "type": "Microsoft.HybridConnectivity/publicCloudConnectors",
+    "imagePath": "svg/Microsoft_Azure_HybridCompute/MultiCloudConnector.svg"
+  },
+  {
+    "type": "microsoft.hybridcompute/machines/microsoft.awsconnector/ec2instances",
+    "imagePath": "svg/Microsoft_Azure_HybridCompute/microsoft_awsconnector_ec2instances_2024_08_01_preview.svg"
+  },
+  {
+    "type": "Microsoft.HybridCompute/machinesSovereign",
+    "imagePath": "svg/Microsoft_Azure_HybridCompute/HybridComputeSovereign.svg"
+  },
+  {
+    "type": "Microsoft.HybridCompute/machines",
+    "imagePath": "svg/Microsoft_Azure_HybridCompute/HybridCompute.svg"
+  },
+  {
+    "type": "Microsoft.HybridCompute/arcServerWithWac",
+    "imagePath": "svg/Microsoft_Azure_HybridCompute/ArcServerWithWac.svg"
+  },
+  {
+    "type": "Microsoft.ExtendedLocation/CustomLocations",
+    "imagePath": "svg/Microsoft_Azure_HybridCompute/CustomLocation.svg"
+  },
+  {
+    "type": "Microsoft.AzureStackHci/virtualMachines",
+    "imagePath": "svg/Microsoft_Azure_HybridCompute/AzureStackHci.svg"
+  },
+  {
+    "type": "Microsoft.All/virtualMachines",
+    "imagePath": "svg/Microsoft_Azure_HybridCompute/VirtualMachines.svg"
+  },
+  {
+    "type": "Microsoft.All/arcVirtualMachines",
+    "imagePath": "svg/Microsoft_Azure_HybridCompute/ArcVirtualMachines.svg"
+  },
+  {
+    "type": "Microsoft.Arc/kubernetesResources",
+    "imagePath": "svg/Microsoft_Azure_HybridCompute/ArcK8Resources.svg"
+  },
+  {
+    "type": "Microsoft.HybridContainerService/provisionedClusters",
+    "imagePath": "svg/Microsoft_Azure_HybridCompute/ProvisionedCluster.svg"
+  },
+  {
+    "type": "Microsoft.Kubernetes/connectedClusters/Microsoft.KubernetesConfiguration/extensions",
+    "imagePath": "svg/Microsoft_Azure_HybridCompute/ConnectedClusterExtension.svg"
+  },
+  {
+    "type": "Microsoft.Kubernetes/connectedClusters",
+    "imagePath": "svg/Microsoft_Azure_HybridCompute/ConnectedClusters.svg"
+  },
+  {
+    "type": "Microsoft.ResourceConnector/Appliances",
+    "imagePath": "svg/Microsoft_Azure_HybridCompute/ResourceBridge.svg"
+  },
+  {
+    "type": "Microsoft.AzureArcData/dataControllers",
+    "imagePath": "svg/Microsoft_Azure_HybridData_Platform/DataController.svg"
+  },
+  {
+    "type": "Microsoft.AzureArcData/postgresInstances",
+    "imagePath": "svg/Microsoft_Azure_HybridData_Platform/PostgresInstance.svg"
+  },
+  {
+    "type": "Microsoft.AzureArcData/MySqlServer",
+    "imagePath": "svg/Microsoft_Azure_HybridData_Platform/MySqlServer.svg"
+  },
+  {
+    "type": "Microsoft.AzureArcData/PostgresSqlServer",
+    "imagePath": "svg/Microsoft_Azure_HybridData_Platform/PostgresSqlServer.svg"
+  },
+  {
+    "type": "Microsoft.AzureArcData/sqlManagedInstances",
+    "imagePath": "svg/Microsoft_Azure_HybridData_Platform/SqlManagedInstance.svg"
+  },
+  {
+    "type": "microsoft.azurearcdata/sqlserveresulicenses",
+    "imagePath": "svg/Microsoft_Azure_HybridData_Platform/SqlServerEsuLicense.svg"
+  },
+  {
+    "type": "Microsoft.AzureArcData/sqlServerInstances",
+    "imagePath": "svg/Microsoft_Azure_HybridData_Platform/SqlServerInstance.svg"
+  },
+  {
+    "type": "Microsoft.AzureArcData/SqlServerInstances/Databases",
+    "imagePath": "svg/Microsoft_Azure_HybridData_Platform/SqlServerInstancesDatabases.svg"
+  },
+  {
+    "type": "microsoft.azurearcdata/sqlserverlicenses",
+    "imagePath": "svg/Microsoft_Azure_HybridData_Platform/SqlServerLicense.svg"
+  },
+  {
+    "type": "microsoft.network/networkvirtualappliances",
+    "imagePath": "svg/Microsoft_Azure_HybridNetworking/microsoft_network_networkvirtualappliances_2020_03_01.svg"
+  },
+  {
+    "type": "Microsoft.Network/virtualWans",
+    "imagePath": "svg/Microsoft_Azure_HybridNetworking/VirtualWan.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_HybridNetworking/GlobalSecureAccess.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_HybridNetworking/VirtualRoutermanager.svg"
+  },
+  {
+    "type": "Microsoft.Network/virtualHubs",
+    "imagePath": "svg/Microsoft_Azure_HybridNetworking/VirtualRouter.svg"
+  },
+  {
+    "type": "Microsoft.Network/virtualNetworkGateways",
+    "imagePath": "svg/Microsoft_Azure_HybridNetworking/VirtualNetworkGateway.svg"
+  },
+  {
+    "type": "Microsoft.Network/routeFilters",
+    "imagePath": "svg/Microsoft_Azure_HybridNetworking/RouteFilter.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_HybridNetworking/NetworkSecurity.svg"
+  },
+  {
+    "type": "Microsoft.NetworkFunction/meshVpns",
+    "imagePath": "svg/Microsoft_Azure_HybridNetworking/MeshVpn.svg"
+  },
+  {
+    "type": "Microsoft.Network/localnetworkgateways",
+    "imagePath": "svg/Microsoft_Azure_HybridNetworking/LocalNetworkGateway.svg"
+  },
+  {
+    "type": "Microsoft.Network/ipGroups",
+    "imagePath": "svg/Microsoft_Azure_HybridNetworking/IpGroups.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_HybridNetworking/HybridConnectivityHub.svg"
+  },
+  {
+    "type": "Microsoft.Network/firewallPolicies",
+    "imagePath": "svg/Microsoft_Azure_HybridNetworking/FirewallPolicy.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_HybridNetworking/FirewallManager.svg"
+  },
+  {
+    "type": "Microsoft.NetworkFunction/azureTrafficCollectors",
+    "imagePath": "svg/Microsoft_Azure_HybridNetworking/ExpressRouteTrafficCollector.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_HybridNetworking/ExpressRouteProvider.svg"
+  },
+  {
+    "type": "Microsoft.Network/expressRouteGateways/expressRouteConnections",
+    "imagePath": "svg/Microsoft_Azure_HybridNetworking/Microsoft_Network_expressRouteGateways_expressRouteConnections_2022_01_01.svg"
+  },
+  {
+    "type": "Microsoft.Network/expressRoutePorts",
+    "imagePath": "svg/Microsoft_Azure_HybridNetworking/ExpressRouteDirect.svg"
+  },
+  {
+    "type": "Microsoft.Network/expressRouteCircuits",
+    "imagePath": "svg/Microsoft_Azure_HybridNetworking/ExpressRoute.svg"
+  },
+  {
+    "type": "Microsoft.Network/connections",
+    "imagePath": "svg/Microsoft_Azure_HybridNetworking/Connection.svg"
+  },
+  {
+    "type": "Microsoft.Network/azureFirewalls",
+    "imagePath": "svg/Microsoft_Azure_HybridNetworking/CloudNativeFirewall.svg"
+  },
+  {
+    "type": "Microsoft.Network/bastionHosts",
+    "imagePath": "svg/Microsoft_Azure_HybridNetworking/BastionHost.svg"
+  },
+  {
+    "type": "Microsoft.Network/applicationGateways",
+    "imagePath": "svg/Microsoft_Azure_HybridNetworking/ApplicationGateway.svg"
+  },
+  {
+    "type": "Microsoft.ServiceNetworking/trafficControllers",
+    "imagePath": "svg/Microsoft_Azure_HybridNetworking/AppGwForContainers.svg"
+  },
+  {
+    "type": "Microsoft.DevHub/iacProfiles",
+    "imagePath": "svg/Microsoft_Azure_IacAutomation/ArcIacAutomation.svg"
+  },
+  {
+    "type": "Providers.Test/statefulIbizaEngines",
+    "imagePath": "svg/Microsoft_Azure_IdentityGovernance/MyResource.svg"
+  },
+  {
+    "type": "Microsoft.IoTCentral/IoTApps",
+    "imagePath": "svg/Microsoft_Azure_IoTCentral/IoTApps.svg"
+  },
+  {
+    "type": "Microsoft.Devices/IotHubs",
+    "imagePath": "svg/Microsoft_Azure_IotHub/IotHubs.svg"
+  },
+  {
+    "type": "Microsoft.Devices/ProvisioningServices",
+    "imagePath": "svg/Microsoft_Azure_IotHub/DeviceProvisioning.svg"
+  },
+  {
+    "type": "Microsoft.IoTOperations/instances",
+    "imagePath": "svg/Microsoft_Azure_IoTOperations/IoTOperations.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_IoT_Defender/IoTDefender.svg"
+  },
+  {
+    "type": "Microsoft.Network/networkManagers/ipamPools",
+    "imagePath": "svg/Microsoft_Azure_IPAddressManager/IPAMPools.svg"
+  },
+  {
+    "type": "Microsoft.StorageSync/storageSyncServices",
+    "imagePath": "svg/Microsoft_Azure_Kailani/SyncServiceAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_KeyVault/Secret.svg"
+  },
+  {
+    "type": "Microsoft.KeyVault/vaults",
+    "imagePath": "svg/Microsoft_Azure_KeyVault/KeyVault.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_KeyVault/Key.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_KeyVault/Certificate.svg"
+  },
+  {
+    "type": "microsoft.containerservice/fleets",
+    "imagePath": "svg/Microsoft_Azure_KubernetesFleet/Fleets.svg"
+  },
+  {
+    "type": "Microsoft.Synapse/workspaces/kustopools/databases",
+    "imagePath": "svg/Microsoft_Azure_Kusto/kustoSynapsePoolDatabase.svg"
+  },
+  {
+    "type": "Microsoft.Synapse/workspaces/kustopools",
+    "imagePath": "svg/Microsoft_Azure_Kusto/kustoSynapsePool.svg"
+  },
+  {
+    "type": "Microsoft.Kusto/clusters/databases",
+    "imagePath": "svg/Microsoft_Azure_Kusto/KustoClusterDatabase.svg"
+  },
+  {
+    "type": "Microsoft.Kusto/clusters",
+    "imagePath": "svg/Microsoft_Azure_Kusto/KustoCluster.svg"
+  },
+  {
+    "type": "Microsoft.Maps/accounts",
+    "imagePath": "svg/Microsoft_Azure_LocationServices/Maps.svg"
+  },
+  {
+    "type": "Microsoft.Maps/accounts/creators",
+    "imagePath": "svg/Microsoft_Azure_LocationServices/Creator.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Lockbox/AzureLockbox.svg"
+  },
+  {
+    "type": "Microsoft.Maintenance/maintenanceConfigurations",
+    "imagePath": "svg/Microsoft_Azure_Maintenance/MaintenanceConfiguration.svg"
+  },
+  {
+    "type": "Microsoft.ComputeSchedule/autoActions",
+    "imagePath": "svg/Microsoft_Azure_Maintenance/AutomaticAction.svg"
+  },
+  {
+    "type": "Microsoft.KeyVault/managedHSMs",
+    "imagePath": "svg/Microsoft_Azure_ManagedHSM/ManagedHSM.svg"
+  },
+  {
+    "type": "Microsoft.LabServices/labAccounts/labs",
+    "imagePath": "svg/Microsoft_Azure_ManagedLab/LegacyLab.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_ManagedLab/LabServices.svg"
+  },
+  {
+    "type": "Microsoft.LabServices/labPlans",
+    "imagePath": "svg/Microsoft_Azure_ManagedLab/LabPlan.svg"
+  },
+  {
+    "type": "Microsoft.LabServices/labAccounts",
+    "imagePath": "svg/Microsoft_Azure_ManagedLab/LabAccount.svg"
+  },
+  {
+    "type": "Microsoft.LabServices/labs",
+    "imagePath": "svg/Microsoft_Azure_ManagedLab/Lab.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_ManagedNetwork/VirtualNetworkManager.svg"
+  },
+  {
+    "type": "Microsoft.Network/networkManagers/routingConfigurations",
+    "imagePath": "svg/Microsoft_Azure_ManagedNetwork/UserDefinedRoutingConfiguration.svg"
+  },
+  {
+    "type": "Microsoft.Network/networkManagers/securityUserConfigurations",
+    "imagePath": "svg/Microsoft_Azure_ManagedNetwork/SecurityUserConfigurationOverview.svg"
+  },
+  {
+    "type": "Microsoft.Network/networkManagers/securityAdminConfigurations",
+    "imagePath": "svg/Microsoft_Azure_ManagedNetwork/SecurityAdminConfigurationOverview.svg"
+  },
+  {
+    "type": "Microsoft.Network/networkManagers/networkGroups",
+    "imagePath": "svg/Microsoft_Azure_ManagedNetwork/NetworkGroupOverview.svg"
+  },
+  {
+    "type": "Microsoft.Network/networkManagers/connectivityConfigurations",
+    "imagePath": "svg/Microsoft_Azure_ManagedNetwork/ConnectivityConfigurationOverview.svg"
+  },
+  {
+    "type": "Microsoft.Network/networkManagers",
+    "imagePath": "svg/Microsoft_Azure_ManagedNetwork/NetworkManager.svg"
+  },
+  {
+    "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
+    "imagePath": "svg/Microsoft_Azure_ManagedServiceIdentity/UserAssignedIdentity.svg"
+  },
+  {
+    "type": "microsoft.kubernetes/connectedClusters",
+    "imagePath": "svg/Microsoft_Azure_ManagedStorageClass/ConnectedClusterWithStorageClassPlus.svg"
+  },
+  {
+    "type": "Microsoft.SaaS/resources",
+    "imagePath": "svg/Microsoft_Azure_Marketplace/SaasSubscriptionLevel.svg"
+  },
+  {
+    "type": "Microsoft.SaaS/applications",
+    "imagePath": "svg/Microsoft_Azure_Marketplace/SaasClassic.svg"
+  },
+  {
+    "type": "Microsoft.SaaS/saasresources",
+    "imagePath": "svg/Microsoft_Azure_Marketplace/Saas.svg"
+  },
+  {
+    "type": "Microsoft.Gallery/myareas/galleryitems",
+    "imagePath": "svg/Microsoft_Azure_Marketplace/GalleryRpItem.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Marketplace/StoreGallery.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Marketplace/Gallery.svg"
+  },
+  {
+    "type": "Microsoft.ProfessionalService/resources",
+    "imagePath": "svg/Microsoft_Azure_MarketplaceTransact/ProfessionalService.svg"
+  },
+  {
+    "type": "Microsoft.Migrate/projects",
+    "imagePath": "svg/Microsoft_Azure_Migrate/MigrationProject.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Migrate/AzureMigrationHub.svg"
+  },
+  {
+    "type": "Providers.Test/statefulIbizaEngines",
+    "imagePath": "svg/Microsoft_Azure_MigrateAssessment/MigrateAssessmentResource.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_MLTeamAccounts/Nixtla.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_MLTeamAccounts/ModelProvider.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_MLTeamAccounts/Mistral.svg"
+  },
+  {
+    "type": "Microsoft.MachineLearningServices/workspaces",
+    "imagePath": "svg/Microsoft_Azure_MLTeamAccounts/MachineLearningServices.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_MLTeamAccounts/Llama2.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_MLTeamAccounts/Core42.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_MLTeamAccounts/Cohere.svg"
+  },
+  {
+    "type": "Microsoft.MachineLearningServices/aistudio",
+    "imagePath": "svg/Microsoft_Azure_MLTeamAccounts/AIStudio.svg"
+  },
+  {
+    "type": "Microsoft.MachineLearningServices/registries",
+    "imagePath": "svg/Microsoft_Azure_MLTeamAccounts/Registry.svg"
+  },
+  {
+    "type": "Microsoft.MachineLearningServices/workspaces/onlineEndpoints",
+    "imagePath": "svg/Microsoft_Azure_MLTeamAccounts/OnlineEndpoint.svg"
+  },
+  {
+    "type": "Microsoft.MachineLearningServices/workspaces/onlineEndpoints/deployments",
+    "imagePath": "svg/Microsoft_Azure_MLTeamAccounts/OnlineEndpointDeployment.svg"
+  },
+  {
+    "type": "Microsoft.Dashboard/dashboards",
+    "imagePath": "svg/Microsoft_Azure_MonitorDashboard/MonitorDashboard.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_MonitorDashboard/GalleryAsset.svg"
+  },
+  {
+    "type": "Private.MonitorGrafana/dashboards",
+    "imagePath": "svg/Microsoft_Azure_MonitorDashboard/PrivateMonitorDashboard.svg"
+  },
+  {
+    "type": "microsoft.alertsmanagement/prometheusrulegroups",
+    "imagePath": "svg/Microsoft_Azure_Monitoring/PrometheusRuleGroup.svg"
+  },
+  {
+    "type": "microsoft.monitor/accounts",
+    "imagePath": "svg/Microsoft_Azure_Monitoring/MonitoringAccount.svg"
+  },
+  {
+    "type": "microsoft.insights/datacollectionrules",
+    "imagePath": "svg/Microsoft_Azure_Monitoring/DataCollectionRules.svg"
+  },
+  {
+    "type": "microsoft.insights/datacollectionendpoints",
+    "imagePath": "svg/Microsoft_Azure_Monitoring/DataCollectionEndpoints.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Monitoring/Prometheus.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Monitoring/Metrics.svg"
+  },
+  {
+    "type": "Microsoft.Insights/diagnosticSettings",
+    "imagePath": "svg/Microsoft_Azure_Monitoring/AzureMonitoringSubscriptionalLevelDiagnosticsDetail.svg"
+  },
+  {
+    "type": "microsoft.eventhub/namespaces/providers/diagnosticsettings",
+    "imagePath": "svg/Microsoft_Azure_Monitoring/AzureMonitoringDiagnosticsDetail.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Monitoring/AzureMonitoringDiagnostics.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Monitoring/AzureMonitoring.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Monitoring/Autoscale.svg"
+  },
+  {
+    "type": "Microsoft.monitor/pipelineGroups",
+    "imagePath": "svg/Microsoft_Azure_Monitoring/AzureEdgePipeline.svg"
+  },
+  {
+    "type": "microsoft.alertsmanagement/smartdetectoralertrules",
+    "imagePath": "svg/Microsoft_Azure_Monitoring_Alerts/SmartDetectorAlertRule.svg"
+  },
+  {
+    "type": "microsoft.insights/metricalerts",
+    "imagePath": "svg/Microsoft_Azure_Monitoring_Alerts/MetricAlertRule.svg"
+  },
+  {
+    "type": "microsoft.insights/scheduledqueryrules",
+    "imagePath": "svg/Microsoft_Azure_Monitoring_Alerts/LogSearchAlertRule.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Monitoring_Alerts/Alerts.svg"
+  },
+  {
+    "type": "microsoft.alertsmanagement/actionrules",
+    "imagePath": "svg/Microsoft_Azure_Monitoring_Alerts/AlertProcessingRule.svg"
+  },
+  {
+    "type": "microsoft.insights/activitylogalerts",
+    "imagePath": "svg/Microsoft_Azure_Monitoring_Alerts/ActivityLogAlertRule.svg"
+  },
+  {
+    "type": "microsoft.insights/actiongroups",
+    "imagePath": "svg/Microsoft_Azure_Monitoring_Alerts/ActionGroup.svg"
+  },
+  {
+    "type": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/volumeQuotaRules",
+    "imagePath": "svg/Microsoft_Azure_NetApp/NfsVolumeQuotaRule.svg"
+  },
+  {
+    "type": "Microsoft.NetApp/netAppAccounts/volumeGroups",
+    "imagePath": "svg/Microsoft_Azure_NetApp/NfsVolumeGroup.svg"
+  },
+  {
+    "type": "Microsoft.NetApp/netAppAccounts/capacityPools/Volumes",
+    "imagePath": "svg/Microsoft_Azure_NetApp/NfsVolume.svg"
+  },
+  {
+    "type": "Microsoft.NetApp/netAppAccounts/snapshotPolicies",
+    "imagePath": "svg/Microsoft_Azure_NetApp/NfsSnapshotPolicy.svg"
+  },
+  {
+    "type": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/snapshots",
+    "imagePath": "svg/Microsoft_Azure_NetApp/NfsSnapshot.svg"
+  },
+  {
+    "type": "Microsoft.NetApp/netAppAccounts/capacityPools",
+    "imagePath": "svg/Microsoft_Azure_NetApp/NfsPool.svg"
+  },
+  {
+    "type": "Microsoft.NetApp/netAppAccounts/backupVaults",
+    "imagePath": "svg/Microsoft_Azure_NetApp/NfsBackupVault.svg"
+  },
+  {
+    "type": "Microsoft.NetApp/netAppAccounts/backupPolicies",
+    "imagePath": "svg/Microsoft_Azure_NetApp/NfsBackupPolicy.svg"
+  },
+  {
+    "type": "Microsoft.NetApp/netAppAccounts",
+    "imagePath": "svg/Microsoft_Azure_NetApp/NetAppAccount.svg"
+  },
+  {
+    "type": "Microsoft.Network/FrontDoorWebApplicationFirewallPolicies",
+    "imagePath": "svg/Microsoft_Azure_Network/FrontdoorWafPolicy.svg"
+  },
+  {
+    "type": "Microsoft.Cdn/CdnWebApplicationFirewallPolicies",
+    "imagePath": "svg/Microsoft_Azure_Network/ContentDeliveryNetworkWafPolicy.svg"
+  },
+  {
+    "type": "Microsoft.Network/ApplicationGatewayWebApplicationFirewallPolicies",
+    "imagePath": "svg/Microsoft_Azure_Network/ApplicationGatewayWafPolicy.svg"
+  },
+  {
+    "type": "microsoft.network/virtualnetworktaps",
+    "imagePath": "svg/Microsoft_Azure_Network/VirtualNetworkTAP.svg"
+  },
+  {
+    "type": "Microsoft.Network/privateDnsZones/virtualNetworkLinks",
+    "imagePath": "svg/Microsoft_Azure_Network/VirtualNetworkLink.svg"
+  },
+  {
+    "type": "Microsoft.Network/virtualNetworks",
+    "imagePath": "svg/Microsoft_Azure_Network/VirtualNetwork.svg"
+  },
+  {
+    "type": "Microsoft.Network/serviceEndpointPolicies",
+    "imagePath": "svg/Microsoft_Azure_Network/ServiceEndpointPolicy.svg"
+  },
+  {
+    "type": "Microsoft.Network/routeTables",
+    "imagePath": "svg/Microsoft_Azure_Network/RouteTable.svg"
+  },
+  {
+    "type": "Microsoft.Authorization/resourceManagementPrivateLinks",
+    "imagePath": "svg/Microsoft_Azure_Network/ResourceManagementPrivateLink.svg"
+  },
+  {
+    "type": "Microsoft.ClassicNetwork/reservedIps",
+    "imagePath": "svg/Microsoft_Azure_Network/ReservedIpAddress.svg"
+  },
+  {
+    "type": "Microsoft.Network/publicIpPrefixes",
+    "imagePath": "svg/Microsoft_Azure_Network/PublicIpPrefix.svg"
+  },
+  {
+    "type": "Microsoft.Network/PublicIpAddresses",
+    "imagePath": "svg/Microsoft_Azure_Network/PublicIpAddress.svg"
+  },
+  {
+    "type": "Microsoft.Network/privateLinkServices",
+    "imagePath": "svg/Microsoft_Azure_Network/PrivateLinkService.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Network/PrivateLinkCenter.svg"
+  },
+  {
+    "type": "Microsoft.Management/managementGroups/providers/privateLinkAssociations",
+    "imagePath": "svg/Microsoft_Azure_Network/PrivateLinkAssociations.svg"
+  },
+  {
+    "type": "Microsoft.Network/privateEndpoints",
+    "imagePath": "svg/Microsoft_Azure_Network/PrivateEndpoint.svg"
+  },
+  {
+    "type": "microsoft.network/networkwatchers/flowlogs",
+    "imagePath": "svg/Microsoft_Azure_Network/NSGFlowLog.svg"
+  },
+  {
+    "type": "microsoft.network/networkwatchers",
+    "imagePath": "svg/Microsoft_Azure_Network/NetworkWatcherResource.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Network/NetworkWatcher.svg"
+  },
+  {
+    "type": "Microsoft.Network/NetworkSecurityGroups",
+    "imagePath": "svg/Microsoft_Azure_Network/NetworkSecurityGroup.svg"
+  },
+  {
+    "type": "Microsoft.Network/networkinterfaces",
+    "imagePath": "svg/Microsoft_Azure_Network/NetworkInterface.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Network/NetworkFoundation.svg"
+  },
+  {
+    "type": "Microsoft.Network/natGateways",
+    "imagePath": "svg/Microsoft_Azure_Network/NatGateway.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Network/LoadBalancingHub.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Network/LoadBalancerAndContentDelivery.svg"
+  },
+  {
+    "type": "Microsoft.Network/LoadBalancers",
+    "imagePath": "svg/Microsoft_Azure_Network/LoadBalancer.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Network/GatewayLoadBalancer.svg"
+  },
+  {
+    "type": "Microsoft.ConnectedVMwarevSphere/virtualMachines/providers/guestConfigurationAssignments",
+    "imagePath": "svg/Microsoft_Azure_Network/VMWareGuestAssignment.svg"
+  },
+  {
+    "type": "Microsoft.Compute/virtualMachineScaleSets/providers/guestConfigurationAssignments",
+    "imagePath": "svg/Microsoft_Azure_Network/VMSSGuestAssignment.svg"
+  },
+  {
+    "type": "Microsoft.HybridCompute/machines/providers/guestConfigurationAssignments",
+    "imagePath": "svg/Microsoft_Azure_Network/NonAzureGuestAssignment.svg"
+  },
+  {
+    "type": "Microsoft.Compute/virtualMachines/providers/guestConfigurationAssignments",
+    "imagePath": "svg/Microsoft_Azure_Network/GuestAssignment.svg"
+  },
+  {
+    "type": "Microsoft.Network/dnsZones",
+    "imagePath": "svg/Microsoft_Azure_Network/DnsZone.svg"
+  },
+  {
+    "type": "Microsoft.Network/ddosProtectionPlans",
+    "imagePath": "svg/Microsoft_Azure_Network/DdosProtectionPlan.svg"
+  },
+  {
+    "type": "Microsoft.Network/customIpPrefixes",
+    "imagePath": "svg/Microsoft_Azure_Network/CustomIpPrefix.svg"
+  },
+  {
+    "type": "Microsoft.ClassicNetwork/virtualNetworks",
+    "imagePath": "svg/Microsoft_Azure_Network/ClassicVirtualNetwork.svg"
+  },
+  {
+    "type": "Microsoft.ClassicNetwork/networkSecurityGroups",
+    "imagePath": "svg/Microsoft_Azure_Network/ClassicNetworkSecurityGroup.svg"
+  },
+  {
+    "type": "Microsoft.Network/applicationSecurityGroups",
+    "imagePath": "svg/Microsoft_Azure_Network/ApplicationSecurityGroup.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/OperatorNexusHub.svg"
+  },
+  {
+    "type": "Microsoft.ManagedNetworkFabric/RoutePolicies",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/RoutePoliciesResource.svg"
+  },
+  {
+    "type": "Microsoft.ManagedNetworkFabric/networkTapRules",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/NetworkTapRuleResource.svg"
+  },
+  {
+    "type": "Microsoft.ManagedNetworkFabric/networkTaps",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/NetworkTapResource.svg"
+  },
+  {
+    "type": "Microsoft.ManagedNetworkFabric/NetworkRacks",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/NetworkRacksResource.svg"
+  },
+  {
+    "type": "Microsoft.ManagedNetworkFabric/NetworkPacketBrokers",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/NetworkPacketBrokersResource.svg"
+  },
+  {
+    "type": "Microsoft.ManagedNetworkFabric/NetworkDevices/networkInterfaces",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/NetworkInterfaceResource.svg"
+  },
+  {
+    "type": "Microsoft.ManagedNetworkFabric/networkFabricControllers",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/NetworkFabricControllersResource.svg"
+  },
+  {
+    "type": "Microsoft.ManagedNetworkFabric/NetworkFabrics",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/NetworkFabricResource.svg"
+  },
+  {
+    "type": "Microsoft.ManagedNetworkFabric/NetworkDevices",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/NetworkDevicesResource.svg"
+  },
+  {
+    "type": "Microsoft.ManagedNetworkFabric/NeighborGroups",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/NeighborGroupsResource.svg"
+  },
+  {
+    "type": "Microsoft.ManagedNetworkFabric/NetworkFabrics/networkToNetworkInterconnects",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/NetworkToNetworkInterconnectResource.svg"
+  },
+  {
+    "type": "Microsoft.ManagedNetworkFabric/l3IsolationDomains",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/L3IsolationDomainsResource.svg"
+  },
+  {
+    "type": "Microsoft.ManagedNetworkFabric/l2IsolationDomains",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/L2IsolationDomainsResource.svg"
+  },
+  {
+    "type": "Microsoft.ManagedNetworkFabric/ipPrefixes",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/IPPrefixesResource.svg"
+  },
+  {
+    "type": "Microsoft.ManagedNetworkFabric/ipExtendedCommunities",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/IPExtendedCommunitiesResource.svg"
+  },
+  {
+    "type": "Microsoft.ManagedNetworkFabric/ipCommunities",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/IPCommunitiesResource.svg"
+  },
+  {
+    "type": "Microsoft.ManagedNetworkFabric/internetGatewayRules",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/InternetGatewayRulesResource.svg"
+  },
+  {
+    "type": "Microsoft.ManagedNetworkFabric/internetGateways",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/InternetGatewaysResource.svg"
+  },
+  {
+    "type": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/internalNetworks",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/InternalNetworkResource.svg"
+  },
+  {
+    "type": "Microsoft.ManagedNetworkFabric/l3IsolationDomains/externalNetworks",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/ExternalNetworkResource.svg"
+  },
+  {
+    "type": "Microsoft.ManagedNetworkFabric/accessControlLists",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/AccessControlListsResource.svg"
+  },
+  {
+    "type": "Microsoft.NetworkCloud/volumes",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/VolumeResource.svg"
+  },
+  {
+    "type": "Microsoft.NetworkCloud/virtualMachines/consoles",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/ConsoleResource.svg"
+  },
+  {
+    "type": "Microsoft.NetworkCloud/virtualMachines",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/VirtualMachineResource.svg"
+  },
+  {
+    "type": "Microsoft.NetworkCloud/trunkedNetworks",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/TrunkedNetworksResource.svg"
+  },
+  {
+    "type": "Microsoft.NetworkCloud/storageAppliances",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/StorageApplianceResource.svg"
+  },
+  {
+    "type": "Microsoft.NetworkCloud/kubernetesClusters/features",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/FeatureResource.svg"
+  },
+  {
+    "type": "Microsoft.NetworkCloud/kubernetesClusters",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/NexusAksClusterResource.svg"
+  },
+  {
+    "type": "Microsoft.NetworkCloud/l3Networks",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/Layer3NetworksResource.svg"
+  },
+  {
+    "type": "Microsoft.NetworkCloud/l2Networks",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/Layer2NetworksResource.svg"
+  },
+  {
+    "type": "Microsoft.NetworkCloud/racks",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/ComputeRackResource.svg"
+  },
+  {
+    "type": "Microsoft.NetworkCloud/clusters/metricsConfigurations",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/ClusterMetricConfigResource.svg"
+  },
+  {
+    "type": "Microsoft.NetworkCloud/clusterManagers",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/ClusterMgrResource.svg"
+  },
+  {
+    "type": "Microsoft.NetworkCloud/clusters/bareMetalMachineKeySets",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/ClusterBmmKeysetResource.svg"
+  },
+  {
+    "type": "Microsoft.NetworkCloud/clusters/bmcKeySets",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/ClusterBmcKeysetResource.svg"
+  },
+  {
+    "type": "Microsoft.NetworkCloud/clusters",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/ClusterResource.svg"
+  },
+  {
+    "type": "Microsoft.NetworkCloud/cloudServicesNetworks",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/CloudServicesNet.svg"
+  },
+  {
+    "type": "Microsoft.NetworkCloud/bareMetalMachines",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/BareMetalMachineResource.svg"
+  },
+  {
+    "type": "Microsoft.NetworkCloud/kubernetesClusters/agentPools",
+    "imagePath": "svg/Microsoft_Azure_NetworkCloud/AgentPoolResource.svg"
+  },
+  {
+    "type": "Providers.Test/statefulIbizaEngines",
+    "imagePath": "svg/Microsoft_Azure_NetworkCopilotExtension/MyResource.svg"
+  },
+  {
+    "type": "Microsoft.Network/networkSecurityPerimeters",
+    "imagePath": "svg/Microsoft_Azure_NetworkSecurityPerimeter/networkSecurityPerimeter.svg"
+  },
+  {
+    "type": "Microsoft.Network/networkSecurityPerimeters/profiles",
+    "imagePath": "svg/Microsoft_Azure_NetworkSecurityPerimeter/NspProfiles.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Network_Access/NetworkAccess.svg"
+  },
+  {
+    "type": "Microsoft.NotificationHubs/namespaces",
+    "imagePath": "svg/Microsoft_Azure_NotificationHubs/Namespace.svg"
+  },
+  {
+    "type": "Microsoft.NotificationHubs/namespaces/notificationHubs",
+    "imagePath": "svg/Microsoft_Azure_NotificationHubs/NotificationHub.svg"
+  },
+  {
+    "type": "Microsoft.Resources/resourceGraphVisualizer",
+    "imagePath": "svg/Microsoft_Azure_OneInventory/ResourceGraphVisualizer.svg"
+  },
+  {
+    "type": "Microsoft.Resources/resourceChange",
+    "imagePath": "svg/Microsoft_Azure_OneInventory/ResourceChange.svg"
+  },
+  {
+    "type": "Providers.Test/statefulIbizaEngines",
+    "imagePath": "svg/Microsoft_Azure_OneInventory/MyResource.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_OneMigrate/AzureOneMigrate.svg"
+  },
+  {
+    "type": "microsoft.onlineexperimentation/workspaces",
+    "imagePath": "svg/Microsoft_Azure_OnlineExperimentation/OnlineExperimentationWorkspace.svg"
+  },
+  {
+    "type": "Microsoft.OpenEnergyPlatform/energyServices",
+    "imagePath": "svg/Microsoft_Azure_OpenEnergyPlatform/OpenEnergyResource.svg"
+  },
+  {
+    "type": "Microsoft.Scom/managedInstances",
+    "imagePath": "svg/Microsoft_Azure_OperationsMgr/AquilaExtensionResource.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_OperationsMgr/Aquila.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Orbital/AzureOrbital.svg"
+  },
+  {
+    "type": "Microsoft.Orbital/l2Connections",
+    "imagePath": "svg/Microsoft_Azure_Orbital/L2Connections.svg"
+  },
+  {
+    "type": "Microsoft.Orbital/GroundStations",
+    "imagePath": "svg/Microsoft_Azure_Orbital/GroundStations.svg"
+  },
+  {
+    "type": "Microsoft.Orbital/geoCatalogs",
+    "imagePath": "svg/Microsoft_Azure_Orbital/geoCatalogs.svg"
+  },
+  {
+    "type": "Microsoft.Orbital/EdgeSites",
+    "imagePath": "svg/Microsoft_Azure_Orbital/EdgeSites.svg"
+  },
+  {
+    "type": "Microsoft.DBforPostgreSQL/flexibleServers",
+    "imagePath": "svg/Microsoft_Azure_OSSDatabases/PostgreSqlFlexibleServer.svg"
+  },
+  {
+    "type": "Microsoft.DBforMySQL/flexibleServers",
+    "imagePath": "svg/Microsoft_Azure_OSSDatabases/MySqlFlexibleServer.svg"
+  },
+  {
+    "type": "Microsoft.DurableTask/Schedulers/TaskHubs",
+    "imagePath": "svg/Microsoft_Azure_PaasServerless/TaskHub.svg"
+  },
+  {
+    "type": "Microsoft.App/agents",
+    "imagePath": "svg/Microsoft_Azure_PaasServerless/SreAgentResources.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_PaasServerless/SreAgentCustomMenu.svg"
+  },
+  {
+    "type": "Microsoft.IntegrationSpaces/spaces",
+    "imagePath": "svg/Microsoft_Azure_PaasServerless/IntegrationSpace.svg"
+  },
+  {
+    "type": "Microsoft.DurableTask/Schedulers",
+    "imagePath": "svg/Microsoft_Azure_PaasServerless/DurableTaskScheduler.svg"
+  },
+  {
+    "type": "Microsoft.Logic/businessprocesses",
+    "imagePath": "svg/Microsoft_Azure_PaasServerless/BusinessProcessTracking.svg"
+  },
+  {
+    "type": "Microsoft.App/spaces",
+    "imagePath": "svg/Microsoft_Azure_PaasServerless/AppSpaces.svg"
+  },
+  {
+    "type": "Microsoft.Peering/peerings/registeredPrefixes",
+    "imagePath": "svg/Microsoft_Azure_Peering/RegisteredPrefix.svg"
+  },
+  {
+    "type": "Microsoft.Peering/peerings/registeredAsns",
+    "imagePath": "svg/Microsoft_Azure_Peering/RegisteredAsn.svg"
+  },
+  {
+    "type": "Microsoft.Peering/peeringServices/prefixes",
+    "imagePath": "svg/Microsoft_Azure_Peering/MicrosoftPeeringServicePrefix.svg"
+  },
+  {
+    "type": "Microsoft.Peering/peeringServices",
+    "imagePath": "svg/Microsoft_Azure_Peering/MicrosoftPeeringService.svg"
+  },
+  {
+    "type": "Microsoft.Peering/peerings",
+    "imagePath": "svg/Microsoft_Azure_Peering/AzurePeering.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_PIMCommon/BrowsePIM.svg"
+  },
+  {
+    "type": "Microsoft.AzurePlaywrightService/accounts",
+    "imagePath": "svg/Microsoft_Azure_PlaywrightService/PlaywrightService.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Policy/PolicyHub.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Policy/ArmBlueprintHub.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_PortalDashboard/DashboardHub.svg"
+  },
+  {
+    "type": "Microsoft.Portal/dashboards",
+    "imagePath": "svg/Microsoft_Azure_PortalDashboard/Dashboards.svg"
+  },
+  {
+    "type": "Microsoft.Portalservices/dashboards",
+    "imagePath": "svg/Microsoft_Azure_PortalDashboard/DashboardsV2.svg"
+  },
+  {
+    "type": "Microsoft.PowerBIDedicated/capacities",
+    "imagePath": "svg/Microsoft_Azure_PowerBIDedicated/PowerBIDedicated.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_PowerPlatform/PowerPlatform.svg"
+  },
+  {
+    "type": "Microsoft.Network/privateDnsZones",
+    "imagePath": "svg/Microsoft_Azure_PrivateDNS/PrivateDnsZone.svg"
+  },
+  {
+    "type": "Microsoft.ProgrammableConnectivity/operatorApiPlans",
+    "imagePath": "svg/Microsoft_Azure_ProgrammableConnectivity/OperatorApiPlanResource.svg"
+  },
+  {
+    "type": "Microsoft.ProgrammableConnectivity/operatorApiConnections",
+    "imagePath": "svg/Microsoft_Azure_ProgrammableConnectivity/OperatorApiConnectionResource.svg"
+  },
+  {
+    "type": "Microsoft.ProgrammableConnectivity/gateways",
+    "imagePath": "svg/Microsoft_Azure_ProgrammableConnectivity/GatewayResource.svg"
+  },
+  {
+    "type": "Microsoft.Purview/Accounts",
+    "imagePath": "svg/Microsoft_Azure_ProjectBabylon/PurviewAccountResource.svg"
+  },
+  {
+    "type": "Microsoft.CognitiveServices/BrowseAIFoundry",
+    "imagePath": "svg/Microsoft_Azure_ProjectOxford/AIFoundry.svg"
+  },
+  {
+    "type": "Microsoft.CognitiveServices/BrowseAIServices",
+    "imagePath": "svg/Microsoft_Azure_ProjectOxford/AIServices.svg"
+  },
+  {
+    "type": "Microsoft.CognitiveServices/BrowseAllInOne",
+    "imagePath": "svg/Microsoft_Azure_ProjectOxford/AllInOne.svg"
+  },
+  {
+    "type": "Microsoft.CognitiveServices/BrowseAllServices",
+    "imagePath": "svg/Microsoft_Azure_ProjectOxford/AllServices.svg"
+  },
+  {
+    "type": "Microsoft.CognitiveServices/BrowseAnomalyDetector",
+    "imagePath": "svg/Microsoft_Azure_ProjectOxford/AnomalyDetector.svg"
+  },
+  {
+    "type": "Microsoft.CognitiveServices/accounts",
+    "imagePath": "svg/Microsoft_Azure_ProjectOxford/CognitiveServicesAccount.svg"
+  },
+  {
+    "type": "Microsoft.CognitiveServices/BrowseComputerVision",
+    "imagePath": "svg/Microsoft_Azure_ProjectOxford/ComputerVision.svg"
+  },
+  {
+    "type": "Microsoft.CognitiveServices/BrowseContentModerator",
+    "imagePath": "svg/Microsoft_Azure_ProjectOxford/ContentModerator.svg"
+  },
+  {
+    "type": "Microsoft.CognitiveServices/BrowseContentSafety",
+    "imagePath": "svg/Microsoft_Azure_ProjectOxford/ContentSafety.svg"
+  },
+  {
+    "type": "Microsoft.CognitiveServices/BrowseCustomVision",
+    "imagePath": "svg/Microsoft_Azure_ProjectOxford/CustomVision.svg"
+  },
+  {
+    "type": "Microsoft.CognitiveServices/BrowseFace",
+    "imagePath": "svg/Microsoft_Azure_ProjectOxford/Face.svg"
+  },
+  {
+    "type": "Microsoft.CognitiveServices/BrowseFormRecognizer",
+    "imagePath": "svg/Microsoft_Azure_ProjectOxford/FormRecognizer.svg"
+  },
+  {
+    "type": "Microsoft.CognitiveServices/BrowseHealthDecisionSupport",
+    "imagePath": "svg/Microsoft_Azure_ProjectOxford/HealthDecisionSupport.svg"
+  },
+  {
+    "type": "Microsoft.CognitiveServices/BrowseHealthInsights",
+    "imagePath": "svg/Microsoft_Azure_ProjectOxford/HealthInsights.svg"
+  },
+  {
+    "type": "Microsoft.CognitiveServices/BrowseImmersiveReader",
+    "imagePath": "svg/Microsoft_Azure_ProjectOxford/ImmersiveReader.svg"
+  },
+  {
+    "type": "Microsoft.CognitiveServices/BrowseLUIS",
+    "imagePath": "svg/Microsoft_Azure_ProjectOxford/LUIS.svg"
+  },
+  {
+    "type": "Microsoft.CognitiveServices/BrowseMetricsAdvisor",
+    "imagePath": "svg/Microsoft_Azure_ProjectOxford/MetricsAdvisor.svg"
+  },
+  {
+    "type": "Microsoft.CognitiveServices/BrowseOpenAI",
+    "imagePath": "svg/Microsoft_Azure_ProjectOxford/OpenAI.svg"
+  },
+  {
+    "type": "Microsoft.CognitiveServices/BrowsePersonalizer",
+    "imagePath": "svg/Microsoft_Azure_ProjectOxford/Personalizer.svg"
+  },
+  {
+    "type": "Microsoft.CognitiveServices/BrowseQnAMaker",
+    "imagePath": "svg/Microsoft_Azure_ProjectOxford/QnAMaker.svg"
+  },
+  {
+    "type": "Microsoft.CognitiveServices/BrowseSpeechServices",
+    "imagePath": "svg/Microsoft_Azure_ProjectOxford/SpeechServices.svg"
+  },
+  {
+    "type": "Microsoft.CognitiveServices/BrowseTextAnalytics",
+    "imagePath": "svg/Microsoft_Azure_ProjectOxford/TextAnalytics.svg"
+  },
+  {
+    "type": "Microsoft.CognitiveServices/BrowseTextTranslation",
+    "imagePath": "svg/Microsoft_Azure_ProjectOxford/TextTranslation.svg"
+  },
+  {
+    "type": "Microsoft.SustainabilityServices/calculations",
+    "imagePath": "svg/Microsoft_Azure_PSC/SustainabilityCalculations.svg"
+  },
+  {
+    "type": "Microsoft.Quantum/Workspaces",
+    "imagePath": "svg/Microsoft_Azure_Quantum/QuantumWorkspace.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Quantum/AzureQuantum.svg"
+  },
+  {
+    "type": "Microsoft.RecommendationsService/accounts",
+    "imagePath": "svg/Microsoft_Azure_RecommendationsService/Account.svg"
+  },
+  {
+    "type": "Microsoft.RecommendationsService/accounts/modeling",
+    "imagePath": "svg/Microsoft_Azure_RecommendationsService/Modeling.svg"
+  },
+  {
+    "type": "Microsoft.RecommendationsService/accounts/serviceEndpoints",
+    "imagePath": "svg/Microsoft_Azure_RecommendationsService/ServiceEndpoint.svg"
+  },
+  {
+    "type": "Microsoft.RecoveryServices/vaults/backupFabrics/protectionContainers/protectedItems",
+    "imagePath": "svg/Microsoft_Azure_RecoveryServices/BackupItem.svg"
+  },
+  {
+    "type": "Microsoft.RecoveryServicesINTD2/vaults",
+    "imagePath": "svg/Microsoft_Azure_RecoveryServices/RecoveryServicesResourceINTD2.svg"
+  },
+  {
+    "type": "Microsoft.RecoveryServicesINTD/vaults",
+    "imagePath": "svg/Microsoft_Azure_RecoveryServices/RecoveryServicesResourceINTD.svg"
+  },
+  {
+    "type": "Microsoft.RecoveryServicesBVTD2/vaults",
+    "imagePath": "svg/Microsoft_Azure_RecoveryServices/RecoveryServicesResourceBVTD2.svg"
+  },
+  {
+    "type": "Microsoft.RecoveryServicesBVTD/vaults",
+    "imagePath": "svg/Microsoft_Azure_RecoveryServices/RecoveryServicesResourceBVTD.svg"
+  },
+  {
+    "type": "Microsoft.RecoveryServices/vaults",
+    "imagePath": "svg/Microsoft_Azure_RecoveryServices/RecoveryServicesResource.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_RecoveryServices/ReplicationJobAsset.svg"
+  },
+  {
+    "type": "Microsoft.Relay/namespaces/WcfRelays",
+    "imagePath": "svg/Microsoft_Azure_Relay/WcfRelay.svg"
+  },
+  {
+    "type": "Microsoft.Relay/namespaces",
+    "imagePath": "svg/Microsoft_Azure_Relay/Relay.svg"
+  },
+  {
+    "type": "Microsoft.Relay/namespaces/HybridConnections",
+    "imagePath": "svg/Microsoft_Azure_Relay/HybridConnection.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Reservations/ReservationsBrowseAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Reservations/SavingsPlanBrowseAsset.svg"
+  },
+  {
+    "type": "Microsoft.Billing/billingAccounts/incentiveSchedules",
+    "imagePath": "svg/Microsoft_Azure_Reservations/ContingencyBillingAdminAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Reservations/ContingencyBrowseAsset.svg"
+  },
+  {
+    "type": "Microsoft.BillingBenefits/incentiveSchedules",
+    "imagePath": "svg/Microsoft_Azure_Reservations/ContingencyServiceAdminAsset.svg"
+  },
+  {
+    "type": "Microsoft.BillingBenefits/credits",
+    "imagePath": "svg/Microsoft_Azure_Reservations/CreditBrowseAsset.svg"
+  },
+  {
+    "type": "Microsoft.Capacity/reservationorders/reservations",
+    "imagePath": "svg/Microsoft_Azure_Reservations/ReservationAsset.svg"
+  },
+  {
+    "type": "Microsoft.Billing/billingAccounts/savingsPlanOrders/savingsPlans",
+    "imagePath": "svg/Microsoft_Azure_Reservations/SavingsPlanItemAsset.svg"
+  },
+  {
+    "type": "Microsoft.BillingBenefits/savingsPlanOrders/savingsPlans",
+    "imagePath": "svg/Microsoft_Azure_Reservations/SavingsPlanItemServiceAdminAsset.svg"
+  },
+  {
+    "type": "Microsoft.BillingBenefits/discounts",
+    "imagePath": "svg/Microsoft_Azure_Reservations/DiscountBrowseAsset.svg"
+  },
+  {
+    "type": "Microsoft.BillingBenefits/maccs",
+    "imagePath": "svg/Microsoft_Azure_Reservations/MaccBrowseAsset.svg"
+  },
+  {
+    "type": "Microsoft.Billing/billingAccounts/incentiveSchedules/milestones",
+    "imagePath": "svg/Microsoft_Azure_Reservations/MilestoneBillingAdminAsset.svg"
+  },
+  {
+    "type": "Microsoft.BillingBenefits/incentiveSchedules/milestones",
+    "imagePath": "svg/Microsoft_Azure_Reservations/MilestoneServiceAdminAsset.svg"
+  },
+  {
+    "type": "Microsoft.Capacity/reservationorders",
+    "imagePath": "svg/Microsoft_Azure_Reservations/ReservationOrderAsset.svg"
+  },
+  {
+    "type": "Microsoft.Billing/billingAccounts/savingsPlanOrders",
+    "imagePath": "svg/Microsoft_Azure_Reservations/SavingsPlanOrderAsset.svg"
+  },
+  {
+    "type": "Microsoft.BillingBenefits/savingsPlanOrders",
+    "imagePath": "svg/Microsoft_Azure_Reservations/SavingsPlanOrderServiceAdminAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_ResiliencyHub/ResiliencyHub.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_ResourceMove/AzureResourceMoveHub.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Resources/WhatsNew.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Resources/UserPrivacy.svg"
+  },
+  {
+    "type": "microsoft.management/serviceGroups",
+    "imagePath": "svg/Microsoft_Azure_Resources/ServiceGroups.svg"
+  },
+  {
+    "type": "microsoft.relationships/serviceGroupRelationships",
+    "imagePath": "svg/Microsoft_Azure_Resources/ServiceGroupRelationships.svg"
+  },
+  {
+    "type": "microsoft.relationships/servicegroupmember",
+    "imagePath": "svg/Microsoft_Azure_Resources/ServiceGroupMembersRelationships.svg"
+  },
+  {
+    "type": "microsoft.relationships/dependencyOf",
+    "imagePath": "svg/Microsoft_Azure_Resources/DependencyRelationships.svg"
+  },
+  {
+    "type": "microsoft.resources/virtualsubscriptionsforresourcepicker",
+    "imagePath": "svg/Microsoft_Azure_Resources/ResExtVirtualSubscriptions.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Resources/ResourceManager.svg"
+  },
+  {
+    "type": "Microsoft.Resources/resourceChanges",
+    "imagePath": "svg/Microsoft_Azure_Resources/ResourceChanges.svg"
+  },
+  {
+    "type": "Microsoft.Resources/deletedResources",
+    "imagePath": "svg/Microsoft_Azure_Resources/DeletedResources.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Resources/Quickstart.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Resources/OperationLog.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Resources/ManagementGroups.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Resources/GitHub.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Resources/AzureDataBoundary.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Resources/Deployment.svg"
+  },
+  {
+    "type": "Microsoft.Management/managementGroups/Microsoft.Resources/deploymentStacks",
+    "imagePath": "svg/Microsoft_Azure_Resources/StackManagementGroup.svg"
+  },
+  {
+    "type": "Microsoft.Resources/deploymentStacks",
+    "imagePath": "svg/Microsoft_Azure_Resources/Stack.svg"
+  },
+  {
+    "type": "Microsoft.DeploymentManager/Rollouts",
+    "imagePath": "svg/Microsoft_Azure_Resources/Rollout.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Resources/APIPlayground.svg"
+  },
+  {
+    "type": "microsoft.features/featureprovidernamespaces/featureconfigurations",
+    "imagePath": "svg/Microsoft_Azure_Resources/PreviewFeaturesArg.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Resources/PreviewFeatures.svg"
+  },
+  {
+    "type": "Microsoft.SaaSHub/cloudServices/hidden",
+    "imagePath": "svg/Microsoft_Azure_SaasHub/SaaSHub.svg"
+  },
+  {
+    "type": "Microsoft.AzureLargeInstance/azureLargeInstances",
+    "imagePath": "svg/Microsoft_Azure_SapHanaInstances/AzureLargeInstance.svg"
+  },
+  {
+    "type": "Microsoft.BareMetalInfrastructure/bareMetalInstances",
+    "imagePath": "svg/Microsoft_Azure_SapHanaInstances/BareMetalInstance.svg"
+  },
+  {
+    "type": "Microsoft.HanaOnAzure/hanaInstances",
+    "imagePath": "svg/Microsoft_Azure_SapHanaInstances/HanaInstance.svg"
+  },
+  {
+    "type": "Microsoft.Workloads/sapVirtualInstances/applicationInstances",
+    "imagePath": "svg/Microsoft_Azure_SAPManagement/SAP_App_Server_instance.svg"
+  },
+  {
+    "type": "Microsoft.Workloads/sapVirtualInstances/centralInstances",
+    "imagePath": "svg/Microsoft_Azure_SAPManagement/SAP_Central_Server_instance.svg"
+  },
+  {
+    "type": "Microsoft.Workloads/sapVirtualInstances/databaseInstances",
+    "imagePath": "svg/Microsoft_Azure_SAPManagement/SAP_DB_Server_instance.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_SAPManagement/SAPOnAzure.svg"
+  },
+  {
+    "type": "Microsoft.Workloads/sapVirtualInstances",
+    "imagePath": "svg/Microsoft_Azure_SAPManagement/SapVirtualInstanceAsset.svg"
+  },
+  {
+    "type": "Microsoft.Search/searchServices",
+    "imagePath": "svg/Microsoft_Azure_Search/SearchService.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Security/SecurityDashboard.svg"
+  },
+  {
+    "type": "microsoft.security/locations/alerts",
+    "imagePath": "svg/Microsoft_Azure_Security/SecurityAlerts.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Security_Insights/Entity.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Security_Insights/Incident.svg"
+  },
+  {
+    "type": "microsoft.securityinsightsarg/sentinel",
+    "imagePath": "svg/Microsoft_Azure_Security_Insights/SecurityInsightsDashboard.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Security_IoT/AzureIoTSecurity.svg"
+  },
+  {
+    "type": "Microsoft.ServiceBus/namespaces/topics",
+    "imagePath": "svg/Microsoft_Azure_ServiceBus/ServiceBusTopic.svg"
+  },
+  {
+    "type": "Microsoft.ServiceBus/namespaces/topics/subscriptions",
+    "imagePath": "svg/Microsoft_Azure_ServiceBus/ServiceBusSubscription.svg"
+  },
+  {
+    "type": "Microsoft.ServiceBus/namespaces/queues",
+    "imagePath": "svg/Microsoft_Azure_ServiceBus/ServiceBusQueue.svg"
+  },
+  {
+    "type": "Microsoft.ServiceBus/namespaces/disasterrecoveryconfigs",
+    "imagePath": "svg/Microsoft_Azure_ServiceBus/ServiceBusDrConfig.svg"
+  },
+  {
+    "type": "Microsoft.ServiceBus/namespaces",
+    "imagePath": "svg/Microsoft_Azure_ServiceBus/ServiceBus.svg"
+  },
+  {
+    "type": "Microsoft.ServiceFabric/clusters",
+    "imagePath": "svg/Microsoft_Azure_ServiceFabric/ServiceFabricCluster.svg"
+  },
+  {
+    "type": "Microsoft.ServiceFabric/managedclusters",
+    "imagePath": "svg/Microsoft_Azure_ServiceFabric/ManagedServiceFabricCluster.svg"
+  },
+  {
+    "type": "Microsoft.ProviderHub/ProviderRegistrations",
+    "imagePath": "svg/Microsoft_Azure_ServiceHub/RPaaS_ResourceProvider.svg"
+  },
+  {
+    "type": "Microsoft.ProviderHub/ProviderRegistrations/ResourceTypeRegistrations",
+    "imagePath": "svg/Microsoft_Azure_ServiceHub/RPaaS_ResourceType.svg"
+  },
+  {
+    "type": "Microsoft.ProviderHub/ProviderRegistrations/ResourceTypeRegistrations/ResourceTypeRegistrations",
+    "imagePath": "svg/Microsoft_Azure_ServiceHub/RPaaS_ResourceTypeNestedOne.svg"
+  },
+  {
+    "type": "Microsoft.Providerhub/providerRegistrations/customRollouts",
+    "imagePath": "svg/Microsoft_Azure_ServiceHub/RPaaS_CustomRollout.svg"
+  },
+  {
+    "type": "Microsoft.Providerhub/providerRegistrations/defaultRollouts",
+    "imagePath": "svg/Microsoft_Azure_ServiceHub/RPaaS_Rollout.svg"
+  },
+  {
+    "type": "Microsoft.SignalRService/WebPubSub/replicas",
+    "imagePath": "svg/Microsoft_Azure_SignalR/WebPubSubReplica.svg"
+  },
+  {
+    "type": "Microsoft.SignalRService/WebPubSub",
+    "imagePath": "svg/Microsoft_Azure_SignalR/WebPubSub.svg"
+  },
+  {
+    "type": "Microsoft.SignalRService/SignalR/replicas",
+    "imagePath": "svg/Microsoft_Azure_SignalR/SignalRReplica.svg"
+  },
+  {
+    "type": "Microsoft.SignalRService/SignalR",
+    "imagePath": "svg/Microsoft_Azure_SignalR/SignalR.svg"
+  },
+  {
+    "type": "Microsoft.Edge/sites",
+    "imagePath": "svg/Microsoft_Azure_SiteManager/SiteManager.svg"
+  },
+  {
+    "type": "Microsoft.Edge/Configurations",
+    "imagePath": "svg/Microsoft_Azure_SiteManager/SiteConfig.svg"
+  },
+  {
+    "type": "microsoft.azuresphere/catalogs",
+    "imagePath": "svg/Microsoft_Azure_Sphere/AzureSphereArm.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Sphere/AzureSphere.svg"
+  },
+  {
+    "type": "Microsoft.DataReplication/replicationVaults",
+    "imagePath": "svg/Microsoft_Azure_Stack_Migrate/ASRV2ReplicationVaultResource.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Storage/StorageBrowser.svg"
+  },
+  {
+    "type": "Microsoft.Storage/StorageAccounts",
+    "imagePath": "svg/Microsoft_Azure_Storage/StorageAccount.svg"
+  },
+  {
+    "type": "Microsoft.ClassicStorage/StorageAccounts",
+    "imagePath": "svg/Microsoft_Azure_Storage/ClassicStorageAccount.svg"
+  },
+  {
+    "type": "Microsoft.StorageCache/caches",
+    "imagePath": "svg/Microsoft_Azure_StorageCache/StorageCache.svg"
+  },
+  {
+    "type": "Microsoft.StorageCache/amlFilesystems",
+    "imagePath": "svg/Microsoft_Azure_StorageCache/AmlFileSystems.svg"
+  },
+  {
+    "type": "Microsoft.StorageDiscovery/storageDiscoveryWorkspaces",
+    "imagePath": "svg/Microsoft_Azure_StorageDiscovery/StorageDiscovery.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_StorageHub/StorageHub.svg"
+  },
+  {
+    "type": "Microsoft.StorageHub/PolicyComplianceResources",
+    "imagePath": "svg/Microsoft_Azure_StorageHub/PolicyComplianceResources.svg"
+  },
+  {
+    "type": "Microsoft.StorageHub/all",
+    "imagePath": "svg/Microsoft_Azure_StorageHub/AllResources.svg"
+  },
+  {
+    "type": "Microsoft.StorageMover/storageMovers",
+    "imagePath": "svg/Microsoft_Azure_StorageMover/StorageMover.svg"
+  },
+  {
+    "type": "Microsoft.StorageActions/storageTasks",
+    "imagePath": "svg/Microsoft_Azure_StorageTasks/StorageTasks.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_StorageTasks/AzureStorageActions.svg"
+  },
+  {
+    "type": "Microsoft.StreamAnalytics/clusters",
+    "imagePath": "svg/Microsoft_Azure_StreamAnalytics/StreamAnalyticsCluster.svg"
+  },
+  {
+    "type": "Microsoft.StreamAnalytics/StreamingJobs",
+    "imagePath": "svg/Microsoft_Azure_StreamAnalytics/StreamAnalyticsJob.svg"
+  },
+  {
+    "type": "microsoft.support/supporttickets",
+    "imagePath": "svg/Microsoft_Azure_Support/SupportRequest.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Support/HelpAndSupport.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Surface/SurfaceDashboard.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Sustainability/Sustainability.svg"
+  },
+  {
+    "type": "Microsoft.Synapse/workspaces",
+    "imagePath": "svg/Microsoft_Azure_Synapse/SynapseWorkspace.svg"
+  },
+  {
+    "type": "Microsoft.Synapse/workspaces/sqlPools",
+    "imagePath": "svg/Microsoft_Azure_Synapse/SynapseSqlPool.svg"
+  },
+  {
+    "type": "Microsoft.Synapse/workspaces/bigDataPools",
+    "imagePath": "svg/Microsoft_Azure_Synapse/SparkPool.svg"
+  },
+  {
+    "type": "Microsoft.Synapse/workspaces/scopePools",
+    "imagePath": "svg/Microsoft_Azure_Synapse/ScopePool.svg"
+  },
+  {
+    "type": "Microsoft.Synapse/privateLinkHubs",
+    "imagePath": "svg/Microsoft_Azure_Synapse/SynapsePrivateLinkHub.svg"
+  },
+  {
+    "type": "Microsoft.Resources/builtInTemplateSpecs",
+    "imagePath": "svg/Microsoft_Azure_TemplateSpecs/ArmBuiltInTemplateSpec.svg"
+  },
+  {
+    "type": "Microsoft.Resources/templateSpecs",
+    "imagePath": "svg/Microsoft_Azure_TemplateSpecs/ArmTemplateSpec.svg"
+  },
+  {
+    "type": "Microsoft.Management/managementgroups/providers/templatespecs",
+    "imagePath": "svg/Microsoft_Azure_TemplateSpecs/ArmTemplateSpecMG.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_TemplateSpecs/ArmTemplateSpecsHub.svg"
+  },
+  {
+    "type": "Microsoft.Resources/deploymentScripts",
+    "imagePath": "svg/Microsoft_Azure_TemplateSpecs/DeploymentScriptHub.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Toolbox/Overview.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_Toolbox/Gallery.svg"
+  },
+  {
+    "type": "microsoft.usagebilling/accounts/pipelines/outputselectors",
+    "imagePath": "svg/Microsoft_Azure_UsageBilling/microsoft_usagebilling_accounts_pipelines_outputselectors_2023_12_01_preview.svg"
+  },
+  {
+    "type": "microsoft.usagebilling/accounts/pipelines",
+    "imagePath": "svg/Microsoft_Azure_UsageBilling/microsoft_usagebilling_accounts_pipelines_2023_12_01_preview.svg"
+  },
+  {
+    "type": "microsoft.usagebilling/accounts/pav2outputs",
+    "imagePath": "svg/Microsoft_Azure_UsageBilling/microsoft_usagebilling_accounts_pav2outputs_2023_12_01_preview.svg"
+  },
+  {
+    "type": "microsoft.usagebilling/accounts/metricexports",
+    "imagePath": "svg/Microsoft_Azure_UsageBilling/microsoft_usagebilling_accounts_metricexports_2023_12_01_preview.svg"
+  },
+  {
+    "type": "microsoft.usagebilling/accounts/inputs",
+    "imagePath": "svg/Microsoft_Azure_UsageBilling/microsoft_usagebilling_accounts_inputs_2023_12_01_preview.svg"
+  },
+  {
+    "type": "microsoft.usagebilling/accounts/dataexports",
+    "imagePath": "svg/Microsoft_Azure_UsageBilling/microsoft_usagebilling_accounts_dataexports_2023_12_01_preview.svg"
+  },
+  {
+    "type": "microsoft.usagebilling/accounts",
+    "imagePath": "svg/Microsoft_Azure_UsageBilling/microsoft_usagebilling_accounts_2023_12_01_preview.svg"
+  },
+  {
+    "type": "Microsoft.Mission/virtualEnclaves/workloads",
+    "imagePath": "svg/Microsoft_Azure_VirtualEnclaves/Workload.svg"
+  },
+  {
+    "type": "Microsoft.Mission/virtualenclaves",
+    "imagePath": "svg/Microsoft_Azure_VirtualEnclaves/Enclave.svg"
+  },
+  {
+    "type": "Microsoft.Mission/communities/transitHubs",
+    "imagePath": "svg/Microsoft_Azure_VirtualEnclaves/TransitHub.svg"
+  },
+  {
+    "type": "Microsoft.Mission/virtualEnclaves/enclaveEndpoints",
+    "imagePath": "svg/Microsoft_Azure_VirtualEnclaves/EnclaveEndpoint.svg"
+  },
+  {
+    "type": "Microsoft.Mission/EnclaveConnections",
+    "imagePath": "svg/Microsoft_Azure_VirtualEnclaves/EnclaveConnection.svg"
+  },
+  {
+    "type": "Microsoft.Mission/communities/communityEndpoints",
+    "imagePath": "svg/Microsoft_Azure_VirtualEnclaves/CommunityEndpoint.svg"
+  },
+  {
+    "type": "Microsoft.Mission/communities",
+    "imagePath": "svg/Microsoft_Azure_VirtualEnclaves/Community.svg"
+  },
+  {
+    "type": "Microsoft.Mission/catalogs",
+    "imagePath": "svg/Microsoft_Azure_VirtualEnclaves/Catalog.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_VirtualEnclaves/AzureVirtualEnclave.svg"
+  },
+  {
+    "type": "Microsoft.Mission/approvals",
+    "imagePath": "svg/Microsoft_Azure_VirtualEnclaves/Approvals.svg"
+  },
+  {
+    "type": "Microsoft.Compute/virtualMachineScaleSets",
+    "imagePath": "svg/Microsoft_Azure_VirtualMachineScaleSets/VirtualMachineScaleSets.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_VirtualVisitsBuilder/vvbuilder.svg"
+  },
+  {
+    "type": "Microsoft.HybridNetwork/networkFunctions",
+    "imagePath": "svg/Microsoft_Azure_VnfManager/VnfManagerVnfs.svg"
+  },
+  {
+    "type": "Microsoft.HybridNetwork/vendors",
+    "imagePath": "svg/Microsoft_Azure_VnfManager/VnfManagerVendors.svg"
+  },
+  {
+    "type": "Microsoft.HybridNetwork/devices",
+    "imagePath": "svg/Microsoft_Azure_VnfManager/VnfManagerDevices.svg"
+  },
+  {
+    "type": "Microsoft.HybridNetwork/siteNetworkServices",
+    "imagePath": "svg/Microsoft_Azure_VnfManager/AosmSns.svg"
+  },
+  {
+    "type": "Microsoft.HybridNetwork/sites",
+    "imagePath": "svg/Microsoft_Azure_VnfManager/AosmSite.svg"
+  },
+  {
+    "type": "Microsoft.HybridNetwork/publishers",
+    "imagePath": "svg/Microsoft_Azure_VnfManager/AosmPublisher.svg"
+  },
+  {
+    "type": "Microsoft.HybridNetwork/publishers/artifactStores",
+    "imagePath": "svg/Microsoft_Azure_VnfManager/AosmPublisherArtifactStore.svg"
+  },
+  {
+    "type": "Microsoft.HybridNetwork/publishers/artifactStores/artifactManifests",
+    "imagePath": "svg/Microsoft_Azure_VnfManager/AosmPublisherArtifactManifest.svg"
+  },
+  {
+    "type": "Microsoft.HybridNetwork/publishers/networkServiceDesignGroups/networkServiceDesignVersions",
+    "imagePath": "svg/Microsoft_Azure_VnfManager/AosmNsdVersion.svg"
+  },
+  {
+    "type": "Microsoft.HybridNetwork/publishers/networkServiceDesignGroups",
+    "imagePath": "svg/Microsoft_Azure_VnfManager/AosmNsdGroup.svg"
+  },
+  {
+    "type": "Microsoft.HybridNetwork/publishers/networkFunctionDefinitionGroups/networkFunctionDefinitionVersions",
+    "imagePath": "svg/Microsoft_Azure_VnfManager/AosmNfdVersion.svg"
+  },
+  {
+    "type": "Microsoft.HybridNetwork/publishers/networkFunctionDefinitionGroups",
+    "imagePath": "svg/Microsoft_Azure_VnfManager/AosmNfdGroup.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_VnfManager/AzureOperatorServiceManager.svg"
+  },
+  {
+    "type": "Microsoft.HybridNetwork/publishers/configurationGroupSchemas",
+    "imagePath": "svg/Microsoft_Azure_VnfManager/AosmConfigSchema.svg"
+  },
+  {
+    "type": "Microsoft.HybridNetwork/configurationGroupValues",
+    "imagePath": "svg/Microsoft_Azure_VnfManager/AosmCgv.svg"
+  },
+  {
+    "type": "Providers.Test/statefulIbizaEngines",
+    "imagePath": "svg/Microsoft_Azure_WaveMigration/WaveMigrationResource.svg"
+  },
+  {
+    "type": "private.edgeinternal/winfields",
+    "imagePath": "svg/Microsoft_Azure_Winfields/Winfields.svg"
+  },
+  {
+    "type": "microsoft.workloads/insights",
+    "imagePath": "svg/Microsoft_Azure_WorkloadInsight/microsoft_workloads_insights_2022_10_15_preview.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_WorkloadInsight/mario.svg"
+  },
+  {
+    "type": "Microsoft.Workloads/monitors",
+    "imagePath": "svg/Microsoft_Azure_WorkloadMonitor/SapMonitorV2.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Azure_WVD/WvdManager.svg"
+  },
+  {
+    "type": "Microsoft.DesktopVirtualization/Workspaces",
+    "imagePath": "svg/Microsoft_Azure_WVD/Workspace.svg"
+  },
+  {
+    "type": "Microsoft.DesktopVirtualization/ScalingPlans",
+    "imagePath": "svg/Microsoft_Azure_WVD/ScalingPlan.svg"
+  },
+  {
+    "type": "Microsoft.DesktopVirtualization/HostPools",
+    "imagePath": "svg/Microsoft_Azure_WVD/Hostpool.svg"
+  },
+  {
+    "type": "Microsoft.DesktopVirtualization/ApplicationGroups",
+    "imagePath": "svg/Microsoft_Azure_WVD/ApplicationGroup.svg"
+  },
+  {
+    "type": "Microsoft.DesktopVirtualization/appAttachPackages",
+    "imagePath": "svg/Microsoft_Azure_WVD/AppAttach.svg"
+  },
+  {
+    "type": "Microsoft.ZeroTrustSegmentation/segmentationManagers",
+    "imagePath": "svg/Microsoft_Azure_ZeroTrustSegmentation/SegmentationManagers.svg"
+  },
+  {
+    "type": "Microsoft.Bing/accounts",
+    "imagePath": "svg/Microsoft_Bing_Api/BingAPIAccount.svg"
+  },
+  {
+    "type": "Microsoft.CloudHealth/healthmodels",
+    "imagePath": "svg/Microsoft_CloudHealth_HealthModels/AzureHealthModel.svg"
+  },
+  {
+    "type": "Microsoft.MixedReality/remoteRenderingAccounts",
+    "imagePath": "svg/Microsoft_Cognition_MixedReality/RemoteRenderingAccount.svg"
+  },
+  {
+    "type": "Microsoft.ConnectedCache/enterpriseMccCustomers",
+    "imagePath": "svg/Microsoft_ConnectedCache_Enterprise/MccEnterpriseResource.svg"
+  },
+  {
+    "type": "Microsoft.ConnectedCache/enterpriseMccCustomers/enterpriseMccCacheNodes",
+    "imagePath": "svg/Microsoft_ConnectedCache_Enterprise/MccEnterpriseCacheNodeResource.svg"
+  },
+  {
+    "type": "Microsoft.ConnectedCache/ispCustomers",
+    "imagePath": "svg/Microsoft_ConnectedCache_ISP/MCCIspResource.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_EMM_ModernWorkplace/MWaaS.svg"
+  },
+  {
+    "type": "Providers.Test/statefulIbizaEngines",
+    "imagePath": "svg/Microsoft_Entra_GSA_Connect/MyResource.svg"
+  },
+  {
+    "type": "Providers.Test/statefulIbizaEngines",
+    "imagePath": "svg/Microsoft_Entra_IDX/MyResource.svg"
+  },
+  {
+    "type": "Microsoft.HealthcareApis/workspaces/fhirservices",
+    "imagePath": "svg/Microsoft_Healthcare_APIs/JupiterFhirService.svg"
+  },
+  {
+    "type": "Microsoft.HealthcareApis/workspaces/iotconnectors",
+    "imagePath": "svg/Microsoft_Healthcare_APIs/IotConnector.svg"
+  },
+  {
+    "type": "Microsoft.Test/healthDataAIServices",
+    "imagePath": "svg/Microsoft_Healthcare_APIs/HealthDataAIServices.svg"
+  },
+  {
+    "type": "Microsoft.HealthcareApis/workspaces",
+    "imagePath": "svg/Microsoft_Healthcare_APIs/HealthcareApisService.svg"
+  },
+  {
+    "type": "Microsoft.HealthcareApis/services",
+    "imagePath": "svg/Microsoft_Healthcare_APIs/FhirService.svg"
+  },
+  {
+    "type": "Microsoft.HealthcareApis/workspaces/dicomservices",
+    "imagePath": "svg/Microsoft_Healthcare_APIs/DicomService.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_Devices/DeviceEntryBladeAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_DeviceSettings/IntuneMC.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_DeviceSettings/IntuneFF.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_DeviceSettings/Intune.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_DeviceSettings/TroubleshootSupportAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_DeviceSettings/TenantAdminAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_DeviceSettings/DevicesAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_DeviceSettings/AppsAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_DeviceSettings/IntuneEduAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_DeviceSettings/AADAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_Edu/ExpressSetup.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_Edu/UserSearch.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_Edu/TermsOfUse.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_Edu/TenantSettings.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_Edu/Support.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_Edu/Subscriptions.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_Edu/ServiceHealthDashboard.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_Edu/SchoolDataSync.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_Edu/Reporting.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_Edu/Groups.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_Edu/FullIntune.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_Edu/EnrollmentAccounts.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_Edu/Documentation.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_Edu/DeviceSearch.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_Edu/Delegation.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_Edu/BarcodeScanner.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_Edu/Apps.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_Edu/Alerts.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_Enrollment/ReportsAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_Workflows/SecurityManagementAsset.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_Intune_Workflows/SecurityBaselineAsset.svg"
+  },
+  {
+    "type": "Microsoft.ManufacturingPlatform/ManufacturingDataServices",
+    "imagePath": "svg/Microsoft_ManufacturingPlatform_DMM/DataManagerForManufacturing.svg"
+  },
+  {
+    "type": "Providers.Test/statefulIbizaEngines",
+    "imagePath": "svg/Microsoft_Marketplace_SolutionFinder/MyResource.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_OneFleet_DataHub/Skylark.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_OneFleet_DataHub/Grip.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_OneFleet_DataHub/AzPubSub.svg"
+  },
+  {
+    "type": "Microsoft.OperationalInsights/querypacks",
+    "imagePath": "svg/Microsoft_OperationsManagementSuite_Workspace/QueryPack.svg"
+  },
+  {
+    "type": "Microsoft.OperationalInsights/workspaces",
+    "imagePath": "svg/Microsoft_OperationsManagementSuite_Workspace/Workspace.svg"
+  },
+  {
+    "type": "Microsoft.OperationsManagement/solutions",
+    "imagePath": "svg/Microsoft_OperationsManagementSuite_Workspace/Solution.svg"
+  },
+  {
+    "type": "microsoft.operationalinsights/clusters",
+    "imagePath": "svg/Microsoft_OperationsManagementSuite_Workspace/cluster.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Microsoft_SafeflyV2/SafeFlyV2.svg"
+  },
+  {
+    "type": "Microsoft.SecurityCopilot/capacities",
+    "imagePath": "svg/Microsoft_Security_Copilot/SecurityCopilotResource.svg"
+  },
+  {
+    "type": "Private.ServicesHubDev/connectors",
+    "imagePath": "svg/Microsoft_ServicesHub_Extension/PrivateConnector.svg"
+  },
+  {
+    "type": "Microsoft.ServicesHub/connectors",
+    "imagePath": "svg/Microsoft_ServicesHub_Extension/Connector.svg"
+  },
+  {
+    "type": "Microsoft.VideoIndexer/accounts",
+    "imagePath": "svg/Microsoft_VideoIndexer/VideoIndexerAccount.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Oracle_Databases_At_Azure/oracledatabaseservice.svg"
+  },
+  {
+    "type": "Oracle.Database/resourceanchors",
+    "imagePath": "svg/Oracle_Databases_At_Azure/oracle_resource_anchor.svg"
+  },
+  {
+    "type": "Oracle.Database/networkanchors",
+    "imagePath": "svg/Oracle_Databases_At_Azure/oracle_network_anchor.svg"
+  },
+  {
+    "type": "Oracle.Database/exadbVmClusters",
+    "imagePath": "svg/Oracle_Databases_At_Azure/oracle_exascale_vmcluster.svg"
+  },
+  {
+    "type": "oracle.database/exascaledbstoragevaults",
+    "imagePath": "svg/Oracle_Databases_At_Azure/oracle_exascale_storage_vaults.svg"
+  },
+  {
+    "type": "oracle.database/cloudvmclusters",
+    "imagePath": "svg/Oracle_Databases_At_Azure/oracle_exadata_vmcluster.svg"
+  },
+  {
+    "type": "oracle.database/cloudexadatainfrastructures",
+    "imagePath": "svg/Oracle_Databases_At_Azure/oracle_exadata_infrastructure.svg"
+  },
+  {
+    "type": "Oracle.Database/oracleSubscriptions",
+    "imagePath": "svg/Oracle_Databases_At_Azure/oracleSubscription.svg"
+  },
+  {
+    "type": "oracle.database/basedb",
+    "imagePath": "svg/Oracle_Databases_At_Azure/oracle_basedb.svg"
+  },
+  {
+    "type": "oracle.database/autonomousdatabases",
+    "imagePath": "svg/Oracle_Databases_At_Azure/oracle_adbs.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/ScanX_Management/ScanXManagement.svg"
+  },
+  {
+    "type": "Microsoft.AzureScan/scanningAccounts",
+    "imagePath": "svg/ScanX_Management/ScanXMeter.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/ServiceLinkerExtension/ServiceLinkerGlobal.svg"
+  },
+  {
+    "type": "Microsoft.Sql/virtualClusters",
+    "imagePath": "svg/SqlAzureExtension/VirtualCluster.svg"
+  },
+  {
+    "type": "Microsoft.SqlVirtualMachine/SqlVirtualMachines",
+    "imagePath": "svg/SqlAzureExtension/SqlVirtualMachine.svg"
+  },
+  {
+    "type": "Microsoft.Sql/servers",
+    "imagePath": "svg/SqlAzureExtension/Server.svg"
+  },
+  {
+    "type": "Microsoft.DBforPostgreSQL/servers",
+    "imagePath": "svg/SqlAzureExtension/PostgreSqlServer.svg"
+  },
+  {
+    "type": "Microsoft.DBforMySQL/servers",
+    "imagePath": "svg/SqlAzureExtension/MySqlServer.svg"
+  },
+  {
+    "type": "Microsoft.DBforMariaDB/servers",
+    "imagePath": "svg/SqlAzureExtension/MariaDBServer.svg"
+  },
+  {
+    "type": "Microsoft.Sql/managedInstances",
+    "imagePath": "svg/SqlAzureExtension/ManagedInstance.svg"
+  },
+  {
+    "type": "Microsoft.Sql/managedInstances/databases",
+    "imagePath": "svg/SqlAzureExtension/ManagedDatabase.svg"
+  },
+  {
+    "type": "Microsoft.Sql/instancePools",
+    "imagePath": "svg/SqlAzureExtension/InstancePool.svg"
+  },
+  {
+    "type": "Microsoft.DatabaseFleetManager/fleets/tiers",
+    "imagePath": "svg/SqlAzureExtension/Tiers.svg"
+  },
+  {
+    "type": "Microsoft.DatabaseFleetManager/fleets/fleetspaces",
+    "imagePath": "svg/SqlAzureExtension/Fleetspace.svg"
+  },
+  {
+    "type": "Microsoft.DatabaseFleetManager/fleets/fleetspaces/databases",
+    "imagePath": "svg/SqlAzureExtension/FleetDatabase.svg"
+  },
+  {
+    "type": "Microsoft.DatabaseFleetManager/fleets",
+    "imagePath": "svg/SqlAzureExtension/DatabaseFleetManager.svg"
+  },
+  {
+    "type": "Microsoft.Sql/servers/elasticpools",
+    "imagePath": "svg/SqlAzureExtension/ElasticPool.svg"
+  },
+  {
+    "type": "Microsoft.Sql/servers/jobAgents",
+    "imagePath": "svg/SqlAzureExtension/JobAgent.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/SqlAzureExtension/SqlService.svg"
+  },
+  {
+    "type": "Microsoft.Sql/servers/databases",
+    "imagePath": "svg/SqlAzureExtension/Database.svg"
+  },
+  {
+    "type": "Microsoft.Sql/azuresql",
+    "imagePath": "svg/SqlAzureExtension/AzureSQL.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/Universal_Print/universal_Print.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/VLCentral_Agreement/MyResource.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/VLCentral_Amendments/VLCentral_Amendments.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/VLCentral_Approval/VLCentral_Approval.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/VLCentral_CaseManagement/VLCentralCaseManagement.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/VLCentral_HelpAndSupport/VLCentralHelp.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/VLCentral_Home/VLCentralHome.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/VLCentral_OrderCredits/MyResource.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/VLCentral_Ordering/VLCentral_Ordering.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/VLCentral_OrganizationManagementService/MyResource.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/VLCentral_Quote/VLCentralQuote.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/VLCentral_ReportingNAnalytics/VLCentralReporting.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/VLCentral_UUM/VLCentralUUM.svg"
+  },
+  {
+    "type": "Microsoft.AVS/privateClouds",
+    "imagePath": "svg/VMCP/SDDC.svg"
+  },
+  {
+    "type": "Wandisco.Fusion/migrators/dataTransferAgents",
+    "imagePath": "svg/WandiscoExtension/DataTransferAgent.svg"
+  },
+  {
+    "type": "Wandisco.Fusion/migrators/exclusionTemplates",
+    "imagePath": "svg/WandiscoExtension/Exclusion.svg"
+  },
+  {
+    "type": "Wandisco.Fusion/migrators/liveDataMigrations",
+    "imagePath": "svg/WandiscoExtension/LiveDataMigration.svg"
+  },
+  {
+    "type": "Wandisco.Fusion/migrators/metadataMigrations",
+    "imagePath": "svg/WandiscoExtension/MetadataMigration.svg"
+  },
+  {
+    "type": "Wandisco.Fusion/migrators/metadataTargets",
+    "imagePath": "svg/WandiscoExtension/MetadataTarget.svg"
+  },
+  {
+    "type": "Wandisco.Fusion/migrators/verifications",
+    "imagePath": "svg/WandiscoExtension/MigrationVerification.svg"
+  },
+  {
+    "type": "Wandisco.Fusion/migrators",
+    "imagePath": "svg/WandiscoExtension/Migrator.svg"
+  },
+  {
+    "type": "Wandisco.Fusion/migrators/pathMappings",
+    "imagePath": "svg/WandiscoExtension/PathMapping.svg"
+  },
+  {
+    "type": "Wandisco.Fusion/migrators/targets",
+    "imagePath": "svg/WandiscoExtension/Target.svg"
+  },
+  {
+    "type": "Microsoft.Web/sites/slots",
+    "imagePath": "svg/WebsitesExtension/WebsiteSlot.svg"
+  },
+  {
+    "type": "Microsoft.Web/sites",
+    "imagePath": "svg/WebsitesExtension/Website.svg"
+  },
+  {
+    "type": "Microsoft.Web/serverFarms",
+    "imagePath": "svg/WebsitesExtension/WebHostingPlan.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/WebsitesExtension/Webapp.svg"
+  },
+  {
+    "type": "Microsoft.Web/StaticSites",
+    "imagePath": "svg/WebsitesExtension/StaticSite.svg"
+  },
+  {
+    "type": "Microsoft.CertificateRegistration/certificateOrders",
+    "imagePath": "svg/WebsitesExtension/SslCertificate.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/WebsitesExtension/MobileApp.svg"
+  },
+  {
+    "type": "Microsoft.App/sessionPools",
+    "imagePath": "svg/WebsitesExtension/ContainerAppSessionPool.svg"
+  },
+  {
+    "type": "Microsoft.App/jobs",
+    "imagePath": "svg/WebsitesExtension/ContainerAppJobs.svg"
+  },
+  {
+    "type": "Microsoft.App/managedEnvironments",
+    "imagePath": "svg/WebsitesExtension/ContainerAppEnvironment.svg"
+  },
+  {
+    "type": "Microsoft.App/connectedEnvironments",
+    "imagePath": "svg/WebsitesExtension/ContainerAppConnectedEnvironment.svg"
+  },
+  {
+    "type": "Microsoft.App/containerApps",
+    "imagePath": "svg/WebsitesExtension/ContainerApp.svg"
+  },
+  {
+    "type": "Microsoft.Web/KubeEnvironments",
+    "imagePath": "svg/WebsitesExtension/AppServiceKubernetesEnvironment.svg"
+  },
+  {
+    "type": "Microsoft.Web/HostingEnvironments",
+    "imagePath": "svg/WebsitesExtension/AppServiceEnvironment.svg"
+  },
+  {
+    "type": "Microsoft.DomainRegistration/domains",
+    "imagePath": "svg/WebsitesExtension/AppServiceDomain.svg"
+  },
+  {
+    "type": "",
+    "imagePath": "svg/WebsitesExtension/Apiapp.svg"
+  }
+]

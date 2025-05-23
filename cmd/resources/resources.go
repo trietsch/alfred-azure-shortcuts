@@ -1,31 +1,38 @@
 package main
 
 import (
-	"bytes"
+	"context"
 	"encoding/json"
 	"flag"
-	"io/ioutil"
-	"log"
-	"net/url"
-	"os"
-	"text/template"
-
+	"fmt"
+	"github.com/Azure/azure-sdk-for-go/sdk/azidentity"
+	"github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/resources/armresources"
 	aw "github.com/deanishe/awgo"
 	"go.deanishe.net/fuzzy"
+	"io"
+	"log"
+	"os"
+	"time"
 )
 
 var (
-	logger = log.New(os.Stderr, "[products] ", log.LstdFlags)
+	logger = log.New(os.Stderr, "[resources] ", log.LstdFlags)
 	wf     *aw.Workflow
 
-	query   string
-	project string
+	cred *azidentity.AzureCLICredential
+	ctx  = context.Background()
+
+	query             string
+	subscriptionId    string
+	resourceGroupName string
 )
 
-func init() {
-	flag.StringVar(&query, "query", "", "search query")
-	flag.StringVar(&project, "project", "", "google cloud project")
+type Icon struct {
+	Type      string `json:"type"`
+	ImagePath string `json:"imagePath"`
+}
 
+func init() {
 	sopts := []fuzzy.Option{
 		fuzzy.AdjacencyBonus(10.0),
 		fuzzy.LeadingLetterPenalty(-0.1),
@@ -34,68 +41,96 @@ func init() {
 	}
 	wf = aw.New(aw.SortOptions(sopts...))
 
+	flag.StringVar(&query, "query", "", "Query input by the user, to filter the list on")
+	flag.StringVar(&subscriptionId, "subscription", "", "Azure Subscription ID")
+	flag.StringVar(&resourceGroupName, "resource-group", "", "Azure Resource Group name")
+
+	credential, err := azidentity.NewAzureCLICredential(nil)
+	if err != nil {
+		wf.FatalError(err)
+	}
+	cred = credential
 }
 
-type ProductTemplate struct {
-	Name string `json:"name"`
-	URL  string `json:"url"`
+func ListResourcesForResourceGroup() (interface{}, error) {
+	client, err := armresources.NewClient(subscriptionId, cred, nil)
+	if err != nil {
+		fmt.Printf("failed to create client: %v\n", err)
+		os.Exit(1)
+	}
+
+	allResources := make([]armresources.GenericResourceExpanded, 0)
+
+	// List all resources in the specified resource group
+	pager := client.NewListByResourceGroupPager(resourceGroupName, nil)
+	for pager.More() {
+		page, err := pager.NextPage(ctx)
+		if err != nil {
+			fmt.Printf("failed to list resources: %v\n", err)
+			os.Exit(1)
+		}
+
+		for _, resource := range page.Value {
+			allResources = append(allResources, *resource)
+		}
+	}
+
+	return allResources, nil
 }
 
-type urlTemplate struct {
-	ProjectID string
-}
-
-func readProducts() ([]ProductTemplate, error) {
-	f, err := os.Open("./products.json")
+func readAzureIcons() (map[string]string, error) {
+	f, err := os.Open("./images/azure_icons.json")
 	if err != nil {
 		return nil, err
 	}
-	byt, err := ioutil.ReadAll(f)
+	defer f.Close()
+
+	byt, err := io.ReadAll(f)
 	if err != nil {
 		return nil, err
 	}
-	var products []ProductTemplate
-	if err := json.Unmarshal(byt, &products); err != nil {
+
+	var icons []Icon
+	if err := json.Unmarshal(byt, &icons); err != nil {
 		return nil, err
 	}
-	return products, nil
+
+	iconMap := make(map[string]string)
+	for _, icon := range icons {
+		iconMap[icon.Type] = "images/" + icon.ImagePath
+	}
+
+	return iconMap, nil
 }
 
 func run() {
-	wf.Args()
 	flag.Parse()
 
-	templateArgs := urlTemplate{
-		ProjectID: project,
-	}
-
-	products, err := readProducts()
+	icons, err := readAzureIcons()
 	if err != nil {
 		wf.FatalError(err)
 		return
 	}
 
-	queryParams := map[string]string{
-		"authuser": wf.Config.Get("authuser"),
+	azureResourcesCacheKey := fmt.Sprintf("azure-resources-%s-%s", subscriptionId, resourceGroupName)
+
+	logger.Printf("query=%s", query)
+	logger.Printf("subscriptionId=%s", subscriptionId)
+	logger.Printf("resourceGroupName=%s", resourceGroupName)
+
+	var resources []armresources.GenericResourceExpanded
+
+	if err := wf.Data.LoadOrStoreJSON(azureResourcesCacheKey, time.Minute*30, ListResourcesForResourceGroup, &resources); err != nil {
+		wf.FatalError(err)
+		return
 	}
 
-	for _, p := range products {
-		urlTemplate, err := template.New("").Parse(p.URL)
-		if err != nil {
-			wf.FatalError(err)
-		}
-		buf := &bytes.Buffer{}
-		if err := urlTemplate.Execute(buf, templateArgs); err != nil {
-			wf.FatalError(err)
-		}
-		urlBytes, err := ioutil.ReadAll(buf)
-		if err != nil {
-			wf.FatalError(err)
-			return
-		}
+	for _, r := range resources {
+		logger.Printf("%+v", r)
+		iconPath, _ := icons[*r.Type]
+		icon := aw.Icon{Value: iconPath}
 
-		generatedURL := appendURLParameters(string(urlBytes), queryParams)
-		wf.NewItem(p.Name).Arg(generatedURL).Subtitle(project).UID(string(urlBytes)).Valid(true)
+		wf.NewItem(fmt.Sprintf("%s (%s)", *r.Name, *r.Type)).Icon(&icon).Arg(*r.ID).Subtitle(*r.ID).UID(*r.ID).Valid(true)
 	}
 
 	if query != "" {
@@ -103,23 +138,6 @@ func run() {
 	}
 
 	wf.SendFeedback()
-}
-
-func appendURLParameters(urlString string, keyval map[string]string) string {
-	u, err := url.ParseRequestURI(urlString)
-	if err != nil {
-		log.Printf("silently failed to parse url: %v", err)
-		return urlString
-	}
-	q := u.Query()
-	for key, val := range keyval {
-		if key == "" || val == "" {
-			continue
-		}
-		q.Add(key, val)
-	}
-	u.RawQuery = q.Encode()
-	return u.String()
 }
 
 func main() {

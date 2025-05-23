@@ -14,16 +14,14 @@ import (
 	aw "github.com/deanishe/awgo"
 )
 
-const (
-	azureResourceGroupsCacheKey = "azure-resource-groups"
-)
-
 var (
 	logger = log.New(os.Stderr, "[resource-groups] ", log.LstdFlags)
 	wf     *aw.Workflow
 
-	cred           *azidentity.AzureCLICredential
-	ctx            = context.Background()
+	cred *azidentity.AzureCLICredential
+	ctx  = context.Background()
+
+	query          string
 	subscriptionId string
 )
 
@@ -41,14 +39,14 @@ func init() {
 	}
 	wf = aw.New(aw.SortOptions(sopts...))
 
-	flag.StringVar(&subscriptionId, "query", "", "Query input by the user, to filter the list on")
+	flag.StringVar(&query, "query", "", "Query input by the user, to filter the list on")
 	flag.StringVar(&subscriptionId, "subscription", "", "Azure Subscription ID")
 
 	credential, err := azidentity.NewAzureCLICredential(nil)
-	cred = credential
 	if err != nil {
 		wf.FatalError(err)
 	}
+	cred = credential
 }
 
 func ListResourceGroupsForSubscription() (interface{}, error) {
@@ -78,13 +76,10 @@ func ListResourceGroupsForSubscription() (interface{}, error) {
 }
 
 func run() {
-	args := wf.Args()
 	flag.Parse()
 
-	var query string
-	if len(args) > 0 {
-		query = args[0]
-	}
+	azureResourceGroupsCacheKey := "azure-resource-groups-" + subscriptionId
+
 	logger.Printf("query=%s", query)
 
 	var resourceGroups []ResourceGroup
@@ -96,7 +91,7 @@ func run() {
 
 	for _, rg := range resourceGroups {
 		logger.Printf("%+v", rg)
-		wf.NewItem(rg.Name).Arg(rg.Id).Subtitle(rg.Id).UID(rg.Id).Valid(true)
+		wf.NewItem(rg.Name).Arg(rg.Name).Subtitle(rg.Id).UID(rg.Id).Var("subscription", subscriptionId).Valid(true)
 	}
 
 	if query != "" {

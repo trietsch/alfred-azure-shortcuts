@@ -2,16 +2,14 @@ package main
 
 import (
 	"context"
-	"flag"
 	"fmt"
 	"github.com/Azure/azure-sdk-for-go/sdk/azidentity"
 	"github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/resources/armsubscriptions"
+	aw "github.com/deanishe/awgo"
 	"go.deanishe.net/fuzzy"
 	"log"
 	"os"
-	"strings"
-
-	aw "github.com/deanishe/awgo"
+	"time"
 )
 
 const (
@@ -22,7 +20,8 @@ var (
 	logger = log.New(os.Stderr, "[subscriptions] ", log.LstdFlags)
 	wf     *aw.Workflow
 
-	argRefreshSubscriptions bool
+	cred *azidentity.AzureCLICredential
+	ctx  = context.Background()
 )
 
 type Subscription struct {
@@ -39,10 +38,14 @@ func init() {
 	}
 	wf = aw.New(aw.SortOptions(sopts...))
 
-	flag.BoolVar(&argRefreshSubscriptions, "refresh", false, "refresh subscriptions")
+	credential, err := azidentity.NewAzureCLICredential(nil)
+	if err != nil {
+		wf.FatalError(err)
+	}
+	cred = credential
 }
 
-func ListAzureSubscriptions(ctx context.Context, cred *azidentity.AzureCLICredential) ([]Subscription, error) {
+func ListAzureSubscriptions() (interface{}, error) {
 	client, err := armsubscriptions.NewClient(cred, nil)
 	if err != nil {
 		return nil, fmt.Errorf("failed to create client: %w", err)
@@ -71,48 +74,19 @@ func ListAzureSubscriptions(ctx context.Context, cred *azidentity.AzureCLICreden
 
 func run() {
 	args := wf.Args()
-	flag.Parse()
-	ctx := context.Background()
-
-	cred, err := azidentity.NewAzureCLICredential(nil)
-	if err != nil {
-		wf.FatalError(err)
-	}
-
-	if argRefreshSubscriptions {
-		wf.Configure(aw.TextErrors(true))
-		logger.Printf("refreshing subscriptions")
-		projects, err := ListAzureSubscriptions(ctx, cred)
-		if err != nil {
-			wf.FatalError(err)
-		}
-		err = wf.Data.StoreJSON(azureSubscriptionCacheKey, projects)
-		if err != nil {
-			wf.FatalError(err)
-		}
-		logger.Printf("refresh done")
-		wf.SendFeedback()
-		return
-	}
 
 	var query string
 	if len(args) > 0 {
 		query = args[0]
 	}
 
-	if strings.HasPrefix(query, "-") {
-		wf.NewItem("Refresh subscriptions").Arg("-refresh").Autocomplete("-refresh").Valid(false)
-		wf.SendFeedback()
-		return
-	}
-
 	logger.Printf("query=%s", query)
+
 	var subscriptions []Subscription
-	if !wf.Data.Exists(azureSubscriptionCacheKey) {
-		wf.Fatal(`No subscriptions cached, please run "-refresh"`)
-	}
-	if err := wf.Data.LoadJSON(azureSubscriptionCacheKey, &subscriptions); err != nil {
+
+	if err := wf.Data.LoadOrStoreJSON(azureSubscriptionCacheKey, time.Minute*30, ListAzureSubscriptions, &subscriptions); err != nil {
 		wf.FatalError(err)
+		return
 	}
 
 	for _, s := range subscriptions {
