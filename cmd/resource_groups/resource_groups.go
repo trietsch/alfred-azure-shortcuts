@@ -93,7 +93,13 @@ func run() {
 
 	for _, rg := range resourceGroups {
 		logger.Printf("%+v", rg)
-		wf.NewItem(rg.Name).Arg(rg.Name).Subtitle(rg.Id).UID(rg.Id).Var("subscription", subscriptionId).Var("tenantId", tenantId).Valid(true)
+		wf.NewItem(rg.Name).
+			Arg(rg.Name).
+			Subtitle(rg.Id).
+			UID(rg.Id).
+			Var("subscription", subscriptionId).
+			Var("tenantId", tenantId).
+			Valid(true)
 	}
 
 	if query != "" {

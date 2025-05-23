@@ -92,7 +92,12 @@ func run() {
 	}
 
 	for _, s := range subscriptions {
-		wf.NewItem(s.Name).Arg(s.SubscriptionID).Subtitle(s.SubscriptionID).UID(s.SubscriptionID).Var("tenantId", s.TenantID).Valid(true)
+		wf.NewItem(s.Name).
+			Arg(s.SubscriptionID).
+			Subtitle(s.SubscriptionID).
+			UID(s.SubscriptionID).
+			Var("tenantId", s.TenantID).
+			Valid(true)
 	}
 
 	if query != "" {

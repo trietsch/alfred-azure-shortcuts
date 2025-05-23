@@ -12,6 +12,7 @@ import (
 	"io"
 	"log"
 	"os"
+	"strings"
 	"time"
 )
 
@@ -99,7 +100,7 @@ func readAzureIcons() (map[string]string, error) {
 
 	iconMap := make(map[string]string)
 	for _, icon := range icons {
-		iconMap[icon.Type] = "images/" + icon.ImagePath
+		iconMap[strings.ToLower(icon.Type)] = "images/" + icon.ImagePath
 	}
 
 	return iconMap, nil
@@ -133,12 +134,18 @@ func run() {
 	}
 
 	for _, r := range resources {
-		iconPath, _ := icons[*r.Type]
+		iconPath, _ := icons[strings.ToLower(*r.Type)]
 		icon := aw.Icon{Value: iconPath}
 
 		url := getAzurePortalURL(*r.ID)
 
-		wf.NewItem(fmt.Sprintf("%s (%s)", *r.Name, *r.Type)).Icon(&icon).Arg(url).Subtitle(*r.ID).UID(*r.ID).Valid(true)
+		name := fmt.Sprintf("%s (%s)", *r.Name, *r.Type)
+		wf.NewItem(name).
+			Icon(&icon).
+			Arg(url).
+			Subtitle(*r.ID).
+			UID(*r.ID).
+			Valid(true)
 	}
 
 	if query != "" {
