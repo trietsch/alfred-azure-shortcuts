@@ -19,32 +19,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>3A3B333D-2E97-4479-AF29-B31FCB5EAE9D</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>3E796BF2-A7BD-4B28-9A03-5DC8A6BB30A7</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>3E796BF2-A7BD-4B28-9A03-5DC8A6BB30A7</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>6CDFE549-1B9C-4EA5-A024-18FE99C69199</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>5C099F2A-5444-49DA-A2C1-0C4499D6F899</key>
 		<array>
 			<dict>
@@ -136,7 +110,7 @@
 				<key>script</key>
 				<string>query=$1
 
-./bin/resources -resource-group "${resource_group}" -subscription "${subscription}" -query "${query}"
+./bin/resources -resource-group "${resource_group}" -subscription "${subscription}" -tenant-id "${tenantId}" -query "${query}"
                     </string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -188,12 +162,12 @@
 				<key>script</key>
 				<string>query=$1
 
-                        ./bin/subscriptions "${query}"
+./bin/subscriptions "${query}"
                     </string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>./bin/subscriptions</string>
+				<string></string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
@@ -259,7 +233,7 @@
 				<key>script</key>
 				<string>query=$1
 
-                        ./bin/resource-groups -subscription "${subscription}" -query "${query}"</string>
+./bin/resource-groups -subscription "${subscription}" -query "${query}" -tenant-id "${tenantId}"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -291,6 +265,8 @@
 				<dict>
 					<key>subscription</key>
 					<string>{query}</string>
+					<key>tenant</key>
+					<string>{var:tenantId}</string>
 				</dict>
 			</dict>
 			<key>type</key>
@@ -313,6 +289,8 @@
 					<string>{query}</string>
 					<key>subscription</key>
 					<string>{var:subscription}</string>
+					<key>tenantId</key>
+					<string>{var:tenantId}</string>
 				</dict>
 			</dict>
 			<key>type</key>
@@ -322,108 +300,21 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>Refresh done</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>6CDFE549-1B9C-4EA5-A024-18FE99C69199</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./bin/subscriptions -refresh &gt; /dev/null
-                        res=$?
-                        if [ $res -eq "0" ]; then
-                        echo "Refresh success"
-                        else
-                        echo "Something failed"
-                        fi
-                    </string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>3E796BF2-A7BD-4B28-9A03-5DC8A6BB30A7</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>{var:hotkey}-refresh</string>
-				<key>subtext</key>
-				<string>Update subscriptions list</string>
-				<key>text</key>
-				<string>Refresh Azure subscriptions</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>3A3B333D-2E97-4479-AF29-B31FCB5EAE9D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>Shortcuts to Azure resources.
 
-            Default hotkey for using is `az &lt;query&gt;`.
-
-            First-time use:
-            Run `az-refresh` which will update the cache of subscriptions</string>
+Default hotkey for using is `az &lt;query&gt;`.</string>
 	<key>uidata</key>
 	<dict>
 		<key>38863873-18DD-4920-A28E-1B8A1AF85CE8</key>
 		<dict>
+			<key>note</key>
+			<string>List subscriptions</string>
 			<key>xpos</key>
 			<real>120</real>
 			<key>ypos</key>
 			<real>105</real>
-		</dict>
-		<key>3A3B333D-2E97-4479-AF29-B31FCB5EAE9D</key>
-		<dict>
-			<key>xpos</key>
-			<real>120</real>
-			<key>ypos</key>
-			<real>255</real>
-		</dict>
-		<key>3E796BF2-A7BD-4B28-9A03-5DC8A6BB30A7</key>
-		<dict>
-			<key>xpos</key>
-			<real>380</real>
-			<key>ypos</key>
-			<real>255</real>
 		</dict>
 		<key>5C099F2A-5444-49DA-A2C1-0C4499D6F899</key>
 		<dict>
@@ -432,15 +323,10 @@
 			<key>ypos</key>
 			<real>135</real>
 		</dict>
-		<key>6CDFE549-1B9C-4EA5-A024-18FE99C69199</key>
-		<dict>
-			<key>xpos</key>
-			<real>580</real>
-			<key>ypos</key>
-			<real>255</real>
-		</dict>
 		<key>7BCA0896-12A5-4CAF-AD27-B0EDB4447753</key>
 		<dict>
+			<key>note</key>
+			<string>List resource groups for subscription</string>
 			<key>xpos</key>
 			<real>370</real>
 			<key>ypos</key>
@@ -456,7 +342,7 @@
 		<key>ABA0DF5B-E3B5-4CB5-9D4B-66FE30AF879D</key>
 		<dict>
 			<key>note</key>
-			<string>fdas</string>
+			<string>List resources for resource group</string>
 			<key>xpos</key>
 			<real>620</real>
 			<key>ypos</key>

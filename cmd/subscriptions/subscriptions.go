@@ -27,6 +27,7 @@ var (
 type Subscription struct {
 	Name           string `json:"name"`
 	SubscriptionID string `json:"subscriptionId"`
+	TenantID       string `json:"tenantId"`
 }
 
 func init() {
@@ -65,6 +66,7 @@ func ListAzureSubscriptions() (interface{}, error) {
 			allSubscriptions = append(allSubscriptions, Subscription{
 				Name:           *subscription.DisplayName,
 				SubscriptionID: *subscription.SubscriptionID,
+				TenantID:       *subscription.TenantID,
 			})
 		}
 	}
@@ -90,7 +92,7 @@ func run() {
 	}
 
 	for _, s := range subscriptions {
-		wf.NewItem(s.Name).Arg(s.SubscriptionID).Subtitle(s.SubscriptionID).UID(s.SubscriptionID).Valid(true)
+		wf.NewItem(s.Name).Arg(s.SubscriptionID).Subtitle(s.SubscriptionID).UID(s.SubscriptionID).Var("tenantId", s.TenantID).Valid(true)
 	}
 
 	if query != "" {

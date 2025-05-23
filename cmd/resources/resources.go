@@ -24,6 +24,7 @@ var (
 
 	query             string
 	subscriptionId    string
+	tenantId          string
 	resourceGroupName string
 )
 
@@ -43,6 +44,7 @@ func init() {
 
 	flag.StringVar(&query, "query", "", "Query input by the user, to filter the list on")
 	flag.StringVar(&subscriptionId, "subscription", "", "Azure Subscription ID")
+	flag.StringVar(&tenantId, "tenant-id", "", "Azure Tenant ID")
 	flag.StringVar(&resourceGroupName, "resource-group", "", "Azure Resource Group name")
 
 	credential, err := azidentity.NewAzureCLICredential(nil)
@@ -103,6 +105,11 @@ func readAzureIcons() (map[string]string, error) {
 	return iconMap, nil
 }
 
+func getAzurePortalURL(resourceId string) string {
+	baseURL := "https://portal.azure.com/#@"
+	return fmt.Sprintf("%s%s/resource%s", baseURL, tenantId, resourceId)
+}
+
 func run() {
 	flag.Parse()
 
@@ -126,11 +133,12 @@ func run() {
 	}
 
 	for _, r := range resources {
-		logger.Printf("%+v", r)
 		iconPath, _ := icons[*r.Type]
 		icon := aw.Icon{Value: iconPath}
 
-		wf.NewItem(fmt.Sprintf("%s (%s)", *r.Name, *r.Type)).Icon(&icon).Arg(*r.ID).Subtitle(*r.ID).UID(*r.ID).Valid(true)
+		url := getAzurePortalURL(*r.ID)
+
+		wf.NewItem(fmt.Sprintf("%s (%s)", *r.Name, *r.Type)).Icon(&icon).Arg(url).Subtitle(*r.ID).UID(*r.ID).Valid(true)
 	}
 
 	if query != "" {

@@ -21,9 +21,9 @@ workflow: build clean target/
 
 install: build
 	@echo "Installing workflow to Alfred..."
-	@cp -r bin/* /Users/robintrietsch/dotfiles/preferences/alfred/Alfred.alfredpreferences/workflows/user.workflow.27E38029-F5F4-4617-A991-F4123720B2CD/bin
-	@cp info.plist /Users/robintrietsch/dotfiles/preferences/alfred/Alfred.alfredpreferences/workflows/user.workflow.27E38029-F5F4-4617-A991-F4123720B2CD/info.plist
-	@cp -r images /Users/robintrietsch/dotfiles/preferences/alfred/Alfred.alfredpreferences/workflows/user.workflow.27E38029-F5F4-4617-A991-F4123720B2CD/images
+	@cp -r bin/* $$alfred_preferences/workflows/user.workflow.27E38029-F5F4-4617-A991-F4123720B2CD/bin
+	@cp info.plist $$alfred_preferences/workflows/user.workflow.27E38029-F5F4-4617-A991-F4123720B2CD/info.plist
+	@cp -r images $$alfred_preferences/workflows/user.workflow.27E38029-F5F4-4617-A991-F4123720B2CD/images
 	@echo "Workflow installed to Alfred."
 
 build-subscriptions:
