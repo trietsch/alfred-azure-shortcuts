@@ -20,7 +20,7 @@ jobs:
   semantic-release:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    name: "Semantic Release""
+    name: "Semantic Release"
     needs: build-and-test
     environment:
       name: Release
