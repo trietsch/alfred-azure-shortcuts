@@ -20,6 +20,7 @@ jobs:
   semantic-release:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    name: "Semantic Release""
     needs: build-and-test
     environment:
       name: Release
@@ -38,8 +39,3 @@ jobs:
             semantic-release-replace-plugin
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      - name: Run GoReleaser
-        uses: goreleaser/goreleaser-action@v5
-        with:
-          distribution: goreleaser
-          version: latest
