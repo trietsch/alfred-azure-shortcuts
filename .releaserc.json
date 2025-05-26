@@ -1,0 +1,33 @@
+{
+  "branches": ["main"],
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/github",
+    [
+      "@semantic-release/git",
+      {
+        "assets": ["CHANGELOG.md"],
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }
+    ],
+    [
+      "semantic-release-replace-plugin",
+      {
+        "files": ["info.plist"],
+        "from": "<key>version</key>\\s*<string>.*?</string>",
+        "to": "<key>version</key>\n<string>${nextRelease.version}</string>",
+        "results": [
+          {
+            "file": "info.plist",
+            "hasChanged": true,
+            "numMatches": 1,
+            "numReplacements": 1
+          }
+        ],
+        "countMatches": true
+      }
+    ]
+  ]
+}

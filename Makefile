@@ -1,4 +1,4 @@
-.PHONY: build
+.PHONY: build vet
 
 
 TARGET_DIR := target
@@ -9,15 +9,13 @@ target/:
 	mkdir target
 
 clean:
-	@[ -d $(TARGET_DIR) ] && rm -r $(TARGET_DIR) || true
+	@rm -rf $(TARGET_DIR)
 
 workflow: build clean target/
 	zip $(WORKFLOW_FILE) \
 	info.plist \
 	icon.png \
-	bin/subscriptions \
-	bin/resources \
-	bin/resource-groups
+	bin/*
 
 install: build
 	@echo "Installing workflow to Alfred..."
@@ -36,3 +34,6 @@ build-resource-groups:
 	GOOS=darwin GOARCH=arm64 CGO_ENABLED=0 go build -ldflags='-s -w' -trimpath -o bin/resource-groups cmd/resource_groups/*.go
 
 build: build-subscriptions build-resources build-resource-groups
+vet:
+	go vet ./...
+
