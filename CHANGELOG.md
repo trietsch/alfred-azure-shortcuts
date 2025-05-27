@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/trietsch/alfred-azure-shortcuts/compare/v1.0.1...v1.0.2) (2025-05-27)
+
+
+### Bug Fixes
+
+* incorrect GH token ([a7bf37e](https://github.com/trietsch/alfred-azure-shortcuts/commit/a7bf37e14530b9e83a79293e7e272b3546628339))
+
 ## [1.0.1](https://github.com/trietsch/alfred-azure-shortcuts/compare/v1.0.0...v1.0.1) (2025-05-27)
 
 
