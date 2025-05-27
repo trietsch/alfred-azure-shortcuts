@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/trietsch/alfred-azure-shortcuts/compare/v1.0.0...v1.0.1) (2025-05-27)
+
+
+### Bug Fixes
+
+* missing setup steps in ci ([ced1b42](https://github.com/trietsch/alfred-azure-shortcuts/commit/ced1b42d3061971b3932262421db525af5cd85bd))
+
 # 1.0.0 (2025-05-26)
 
 
