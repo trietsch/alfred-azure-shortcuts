@@ -3,7 +3,7 @@ name: Publish Release Artifacts
 on:
   release:
     types:
-      - published
+      - created
 
 jobs:
   publish-release-artifacts:
@@ -21,7 +21,7 @@ jobs:
         id: get_release
         uses: bruceadams/get-release@v1.3.2
         env:
-          GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Upload
         id: upload-release-asset
         uses: actions/upload-release-asset@v1.0.1
