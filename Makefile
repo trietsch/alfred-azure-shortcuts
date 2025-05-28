@@ -15,6 +15,7 @@ workflow: build clean target/
 	zip $(WORKFLOW_FILE) \
 	info.plist \
 	icon.png \
+	update-available.png \
 	bin/*
 
 install: build
@@ -22,6 +23,8 @@ install: build
 	@cp -r bin/* $$alfred_preferences/workflows/user.workflow.27E38029-F5F4-4617-A991-F4123720B2CD/bin
 	@cp info.plist $$alfred_preferences/workflows/user.workflow.27E38029-F5F4-4617-A991-F4123720B2CD/info.plist
 	@cp -r images $$alfred_preferences/workflows/user.workflow.27E38029-F5F4-4617-A991-F4123720B2CD/images
+	@cp icon.png $$alfred_preferences/workflows/user.workflow.27E38029-F5F4-4617-A991-F4123720B2CD/icon.png
+	@cp update-available.png $$alfred_preferences/workflows/user.workflow.27E38029-F5F4-4617-A991-F4123720B2CD/update-available.png
 	@echo "Workflow installed to Alfred."
 
 build-subscriptions:

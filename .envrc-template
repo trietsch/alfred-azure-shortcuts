@@ -1,0 +1,12 @@
+# Template variable for required environment variables for make install to work properly and to be able to run
+# the binaries from this repo's directory as if it was installed
+export alfred_workflow_bundleid="dev.trietsch.alfred-azure-shortcuts"
+export alfred_workflow_name="Azure Portal shortcuts"
+export alfred_workflow_data="$HOME/Library/Application Support/Alfred/Workflow Data/dev.trietsch.alfred-azure-shortcuts"
+export alfred_workflow_description="Alfred workflow for opening the Azure Portal for specific resources"
+export alfred_workflow_cache="$HOME/Library/Caches/com.runningwithcrayons.Alfred/Workflow Data/dev.trietsch.alfred-azure-shortcuts"
+
+# Open Alfred settings -> Advanced -> bottom right under syncing, click Reveal in Finder
+# Copy the path to the Alfred preferences and set it here.
+export alfred_preferences="<path/to/Alfred.alfredpreferences>"
+
