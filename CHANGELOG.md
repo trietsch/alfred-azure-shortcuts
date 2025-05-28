@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/trietsch/alfred-azure-shortcuts/compare/v1.0.0...v1.1.0) (2025-05-28)
+
+
+### Features
+
+* automatic updates ([76f4711](https://github.com/trietsch/alfred-azure-shortcuts/commit/76f471166471d63562b948f50e7421d2f08903cf))
+
 # 1.0.0 (2025-05-28)
 
 
