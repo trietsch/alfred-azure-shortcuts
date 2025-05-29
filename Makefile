@@ -12,11 +12,12 @@ clean:
 	@rm -rf $(TARGET_DIR)
 
 workflow: build clean target/
-	zip $(WORKFLOW_FILE) \
+	zip -r $(WORKFLOW_FILE) \
 	info.plist \
 	icon.png \
 	update-available.png \
-	bin/*
+	images \
+	bin
 
 install: build
 	@echo "Installing workflow to Alfred..."
