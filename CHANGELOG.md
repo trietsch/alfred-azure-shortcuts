@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/trietsch/alfred-azure-shortcuts/compare/v1.1.1...v1.1.2) (2025-05-29)
+
+
+### Bug Fixes
+
+* include all relevant files in the zip ([b93207e](https://github.com/trietsch/alfred-azure-shortcuts/commit/b93207e68c8c36c405eded9c9a8eca09da828ea9))
+
 ## [1.1.1](https://github.com/trietsch/alfred-azure-shortcuts/compare/v1.1.0...v1.1.1) (2025-05-29)
 
 
