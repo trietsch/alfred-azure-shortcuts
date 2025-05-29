@@ -4,7 +4,7 @@ Open Azure resources under specific subscriptions and resource groups in the Azu
 
 ## Usage
 
-[//]: # (TODO add GIF / screenshot)
+![workflow](.github/readme/workflow.gif)
 
 ## Installation
 
@@ -32,5 +32,5 @@ Changing the variable `hotkey` from `az` to `azure` results in commands like `az
 ## Acknowledgments
 
 * [alfred-gcloud-shortcuts](https://github.com/jarlefosen/alfred-gcloud-shortcuts) has been used to bootstrap this
-  Alfred
-  workflow. 
+  Alfred workflow.
+* [maskati/azure-icons](https://github.com/maskati/azure-icons) is used for getting up to date Azure icons.
