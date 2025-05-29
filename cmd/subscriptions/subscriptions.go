@@ -18,7 +18,7 @@ import (
 const (
 	azureSubscriptionCacheKey = "azure-subscriptions"
 	updateJobName             = "checkForUpdate"
-	repo                      = "trietsch/alfred-azure-subscriptions"
+	repo                      = "trietsch/alfred-azure-shortcuts"
 )
 
 var (
@@ -123,7 +123,7 @@ func run() {
 		//
 		// If executed, the Magic Action downloads the latest version
 		// of the workflow and asks Alfred to install it.
-		wf.NewItem("Update available!").
+		wf.NewItem("Update available").
 			Subtitle("↩ to install").
 			Autocomplete("workflow:update").
 			Valid(false).
