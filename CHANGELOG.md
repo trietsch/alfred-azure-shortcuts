@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/trietsch/alfred-azure-shortcuts/compare/v1.1.0...v1.1.1) (2025-05-29)
+
+
+### Bug Fixes
+
+* auto updater is working ([03f5cd0](https://github.com/trietsch/alfred-azure-shortcuts/commit/03f5cd0a78abf57be4c9631b3c228ab3a1e3af14))
+
 # [1.1.0](https://github.com/trietsch/alfred-azure-shortcuts/compare/v1.0.0...v1.1.0) (2025-05-28)
 
 

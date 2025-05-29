@@ -366,7 +366,7 @@ Default hotkey for using is `az &lt;query&gt;`.</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-<string>0.1.0</string>
+<string>1.1.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/trietsch/alfred-azure-shortcuts</string>
 </dict>
