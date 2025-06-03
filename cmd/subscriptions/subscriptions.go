@@ -68,8 +68,7 @@ func ListAzureSubscriptions() (interface{}, error) {
 	for pager.More() {
 		page, err := pager.NextPage(ctx)
 		if err != nil {
-			fmt.Printf("failed to list subscriptions: %v\n", err)
-			os.Exit(1)
+			return nil, fmt.Errorf("failed to list subscriptions: %w", err)
 		}
 
 		for _, subscription := range page.Value {
@@ -133,8 +132,12 @@ func run() {
 	var subscriptions []Subscription
 
 	if err := wf.Data.LoadOrStoreJSON(azureSubscriptionCacheKey, time.Minute*30, ListAzureSubscriptions, &subscriptions); err != nil {
-		wf.FatalError(err)
-		return
+		wf.NewWarningItem("Failed to list subscriptions.", "Try 'az login' or check network. Error: "+err.Error()).
+			Icon(aw.IconWarning).
+			Valid(false)
+		// wf.FatalError(err) // Original line
+		wf.SendFeedback() // Send the warning
+		return           // Exit after sending warning
 	}
 
 	for _, s := range subscriptions {

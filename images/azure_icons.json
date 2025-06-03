@@ -4546,5 +4546,9 @@
   {
     "type": "",
     "imagePath": "svg/WebsitesExtension/Apiapp.svg"
+  },
+  {
+    "type": "generic_fallback_icon",
+    "imagePath": "svg/HubsExtension/BrowseAllResources.svg"
   }
 ]

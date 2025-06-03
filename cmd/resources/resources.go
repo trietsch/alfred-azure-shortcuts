@@ -58,8 +58,7 @@ func init() {
 func ListResourcesForResourceGroup() (interface{}, error) {
 	client, err := armresources.NewClient(subscriptionId, cred, nil)
 	if err != nil {
-		fmt.Printf("failed to create client: %v\n", err)
-		os.Exit(1)
+		return nil, fmt.Errorf("failed to create client: %w", err)
 	}
 
 	allResources := make([]armresources.GenericResourceExpanded, 0)
@@ -69,8 +68,7 @@ func ListResourcesForResourceGroup() (interface{}, error) {
 	for pager.More() {
 		page, err := pager.NextPage(ctx)
 		if err != nil {
-			fmt.Printf("failed to list resources: %v\n", err)
-			os.Exit(1)
+			return nil, fmt.Errorf("failed to list resources: %w", err)
 		}
 
 		for _, resource := range page.Value {
@@ -84,17 +82,20 @@ func ListResourcesForResourceGroup() (interface{}, error) {
 func readAzureIcons() (map[string]string, error) {
 	f, err := os.Open("./images/azure_icons.json")
 	if err != nil {
+		logger.Printf("Warning: Could not read azure_icons.json: %v", err)
 		return nil, err
 	}
 	defer f.Close()
 
 	byt, err := io.ReadAll(f)
 	if err != nil {
+		logger.Printf("Warning: Could not read azure_icons.json: %v", err)
 		return nil, err
 	}
 
 	var icons []Icon
 	if err := json.Unmarshal(byt, &icons); err != nil {
+		logger.Printf("Warning: Could not read azure_icons.json: %v", err)
 		return nil, err
 	}
 
@@ -129,12 +130,24 @@ func run() {
 	var resources []armresources.GenericResourceExpanded
 
 	if err := wf.Data.LoadOrStoreJSON(azureResourcesCacheKey, time.Minute*30, ListResourcesForResourceGroup, &resources); err != nil {
-		wf.FatalError(err)
-		return
+		wf.NewWarningItem("Failed to list resources.", "Error: "+err.Error()).
+			Icon(aw.IconWarning).
+			Valid(false)
+		// wf.FatalError(err) // Original line
+		wf.SendFeedback() // Send the warning
+		return           // Exit after sending warning
 	}
 
 	for _, r := range resources {
-		iconPath, _ := icons[strings.ToLower(*r.Type)]
+		iconPath, ok := icons[strings.ToLower(*r.Type)]
+		if !ok || iconPath == "" {
+			logger.Printf("Warning: Icon not found for resource type: %s (Resource: %s)", *r.Type, *r.Name)
+			iconPath, ok = icons["generic_fallback_icon"]
+			if !ok || iconPath == "" {
+				logger.Printf("Warning: generic_fallback_icon also not found in azure_icons.json. Hardcoding path.")
+				iconPath = "images/svg/HubsExtension/BrowseAllResources.svg"
+			}
+		}
 		icon := aw.Icon{Value: iconPath}
 
 		url := getAzurePortalURL(*r.ID)

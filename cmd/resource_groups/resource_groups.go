@@ -63,7 +63,7 @@ func ListResourceGroupsForSubscription() (interface{}, error) {
 	for pager.More() {
 		page, err := pager.NextPage(ctx)
 		if err != nil {
-			log.Fatalf("failed to list resource groups: %v", err)
+			return nil, fmt.Errorf("failed to list resource groups: %w", err)
 		}
 
 		for _, rg := range page.Value {
@@ -87,8 +87,12 @@ func run() {
 	var resourceGroups []ResourceGroup
 
 	if err := wf.Data.LoadOrStoreJSON(azureResourceGroupsCacheKey, time.Minute*30, ListResourceGroupsForSubscription, &resourceGroups); err != nil {
-		wf.FatalError(err)
-		return
+		wf.NewWarningItem("Failed to list resource groups.", "Try 'az login' or check network. Error: "+err.Error()).
+			Icon(aw.IconWarning).
+			Valid(false)
+		// wf.FatalError(err) // Original line
+		wf.SendFeedback() // Send the warning
+		return           // Exit after sending warning
 	}
 
 	for _, rg := range resourceGroups {
