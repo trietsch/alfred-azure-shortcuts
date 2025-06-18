@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/trietsch/alfred-azure-shortcuts/compare/v1.1.2...v1.2.0) (2025-06-18)
+
+
+### Features
+
+* Improve icon handling and error reporting ([51548cf](https://github.com/trietsch/alfred-azure-shortcuts/commit/51548cf303b9f402f83d4525570288e0a5f12672))
+* Improve icon handling and error reporting ([ee4546e](https://github.com/trietsch/alfred-azure-shortcuts/commit/ee4546e64fe0cf315d59331a7b4ff127709116c3))
+
 # [1.2.0](https://github.com/trietsch/alfred-azure-shortcuts/compare/v1.1.2...v1.2.0) (2025-06-05)
 
 
