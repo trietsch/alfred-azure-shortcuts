@@ -6,6 +6,19 @@
 	<string>dev.trietsch.alfred-azure-shortcuts</string>
 	<key>connections</key>
 	<dict>
+		<key>TENANT-SELECTOR-UID</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>38863873-18DD-4920-A28E-1B8A1AF85CE8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>38863873-18DD-4920-A28E-1B8A1AF85CE8</key>
 		<array>
 			<dict>
@@ -97,6 +110,58 @@
 				<integer>1</integer>
 				<key>escaping</key>
 				<integer>102</integer>
+				<key>keyword</key>
+				<string>{var:hotkey}</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>2</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>query=$1
+
+./bin/tenants "${query}"
+                    </string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>TENANT-SELECTOR-UID</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
 				<key>queuedelaycustom</key>
 				<integer>1</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -162,7 +227,7 @@
 				<key>script</key>
 				<string>query=$1
 
-./bin/subscriptions "${query}"
+./bin/subscriptions -tenant-id "${selectedTenantId}" "${query}"
                     </string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -307,19 +372,28 @@
 Default hotkey for using is `az &lt;query&gt;`.</string>
 	<key>uidata</key>
 	<dict>
+		<key>TENANT-SELECTOR-UID</key>
+		<dict>
+			<key>note</key>
+			<string>Select tenant (or auto-skip if single tenant)</string>
+			<key>xpos</key>
+			<real>40</real>
+			<key>ypos</key>
+			<real>105</real>
+		</dict>
 		<key>38863873-18DD-4920-A28E-1B8A1AF85CE8</key>
 		<dict>
 			<key>note</key>
 			<string>List subscriptions</string>
 			<key>xpos</key>
-			<real>120</real>
+			<real>200</real>
 			<key>ypos</key>
 			<real>105</real>
 		</dict>
 		<key>5C099F2A-5444-49DA-A2C1-0C4499D6F899</key>
 		<dict>
 			<key>xpos</key>
-			<real>290</real>
+			<real>370</real>
 			<key>ypos</key>
 			<real>135</real>
 		</dict>
@@ -328,14 +402,14 @@ Default hotkey for using is `az &lt;query&gt;`.</string>
 			<key>note</key>
 			<string>List resource groups for subscription</string>
 			<key>xpos</key>
-			<real>370</real>
+			<real>450</real>
 			<key>ypos</key>
 			<real>105</real>
 		</dict>
 		<key>894ACD4B-387C-419D-9555-34800A4B7C2F</key>
 		<dict>
 			<key>xpos</key>
-			<real>540</real>
+			<real>620</real>
 			<key>ypos</key>
 			<real>135</real>
 		</dict>
@@ -344,14 +418,14 @@ Default hotkey for using is `az &lt;query&gt;`.</string>
 			<key>note</key>
 			<string>List resources for resource group</string>
 			<key>xpos</key>
-			<real>620</real>
+			<real>700</real>
 			<key>ypos</key>
 			<real>105</real>
 		</dict>
 		<key>F34201E5-52DD-45C8-9E1A-828DEFB2A724</key>
 		<dict>
 			<key>xpos</key>
-			<real>820</real>
+			<real>900</real>
 			<key>ypos</key>
 			<real>105</real>
 		</dict>

@@ -16,28 +16,26 @@ import (
 )
 
 const (
-	azureSubscriptionCacheKey = "azure-subscriptions"
-	updateJobName             = "checkForUpdate"
-	repo                      = "trietsch/alfred-azure-shortcuts"
+	azureTenantCacheKey = "azure-tenants"
+	updateJobName       = "checkForUpdate"
+	repo                = "trietsch/alfred-azure-shortcuts"
 )
 
 var (
-	logger = log.New(os.Stderr, "[subscriptions] ", log.LstdFlags)
+	logger = log.New(os.Stderr, "[tenants] ", log.LstdFlags)
 	wf     *aw.Workflow
 
 	doCheck       bool
 	iconAvailable = &aw.Icon{Value: "update-available.png"}
-	tenantId      string
-	singleTenant  bool
 
 	cred *azidentity.AzureCLICredential
 	ctx  = context.Background()
 )
 
-type Subscription struct {
-	Name           string `json:"name"`
-	SubscriptionID string `json:"subscriptionId"`
-	TenantID       string `json:"tenantId"`
+type Tenant struct {
+	TenantID    string `json:"tenantId"`
+	DisplayName string `json:"displayName"`
+	CountryCode string `json:"countryCode,omitempty"`
 }
 
 func init() {
@@ -50,8 +48,6 @@ func init() {
 	updateOpt := update.GitHub(repo)
 	wf = aw.New(updateOpt, aw.SortOptions(sopts...))
 	flag.BoolVar(&doCheck, "check", false, "check for a new version")
-	flag.StringVar(&tenantId, "tenant-id", "", "Azure Tenant ID to filter subscriptions")
-	flag.BoolVar(&singleTenant, "single-tenant", false, "True if the workflow skipped the tenant selection step")
 
 	credential, err := azidentity.NewAzureCLICredential(nil)
 	if err != nil {
@@ -60,36 +56,44 @@ func init() {
 	cred = credential
 }
 
-func ListAzureSubscriptions() (interface{}, error) {
-	client, err := armsubscriptions.NewClient(cred, nil)
+func ListAzureTenants() (interface{}, error) {
+	client, err := armsubscriptions.NewTenantsClient(cred, nil)
 	if err != nil {
 		return nil, fmt.Errorf("failed to create client: %w", err)
 	}
 
-	allSubscriptions := make([]Subscription, 0)
+	allTenants := make([]Tenant, 0)
 
 	pager := client.NewListPager(nil)
 	for pager.More() {
 		page, err := pager.NextPage(ctx)
 		if err != nil {
-			return nil, fmt.Errorf("failed to list subscriptions: %w", err)
+			return nil, fmt.Errorf("failed to list tenants: %w", err)
 		}
 
-		for _, subscription := range page.Value {
-			// Filter by tenant if specified
-			if tenantId != "" && *subscription.TenantID != tenantId {
-				continue
+		for _, tenant := range page.Value {
+			displayName := ""
+			if tenant.DisplayName != nil {
+				displayName = *tenant.DisplayName
+			}
+			if displayName == "" {
+				displayName = *tenant.TenantID
 			}
 
-			allSubscriptions = append(allSubscriptions, Subscription{
-				Name:           *subscription.DisplayName,
-				SubscriptionID: *subscription.SubscriptionID,
-				TenantID:       *subscription.TenantID,
+			countryCode := ""
+			if tenant.CountryCode != nil {
+				countryCode = *tenant.CountryCode
+			}
+
+			allTenants = append(allTenants, Tenant{
+				TenantID:    *tenant.TenantID,
+				DisplayName: displayName,
+				CountryCode: countryCode,
 			})
 		}
 	}
 
-	return allSubscriptions, nil
+	return allTenants, nil
 }
 
 func run() {
@@ -97,7 +101,38 @@ func run() {
 	flag.Parse()
 	query := flag.Arg(0)
 
-	if doCheck && singleTenant {
+	var tenants []Tenant
+
+	if err := wf.Data.LoadOrStoreJSON(azureTenantCacheKey, time.Minute*30, ListAzureTenants, &tenants); err != nil {
+		wf.NewWarningItem("Failed to list tenants.", "Try 'az login' or check network. Error: "+err.Error()).
+			Icon(aw.IconWarning).
+			Valid(false)
+		wf.FatalError(err)
+		return
+	}
+
+	// If only one tenant is available, automatically proceed with that tenant
+	if len(tenants) == 1 && query == "" {
+		// Call subscriptions directly with the single tenant
+		exec.Command("./bin/subscriptions", "-tenant-id", tenants[0].TenantID, "-single-tenant", "true")
+		return
+	}
+
+	for _, t := range tenants {
+		subtitle := t.TenantID
+		if t.CountryCode != "" {
+			subtitle += " (" + t.CountryCode + ")"
+		}
+
+		wf.NewItem(t.DisplayName).
+			Arg(t.TenantID).
+			Subtitle(subtitle).
+			UID(t.TenantID).
+			Var("selectedTenantId", t.TenantID).
+			Valid(true)
+	}
+
+	if doCheck {
 		wf.Configure(aw.TextErrors(true))
 		log.Println("Checking for updates...")
 		if err := wf.CheckForUpdate(); err != nil {
@@ -117,7 +152,7 @@ func run() {
 
 	logger.Printf("query=%s", query)
 
-	if query == "" && wf.UpdateAvailable() && singleTenant {
+	if query == "" && wf.UpdateAvailable() {
 		// Turn off UIDs to force this item to the top.
 		// If UIDs are enabled, Alfred will apply its "knowledge"
 		// to order the results based on your past usage.
@@ -136,28 +171,6 @@ func run() {
 			Autocomplete("workflow:update").
 			Valid(false).
 			Icon(iconAvailable)
-	}
-
-	var subscriptions []Subscription
-
-	cacheKey := azureSubscriptionCacheKey + "-" + tenantId
-
-	if err := wf.Data.LoadOrStoreJSON(cacheKey, time.Minute*30, ListAzureSubscriptions, &subscriptions); err != nil {
-		wf.NewWarningItem("Failed to list subscriptions.", "Try 'az login' or check network. Error: "+err.Error()).
-			Icon(aw.IconWarning).
-			Valid(false)
-		// wf.FatalError(err) // Original line
-		wf.SendFeedback() // Send the warning
-		return            // Exit after sending warning
-	}
-
-	for _, s := range subscriptions {
-		wf.NewItem(s.Name).
-			Arg(s.SubscriptionID).
-			Subtitle(s.SubscriptionID).
-			UID(s.SubscriptionID).
-			Var("tenantId", s.TenantID).
-			Valid(true)
 	}
 
 	if query != "" {
