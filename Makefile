@@ -37,7 +37,10 @@ build-resources:
 build-resource-groups:
 	GOOS=darwin GOARCH=arm64 CGO_ENABLED=0 go build -ldflags='-s -w' -trimpath -o bin/resource-groups cmd/resource_groups/*.go
 
-build: build-subscriptions build-resources build-resource-groups
+build-tenants:
+	GOOS=darwin GOARCH=arm64 CGO_ENABLED=0 go build -ldflags='-s -w' -trimpath -o bin/tenants cmd/tenants/*.go
+
+build: build-subscriptions build-resources build-resource-groups build-tenants
 vet:
 	go vet ./...
 
