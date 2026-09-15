@@ -6,6 +6,70 @@
 	<string>dev.trietsch.alfred-azure-shortcuts</string>
 	<key>connections</key>
 	<dict>
+		<key>TENANT-SELECTOR-UID</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>TENANT-FORWARD-COND-UID</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>TENANT-FORWARD-COND-UID</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>SUBSCRIPTION-ARGS-UID</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>TENANT-FORWARD-COND-1</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>TENANT-ARGS-UID</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>SUBSCRIPTION-ARGS-UID</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7BCA0896-12A5-4CAF-AD27-B0EDB4447753</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>TENANT-ARGS-UID</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>38863873-18DD-4920-A28E-1B8A1AF85CE8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>38863873-18DD-4920-A28E-1B8A1AF85CE8</key>
 		<array>
 			<dict>
@@ -97,6 +161,58 @@
 				<integer>1</integer>
 				<key>escaping</key>
 				<integer>102</integer>
+				<key>keyword</key>
+				<string>{var:hotkey}</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>2</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>query=$1
+
+./bin/tenants "${query}"
+                    </string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>TENANT-SELECTOR-UID</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
 				<key>queuedelaycustom</key>
 				<integer>1</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -147,8 +263,6 @@
 				<integer>1</integer>
 				<key>escaping</key>
 				<integer>102</integer>
-				<key>keyword</key>
-				<string>{var:hotkey}</string>
 				<key>queuedelaycustom</key>
 				<integer>1</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -162,7 +276,7 @@
 				<key>script</key>
 				<string>query=$1
 
-./bin/subscriptions "${query}"
+./bin/subscriptions -tenant-id "${selectedTenantId}" "${query}"
                     </string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -285,6 +399,76 @@
 				<false/>
 				<key>variables</key>
 				<dict>
+					<key>selectedTenantId</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>TENANT-ARGS-UID</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:singleTenantForward}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>^true$</string>
+						<key>outputlabel</key>
+						<string>Single-tenant auto-forward</string>
+						<key>uid</key>
+						<string>TENANT-FORWARD-COND-1</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>Normal tenant selection</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>TENANT-FORWARD-COND-UID</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>subscription</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>SUBSCRIPTION-ARGS-UID</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
 					<key>resource_group</key>
 					<string>{query}</string>
 					<key>subscription</key>
@@ -307,19 +491,51 @@
 Default hotkey for using is `az &lt;query&gt;`.</string>
 	<key>uidata</key>
 	<dict>
+		<key>TENANT-SELECTOR-UID</key>
+		<dict>
+			<key>note</key>
+			<string>Select tenant (or auto-skip if single tenant)</string>
+			<key>xpos</key>
+			<real>40</real>
+			<key>ypos</key>
+			<real>105</real>
+		</dict>
 		<key>38863873-18DD-4920-A28E-1B8A1AF85CE8</key>
 		<dict>
 			<key>note</key>
 			<string>List subscriptions</string>
 			<key>xpos</key>
-			<real>120</real>
+			<real>200</real>
 			<key>ypos</key>
 			<real>105</real>
+		</dict>
+		<key>TENANT-ARGS-UID</key>
+		<dict>
+			<key>xpos</key>
+			<real>120</real>
+			<key>ypos</key>
+			<real>135</real>
+		</dict>
+		<key>TENANT-FORWARD-COND-UID</key>
+		<dict>
+			<key>note</key>
+			<string>Single-tenant forward skips straight to resource groups</string>
+			<key>xpos</key>
+			<real>60</real>
+			<key>ypos</key>
+			<real>220</real>
+		</dict>
+		<key>SUBSCRIPTION-ARGS-UID</key>
+		<dict>
+			<key>xpos</key>
+			<real>350</real>
+			<key>ypos</key>
+			<real>260</real>
 		</dict>
 		<key>5C099F2A-5444-49DA-A2C1-0C4499D6F899</key>
 		<dict>
 			<key>xpos</key>
-			<real>290</real>
+			<real>370</real>
 			<key>ypos</key>
 			<real>135</real>
 		</dict>
@@ -328,14 +544,14 @@ Default hotkey for using is `az &lt;query&gt;`.</string>
 			<key>note</key>
 			<string>List resource groups for subscription</string>
 			<key>xpos</key>
-			<real>370</real>
+			<real>450</real>
 			<key>ypos</key>
 			<real>105</real>
 		</dict>
 		<key>894ACD4B-387C-419D-9555-34800A4B7C2F</key>
 		<dict>
 			<key>xpos</key>
-			<real>540</real>
+			<real>620</real>
 			<key>ypos</key>
 			<real>135</real>
 		</dict>
@@ -344,22 +560,40 @@ Default hotkey for using is `az &lt;query&gt;`.</string>
 			<key>note</key>
 			<string>List resources for resource group</string>
 			<key>xpos</key>
-			<real>620</real>
+			<real>700</real>
 			<key>ypos</key>
 			<real>105</real>
 		</dict>
 		<key>F34201E5-52DD-45C8-9E1A-828DEFB2A724</key>
 		<dict>
 			<key>xpos</key>
-			<real>820</real>
+			<real>900</real>
 			<key>ypos</key>
 			<real>105</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
-	<array/>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>0</string>
+			</dict>
+			<key>description</key>
+			<string>When enabled, always show the tenant selection screen, even if you only have access to a single Azure tenant. When disabled (default), the workflow skips straight to your subscriptions when you only have one tenant.</string>
+			<key>label</key>
+			<string>Always show tenant selection</string>
+			<key>type</key>
+			<string>checkbox</string>
+			<key>variable</key>
+			<string>always_show_tenant_selection</string>
+		</dict>
+	</array>
 	<key>variables</key>
 	<dict>
+		<key>always_show_tenant_selection</key>
+		<string>0</string>
 		<key>hotkey</key>
 		<string>az</string>
 	</dict>

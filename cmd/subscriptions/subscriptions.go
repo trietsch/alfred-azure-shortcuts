@@ -27,6 +27,8 @@ var (
 
 	doCheck       bool
 	iconAvailable = &aw.Icon{Value: "update-available.png"}
+	tenantId      string
+	singleTenant  bool
 
 	cred *azidentity.AzureCLICredential
 	ctx  = context.Background()
@@ -48,6 +50,8 @@ func init() {
 	updateOpt := update.GitHub(repo)
 	wf = aw.New(updateOpt, aw.SortOptions(sopts...))
 	flag.BoolVar(&doCheck, "check", false, "check for a new version")
+	flag.StringVar(&tenantId, "tenant-id", "", "Azure Tenant ID to filter subscriptions")
+	flag.BoolVar(&singleTenant, "single-tenant", false, "True if the workflow skipped the tenant selection step")
 
 	credential, err := azidentity.NewAzureCLICredential(nil)
 	if err != nil {
@@ -72,6 +76,11 @@ func ListAzureSubscriptions() (interface{}, error) {
 		}
 
 		for _, subscription := range page.Value {
+			// Filter by tenant if specified
+			if tenantId != "" && *subscription.TenantID != tenantId {
+				continue
+			}
+
 			allSubscriptions = append(allSubscriptions, Subscription{
 				Name:           *subscription.DisplayName,
 				SubscriptionID: *subscription.SubscriptionID,
@@ -88,7 +97,7 @@ func run() {
 	flag.Parse()
 	query := flag.Arg(0)
 
-	if doCheck {
+	if doCheck && singleTenant {
 		wf.Configure(aw.TextErrors(true))
 		log.Println("Checking for updates...")
 		if err := wf.CheckForUpdate(); err != nil {
@@ -108,7 +117,7 @@ func run() {
 
 	logger.Printf("query=%s", query)
 
-	if query == "" && wf.UpdateAvailable() {
+	if query == "" && wf.UpdateAvailable() && singleTenant {
 		// Turn off UIDs to force this item to the top.
 		// If UIDs are enabled, Alfred will apply its "knowledge"
 		// to order the results based on your past usage.
@@ -131,22 +140,34 @@ func run() {
 
 	var subscriptions []Subscription
 
-	if err := wf.Data.LoadOrStoreJSON(azureSubscriptionCacheKey, time.Minute*30, ListAzureSubscriptions, &subscriptions); err != nil {
+	cacheKey := azureSubscriptionCacheKey + "-" + tenantId
+
+	if err := wf.Data.LoadOrStoreJSON(cacheKey, time.Minute*30, ListAzureSubscriptions, &subscriptions); err != nil {
 		wf.NewWarningItem("Failed to list subscriptions.", "Try 'az login' or check network. Error: "+err.Error()).
 			Icon(aw.IconWarning).
 			Valid(false)
 		// wf.FatalError(err) // Original line
 		wf.SendFeedback() // Send the warning
-		return           // Exit after sending warning
+		return            // Exit after sending warning
 	}
 
 	for _, s := range subscriptions {
-		wf.NewItem(s.Name).
+		item := wf.NewItem(s.Name).
 			Arg(s.SubscriptionID).
 			Subtitle(s.SubscriptionID).
 			UID(s.SubscriptionID).
 			Var("tenantId", s.TenantID).
 			Valid(true)
+
+		// When this list is served via the tenants binary's single-tenant
+		// auto-forward (see cmd/tenants), items are actioned directly from
+		// the tenant selector node, so the Alfred connection graph routes
+		// selections to the subscriptions node next, not resource groups.
+		// This marker lets a Conditional utility in info.plist detect that
+		// and route straight to resource groups instead.
+		if singleTenant {
+			item.Var("singleTenantForward", "true")
+		}
 	}
 
 	if query != "" {
