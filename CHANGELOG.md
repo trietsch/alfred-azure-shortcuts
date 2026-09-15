@@ -1,3 +1,12 @@
+# [1.3.0](https://github.com/trietsch/alfred-azure-shortcuts/compare/v1.2.0...v1.3.0) (2026-09-15)
+
+
+### Features
+
+* add multi-tenancy support ([fe82d03](https://github.com/trietsch/alfred-azure-shortcuts/commit/fe82d035755c9a64c1237d1a3415747f5c87859d))
+* add multi-tenant support ([87e6c67](https://github.com/trietsch/alfred-azure-shortcuts/commit/87e6c67b4c54150e6fbfaee9cca06205534b6795))
+* add multi-tenant support ([c4edbaa](https://github.com/trietsch/alfred-azure-shortcuts/commit/c4edbaae878b0c6688aae2d91955a770cfeadb41))
+
 # [1.2.0](https://github.com/trietsch/alfred-azure-shortcuts/compare/v1.1.2...v1.2.0) (2025-06-18)
 
 
