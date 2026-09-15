@@ -29,6 +29,13 @@ This only needs to happen once, because this Alfred workflow uses the same crede
 
 Changing the variable `hotkey` from `az` to `azure` results in commands like `azure <query>`.
 
+**always_show_tenant_selection**
+
+By default, when you only have access to a single Azure tenant, the workflow skips the tenant
+selection step and goes straight to listing subscriptions. Enable the "Always show tenant
+selection" checkbox in the workflow's configuration (or set the `always_show_tenant_selection`
+variable to `1`) to always show the tenant selection step, even with a single tenant.
+
 ## Acknowledgments
 
 * [alfred-gcloud-shortcuts](https://github.com/jarlefosen/alfred-gcloud-shortcuts) has been used to bootstrap this

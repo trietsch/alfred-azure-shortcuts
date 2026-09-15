@@ -12,6 +12,7 @@ import (
 	"log"
 	"os"
 	"os/exec"
+	"strings"
 	"time"
 )
 
@@ -28,9 +29,24 @@ var (
 	doCheck       bool
 	iconAvailable = &aw.Icon{Value: "update-available.png"}
 
+	// alwaysShowTenantSelection controls whether the tenant selection step is
+	// shown even when only one tenant is available. It is configured via the
+	// "always_show_tenant_selection" Alfred workflow variable; when unset or
+	// falsy, a single tenant is auto-selected (skipping the selection step).
+	alwaysShowTenantSelection = isTruthy(os.Getenv("always_show_tenant_selection"))
+
 	cred *azidentity.AzureCLICredential
 	ctx  = context.Background()
 )
+
+func isTruthy(value string) bool {
+	switch strings.ToLower(strings.TrimSpace(value)) {
+	case "1", "true", "yes", "on":
+		return true
+	default:
+		return false
+	}
+}
 
 type Tenant struct {
 	TenantID    string `json:"tenantId"`
@@ -111,10 +127,22 @@ func run() {
 		return
 	}
 
-	// If only one tenant is available, automatically proceed with that tenant
-	if len(tenants) == 1 && query == "" {
-		// Call subscriptions directly with the single tenant
-		exec.Command("./bin/subscriptions", "-tenant-id", tenants[0].TenantID, "-single-tenant", "true")
+	// If only one tenant is available, automatically proceed with that tenant,
+	// unless the user configured the workflow to always show tenant selection.
+	// This node keeps being re-invoked (with the user's typed filter as query)
+	// for as long as Alfred shows this list, so keep delegating on every call,
+	// not just the initial empty-query one, to keep query filtering working.
+	if len(tenants) == 1 && !alwaysShowTenantSelection {
+		args := []string{"-tenant-id", tenants[0].TenantID, "-single-tenant=true"}
+		if query != "" {
+			args = append(args, query)
+		}
+		cmd := exec.Command("./bin/subscriptions", args...)
+		cmd.Stdout = os.Stdout
+		cmd.Stderr = os.Stderr
+		if err := cmd.Run(); err != nil {
+			wf.FatalError(err)
+		}
 		return
 	}
 

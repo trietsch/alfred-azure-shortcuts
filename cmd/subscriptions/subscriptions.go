@@ -152,12 +152,22 @@ func run() {
 	}
 
 	for _, s := range subscriptions {
-		wf.NewItem(s.Name).
+		item := wf.NewItem(s.Name).
 			Arg(s.SubscriptionID).
 			Subtitle(s.SubscriptionID).
 			UID(s.SubscriptionID).
 			Var("tenantId", s.TenantID).
 			Valid(true)
+
+		// When this list is served via the tenants binary's single-tenant
+		// auto-forward (see cmd/tenants), items are actioned directly from
+		// the tenant selector node, so the Alfred connection graph routes
+		// selections to the subscriptions node next, not resource groups.
+		// This marker lets a Conditional utility in info.plist detect that
+		// and route straight to resource groups instead.
+		if singleTenant {
+			item.Var("singleTenantForward", "true")
+		}
 	}
 
 	if query != "" {
